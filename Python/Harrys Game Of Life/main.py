@@ -17,13 +17,12 @@ sys.path.append(root + "/lib")
 
 import pygame as pygame
 
-from game import Game
+from init import init
 
 
-class Main(Game):
+class Main(init):
     def __init__(self):
         super().__init__()
-        self.x = 0
 
     def main(self):
         self.canvas.fill((100, 100, 100))
@@ -31,7 +30,20 @@ class Main(Game):
             pygame.draw.line(self.canvas, (255, 255, 255), (x, 0), (x, 1080))
         for y in range(0, 1080, 40):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
-        self.x += 1
+
+        for neighbour in self.universe:
+            cells = [
+                (neighbour[0] - 1, neighbour[1] - 1),
+                (neighbour[0], neighbour[1] - 1),
+                (neighbour[0] + 1, neighbour[1] - 1),
+                (neighbour[0] - 1, neighbour[1]),
+                (neighbour[0] + 1, neighbour[1]),
+                (neighbour[0] - 1, neighbour[1] + 1),
+                (neighbour[0], neighbour[1] + 1),
+                (neighbour[0] + 1, neighbour[1] + 1)
+            ]
+
+            pass
 
         self.update()
 

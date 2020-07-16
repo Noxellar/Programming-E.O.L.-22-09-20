@@ -3,7 +3,7 @@
 import pygame as pygame
 
 
-class Game():
+class init():
     def __init__(self):
         pygame.init()
 
@@ -46,6 +46,8 @@ class Game():
         }
 
         self.videoresize(pygame.event.Event(pygame.VIDEORESIZE, display))
+
+        self.universe = [(10, 10), (10, 11), (10, 9)]
 
     def update(self):
         for event in pygame.event.get():

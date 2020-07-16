@@ -4,7 +4,6 @@
 - 
 
 ## INSTRUCTIONS
-
 - 
 
 - 
@@ -16,5 +15,4 @@
 - 
 
 ## EXECUTION
-
 - 
