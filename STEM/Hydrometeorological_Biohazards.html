@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Kayla Fairweather">
+		<meta name="author" content="Harry Le">
+		<meta name="author" content="Ashton Grant">
+		<meta name="author" content="Gretchen Pronk">
+		<meta name="description" content="This is a website that is meant to educate you on the effects of biohazards caused by natural disasters, hydrometeorological ones in fact. This combination of terms gives us the name of our website: &qout;hydrometeorological biohazards&quot;">
+		<meta name="keywords" content="hydrometeorological biohazards, biohazards, natural hydrometeorological disasters, disease, preventation">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<style>
+
+			* {
+				font-family: Montserrat, Trebuchet MS;
+			}
+
+			html, body {
+				margin: 0px;
+			}
+
+			#title_header {
+				background: url("homepage.png");
+				background-repeat: no-repeat !important;
+				background-position: center;
+				background-size: cover !important;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			#navbar {
+				position: sticky;
+				top: 0px;
+				z-index: 1;
+				background: #007fff;
+				text-align: center;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			#icon {
+				position: relative;
+				margin: 10px;
+				width: 110px;
+				background: rgba(128, 128, 128, 0.25) 80px;
+				border-radius: 20px;
+				cursor: pointer;
+			}
+
+			h1, #copyright {
+				position: relative;
+				margin: 20px;
+				color: white;
+				display: inline-block;
+				float: right;
+				font-size: 40px;
+			}
+
+			h2, h3, h4 {
+				position: relative;
+				margin: 20px;
+			}
+
+			h6 {
+				position: relative;
+				text-align: center;
+				margin: 0px;
+				padding: 20px;
+				color: white;
+				display: inline-block;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+			}
+
+			.topics:hover {
+				background: rgba(128, 128, 128, 0.25);
+				cursor: pointer;
+			}
+
+			.topic {
+				position: relative;
+				min-height: calc(100vh - 326px);
+			}
+
+			#Gallery img, #Gallery video {
+				height: 400px;
+				text-align: center;
+			}
+
+			p {
+				position: relative;
+				margin: 20px;
+				font-size: 18px;
+			}
+
+			#Our_Essay_on_Hydrometeorological_Biohazards * {
+				font-family: Times;
+			}
+
+			#essay_title {
+				text-align: center;
+			}
+
+			.directory_link {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			li {
+				margin-left: 30px;
+			}
+
+			.reference {
+				font-style: italic;
+				text-decoration: underline;
+				color: grey;
+				cursor: pointer;
+			}
+
+			.csl-bib-body {
+				margin: 20px;
+			}
+
+			.csl-entry {
+				position: relative;
+			}
+
+			footer {
+				position: absolute;
+				background: #58595b;
+				color: white;
+				width: 100%;
+			}
+
+			#footerico {
+				padding-right: 20px;
+				border-right: 2px solid #c3bdbd;
+			}
+
+			.icolinks {
+				position: relative;
+				margin: 10px;
+				display: inline-block;
+			}
+
+			::-webkit-scrollbar {
+				position: absolute;
+				width: 7.5px;
+				margin: 10px;
+			}
+
+			::-webkit-scrollbar-thumb {
+				background: #909090;
+				border-radius: 10px;
+			}
+
+			::-webkit-scrollbar-track {
+				background: transparent;
+			}
+
+		</style>
+		<script>
+
+			$(function() {
+				var date = new Date();
+				$("#copyright_year").replaceWith(date.getFullYear());
+
+				var topic_list = {
+					0: ["Homepage", "", ["homepage.png", "007fff"]],
+					1: ["What Hydrometeorological Biohazards are and what they do", "center 40%", ["what_hydrometeorological_biohazards_are_and_what_they_do.png", "34303b"]],
+					2: ["When and Where The Disasters Happened", "center 20%", ["when_and_where_the_disasters_happened.png", "e69d00"]],
+					3: ["Our Ideas", "center 35%", ["our_ideas.png", "bcfeee"]],
+					4: ["Pros and Cons", "center 60%", ["pros_and_cons.png", "d4fbff"]],
+					5: ["What You can Do", "center 71%", ["what_you_can_do.png", "1b3740"]],
+					6: ["Our Essay on Hydrometeorological Biohazards", "center 40%", ["our_essay_on_hydrometeorological_biohazards.png", "854f3e"]],
+					7: ["Gallery", "center 40%", ["gallery.png", "1a2861"]],
+					8: ["Credits and References", "center 42%", ["credits_and_references.png", "bdebff"]],
+				};
+
+				$(document).prop("title", "Hydrometeorlogical Biohazards | " + topic_list[0][0]);
+
+				for (i in topic_list) {
+					$("#" + topic_list[i][0].split(" ").join("_")).hide();
+				}
+
+				for (var i in topic_list) {
+					var element = document.createElement("h6");
+					var node = document.createTextNode(topic_list[i][0].toUpperCase());
+					$(element).append(node);
+					$("#navbar").append(element);
+					element.className = "topics";
+					element.id = topic_list[i][0].split(" ").join("_") + "_directory";
+				}
+
+				$("#Homepage").show();
+				$("#Homepage_directory").css("background", "rgba(128, 128, 128, 0.25)");
+
+				function link(select_element, select_topic_num) {
+					$(select_element).click(function() {
+						$("#" + topic_list[select_topic_num][0].split(" ").join("_")).fadeIn(600).css("position", "relative");
+						$("#" + topic_list[select_topic_num][0].split(" ").join("_") + "_directory").css("background", "rgba(128, 128, 128, 0.25)");
+						$(document).prop("title", "Hydrometeorlogical Biohazards | " + topic_list[select_topic_num][0]);
+						for (var i in topic_list) {
+							var topic = "#" + topic_list[i][0].split(" ").join("_");
+							if (topic != "#" + topic_list[select_topic_num][0].split(" ").join("_")) {
+								$(topic).fadeOut(600).css("position", "absolute");
+								$(topic + "_directory").css("background", "");
+								$("#title_header").css({"background": "url(" + topic_list[select_topic_num][2][0] + ")", "background-position": topic_list[select_topic_num][1]});
+								$("#navbar").css("background", "#" + topic_list[select_topic_num][2][1]);
+							}
+						}
+					});
+				}
+
+				for (var i in topic_list) {
+					link("#" + topic_list[i][0].split(" ").join("_") + "_directory", i);
+				}
+
+				link("#hydro", 1);
+				link("#katrina", 2);
+				link("#idea", 3);
+				link("#malaria", 1);
+				link("#procon", 4);
+				link("#leptospirosis", 1);
+				link("#ideas", 3);
+				link("#you", 5);
+				link(".reference", 8);
+
+				link("#icon", 0);
+			});
+
+		</script>
+		<noscript>
+			<div style="position: fixed; z-index: 10; height: 100%; width: 100%; text-align: center; background-color: #ffffff">
+		  	<p style="margin: 100px; font-size: 5em;">JavaScript is not enabled.<br> Please enable it to see this website.</p>
+		  </div>
+		</noscript>
+	</head>
+	<body>
+		<header id="title_header">
+			<h1 id="title">HYDROMETEOROLOGICAL BIOHAZARDS</h1>
+			<img src="favicon.ico" id="icon" title="">
+		</header>
+
+		<header id="navbar"></header>
+
+		<div id="Homepage" class="topic">
+			<div style="margin-top: 20px; margin-top: 20px; text-align: center;">
+				<video height="700px" width="100%" controls>
+					<source src="hydrometeorological_biohazards_animation.mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<p><i><b>A soft sprinkle has persisted over the last few days, but the light rain has failed to interrupt your usual routine. It’s only a small change after all, enough to water your plants and coat your things in a thin layer of water but nothing more. However, as you rise out of bed, you notice something’s off; the once azure skies have morphed into a dark, brooding grey, and the rain for the most part has halted. Putting it aside as just some more rain approaching, you go on with your day, but as you spoon up some soggy cereal, a dark, cloudy, but dry day turns into buckets upon buckets of water and strong winds, hammering against your windows until they finally give in. Dodging shattered glass and puddles of water growing, you burst out of your door, only to find the brewing storm has created a swirling monster of rushing grey water that rushes towards you, swallowing, splashing, seething ... </b></i></p>
+			<p>You might think this is a nightmare turned real, that nothing could possibly be worse than this. That surviving would be something of a blessing, a gift from god. But in many cases, surviving such a disaster, especially in poorer regions, can lead to an even worse event, a sick twist at the end of your story, tragically cut short.</p>
+			<p><i>What is this twist, you ask?</i></p>
+			<p>Over the next few days, you, along with other survivors, are put into shelters. You start getting terrible stomach pains that grab and twist your guts around like play-doh, and soon all you can do is groan in agony. The shelter officials give you painkillers, but the little white pills do nothing to stop it. Eventually, you get sent to one of the makeshift hospitals. Their diagnosis? Cholera with a sprinkling of E. Coli. They say you have a weak immune system and it is failing, leaving you in a serious, unstable condition. Throughout the next week, your life slowly wriggles out of your grasp, until suddenly it painfully slips away into the night to join the moon and stars above.</p>
+			<p>But, what <em>are</em> <i id="hydro" class="directory_link">hydrometeorological biohazards</i>?</p>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_homepage.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="What_Hydrometeorological_Biohazards_are_and_what_they_do" class="topic">
+			<p>Hydrometeorological biohazards; both known so well, and disregarded so much. In many cases, biohazards that occur after a natural disaster pose a larger threat than the disaster itself, in fact, almost 40% of deaths are caused by the biohazards rather than the actual disaster itself (Glutting, 2017). To put it in simple terms, hydrometeorological biohazards are simply hazards caused by natural disasters (think more of earthquakes and hurricanes rather than volcanoes) <span class="reference">(‘Hydro-meteorological hazards | United Nations Educational, Scientific and Cultural Organization’, n.d.)</span>; things like disease outbreaks fall under this category. Any disaster under the sun can cause this; from droughts and tornadoes to floods and hurricanes; meaning no place is <em>really</em> safe. If there’s natural disasters, there’s probably biohazards; and that’s what we’re trying to prevent.</p>
+			<p>Hydrometeorological biohazards, especially diseases, can really hit a weak spot in countries struck by poverty - many of which are prone to natural disasters - because of the often poor health systems they have and the equally poor, unsanitary living conditions that promote the growth of bacteria and spread of disease. Diseases like cholera, E. coli, can easily spread in filthy waters left after floods and hurricanes, other diseases can spread through any corpses left after the disaster, and through pests like rats and mosquitoes that would be lured in by the environment the rubble and disease creates; a place lots of pests can thrive in. This could become an <em>epidemic</em> - a dangerously fast spread of a disease - and if left untreated for too long, it could become a <em>plague</em>.</p>
+			<p>And though a full-scale plague caused by a hydrometeorological disaster hasn’t been recorded before, the possibility is dangerously high, and we need to take action and make sure people are prepared for something like this to happen. Perhaps in a fantasy world we could be able to eliminate poverty and greatly decrease the amount of deaths caused by biohazards that could easily be prevented with proper funding, but for now we work with what we’ve got; and our job is to prevent as many deaths as possible.</p>
+			<p>In the next few paragraphs, we will be looking over a few things that cause these dangers. These things are separated into two sections, biohazards and non-biohazards. Now though it may seem strange that our topic is about biohazards and we have, in fact, included <i>non-biohazards</i> but we have a good reason. We need to educate people on the dangers. Also, some diseases are spread by inanimate things (excluding waste and grey water) such as tetanus, also known as lockjaw.</p>
+			<ul>
+				<h2>Biohazards</h2>
+				<ul>
+					<h3>Common Parasites</h3>
+					<p>Parasites are organisms whose only method of survival forces them to locate and bond with a host, feeding off the animal’s resources. Parasites drain blood, nourishment and even flesh and muscle from their hosts.</p>
+					<p>Parasites can be found in all shapes and sizes, and in all places around the world, from microscopic organisms, to two feet long heartworms. They can be commonly found without a host in water, because it most simulates the host’s natural body environment, which means that parasites can be washed up and found in abundance after water based natural disasters (such as tsunamis or floods) <span class="reference">(‘Parasitism’, 2018)</span>.</p>
+					
+					<h3>Mosquitoes</h3>
+					<p>Mosquitoes, who can spread diseases like <i>Malaria</i>, <i>Zika</i>, <i>Dengue Fever</i>, <i>West Nile</i>, and <i>Yellow Fever</i> prolifically thrive in watery conditions and use the water as breeding grounds; during the Zika epidemic that affected the Americas in 2015-6, the military would inspect water tanks in homes for mosquitoes for that reason. In 2005, the cases of West Nile fever three weeks after monster hurricane, <i id="katrina" class="directory_link">Katrina</i>, made landfall in Louisiana went from 0 to 11 <span class="reference">(Caillouët, Michaels, Xiong, Foppa, & Wesson, 2008; DeNoon, n.d.; Frank, n.d.; Huelskoetter, 2015; ‘Hurricane Katrina’, 2018; ‘Katrina Health Concerns’, 2005)</span>. Louisiana’s lower parts are relatively flat, and this made it hard for floodwaters to drain - bringing the mosquitoes in. The wettest hurricane to ever hit the United States, Hurricane Harvey of 2017, had a similar effect when it stalled over the Texan coastline. Hot and humid conditions like the States’ South can invite good conditions for mould to grow, which can cause respiratory problems <span class="reference">(Belluz, 2017)</span>.</p>
+					<p>Now you may be wondering why we have put mosquitos in its own separate branch. This is because they aren’t your normal pest. But don’t jump up and grab the nearest fly swatter (not yet anyway). Mosquitos are only especially this dangerous since they are the number 1 pest during hurricanes and tsunamis. And, if you don’t believe us, would you like it if you had headaches, body aches, and rashes all over your body because of West Nile Virus? That’s only the best case scenario. Worst case scenario would probably start with a stiff neck, some drowsiness, and maybe feeling a bit dizzy, but then all that would accelerate to tremors, convulsions, and even paralysis, and then … finally … death. Death of you, your family, your friends, and anyone else you have been in contact with … That’s only West Nile Fever, one disease amongst many, many others … <span class="reference">(‘West Nile Virus Infection Prevention, Treatment & Transmission’, n.d.)</span></p>
+				</ul>
+
+				<h2>Non-Biohazards</h2>
+				<ul>
+					<h3>Pests</h3>
+					<ul>
+						<h4>Locusts</h4>
+						<p>Though not technically biohazards, locusts can be triggered by natural disasters and fall into roughly the same category as biohazards, and can cause equally drastic effects. For these reasons, we felt that they definitely needed a section to themselves.</p>
+						<p>Locusts are, at their roots, grasshoppers; but when breeding conditions are perfected, they can trigger a certain behavioural change. While in this state, they’re referred to as locusts, and these locusts cause extreme problems. Their perfect breeding conditions are hot and dry, meaning that, during a drought, especially early on, locusts can be triggered. Once in this stage, they form swarms, eating any edible vegetation they can come across. Just one swarm can contain over 100 million locusts at once; daily, this amount can eat the same amount that 500,000 people would in a day! And, when a drought is going on, this can be devastating; especially when they’re already in poverty. Just imagine for a moment; poor country, locusts eating every morsel they can find, and a drought killing off vegetation and turning farmland infertile. It sounds terrible, and it is, but we have a fairly reliable <i id="idea" class="directory_link">idea</i> to solve it <span class="reference">(RESEARCHFEATURES, 2017)</span>.</p>
+					
+						<h4>Other General Pests</h4>
+						<p>But locusts aren’t the only non-biohazards we thought to mention; many other pests can cause problems as well. Rats and mice, along with spreading many vector-borne diseases, can pose other risks as well; rats are bigger and more aggressive than mice, and can bite and open up wounds on the flesh. Along with giving bacteria and fungi an easy way to infect a person, dirt and dust can enter the bloodstream and cause blood poisoning, and the wound itself, depending on severity, can force people to spend more on hospital bills and take time and resources caring for the new wounds.</p>
+					</ul>
+
+					<h3>Debris</h3>
+					<p>We’ve gone over living things now, but what about the inanimate? Debris can cause just as many problems as the living or even the dead; for example, rusty nails or fragments of metal strewn about after a disaster can spread tetanus when they come into contact with an open wound or a break in the skin; this can happen when someone steps on a contaminated object, such as the aforementioned rusty nail. Any left-over garbage or debris can cause open wounds, giving disease, fungi and bacteria a means to spread. In fact, depending on the type of object, many materials can infect and spread by means of the debris left after a disaster. Debris should be removed from the scene as soon as logically possible, to prevent as much spread of disease as possible.</p>
+				</ul>
+
+				<h2>Diseases</h2>
+				<p>To outline some diseases that can be spread during tsunamis, hurricanes, cyclones, floods, and basically other natural hydrometeorological disasters, we’ve compiled a list of some common diseases and their symptoms.</p>
+				<ul>
+					<h3>Mosquito borne diseases</h3>
+					<ul>
+						<p><b>Malaria.</b> Possibly one of the better-known diseases on this list, malaria is spread by infected mosquitoes that can easily be brought on by the aftermath of natural disasters such as hurricanes, floods and any other water based disasters. This is a dangerous disease that, in many cases, can lead to death. Symptoms include diarrhoea, nausea, fatigue, chills, fast heart rates, confusion, and constant shivering or sweating <span class="reference">(‘Malaria - Symptoms and causes’, n.d.)</span>. This is result from what happens when a person gets infected with this disease. Once the person is infected with the disease, they parasites attack red blood cells where they “reprogram” the cell to produce more parasites inside the red blood cell. Along with creating parasites, the red blood cell is also reprogrammed to create many known and unknown waste substances. When the infected cells’ membrane bursts and release the parasites and chemicals, the parasites continue on to infect more red blood cells whilst the chemicals stimulate other cells in the body to release more substances which, in turn, make the fevers, chills, and sweating. The fatigue and fast heart rate is caused by the lack of red blood cells. This disease can be fatal if treatment is not administered <span class="reference">(CDC-Centers for Disease Control and Prevention, 2018)</span>.</p>
+						<p><b>West Nile Fever.</b> 4 out of 5 people infected with the West Nile Virus don’t show signs of being infected with it. The remaining 1 out of 5 people that do show symptoms develop a fever that is usually accompanied by a headache, body aches, joint pain, vomiting and diarrhoea, fatigue, or a rash. People with this certain type of West Nile Fever generally recover entirely but fatigue can last for weeks and even months. There is also then a more severe type of West Nile Virus. This, however, is very rare and less than 1% of people develop this type of West Nile Virus. This type affects the central nervous system. It can cause encephalitis, the inflammation of the brain, or meningitis (see below), the inflammation of the <em>membranes</em> around the brain and spinal cord. The symptoms of this include a neck stiffness, stupor, disorientation, comas, tremors, convulsions, muscle weakness, vision loss, numbness, and even paralysis. This type of West Nile Virus is deadly and will affect older people and people who have medical conditions e.g. cancer, organ transplants, diabetes <span class="reference">(‘Symptoms, Diagnosis, & Treatment | West Nile Virus | CDC’, 2018; ‘West Nile virus - Symptoms and causes’, n.d.)</span>.</p>
+					<p><b>Dengue fever</b>. Another mosquito-borne disease that occurs in mainly tropical areas, dengue fever is another disease. Its symptoms include high fevers, rashes or red spots, vomiting, easy bruising and bleeding, headaches, sore throats, pain in or behind the eyes along with possible back, bone, muscle, and joint pain, and fatigue. Although most people recover in around a week, some cases can worsen and become life-threatening. People with severe dengue fever will start having more serious symptoms like: severe abdominal pain, vomiting, bleeding from the gums and nose with blood in urine, stool, or vomit, bleeding under the skin which looks like bruising but more serious, and they can even slip into shock. The reason for the bleeding is because blood vessels become weak and so they get damage and start to leak out blood which is not helped by the fact that the amount of platelets (clot forming cells) drops and therefore makes it hard to clot. This disease is fatal if left untreated (‘Dengue fever - Symptoms and causes’, n.d.).</p>
+					</ul>
+
+					<h3>Diseases spread by contamination</h3>
+					<ul>
+						<p><b>Leptospirosis.</b> Also known as Weil’s Disease, leptospirosis is a critical illness brought on by contact with water, food, or soil that is contaminated with animal urine that is infected with <i>Leptospira spirochetes</i>. It is most common in warm climates. A high fever, headache, muscle pain, chills, red eyes, vomiting and headaches can all be symptoms of this disease. When left untreated this will cause kidney failure, liver damage, respiratory distress, meningitis (see below), and will eventually lead to death if not treated <span class="reference">(‘LEPDT - Clinical: Leptospira, IgM, Serum’, n.d.; ‘Leptospirosis | CDC’, 2017)</span>.</p>
+						<p><b>Typhoid fever.</b> Chances are you’ve heard of this one before. Luckily, this one is preventable by vaccines (though they are only partially effective), but many areas of the world don’t have access to them. Spread through contaminated food or water, its symptoms include a very high fever (temperatures can reach as high as 104.9°F or 40.5°C), bloating, constipation, vomiting, diarrhoea, headaches, muscle weakness, loss of appetite, fatigue, and possibly the most recognisable: a rash characterised by small red dots. If not treated, an infected person can become delirious and lie motionless, exhausted, with half-closed eyes. This is known as the typhoid state; this is also where life-threatening complications often most happen. Even though sometimes, when the fever has subsided and the infected person is not sick anymore, the person still may have the bacteria in his system and so they might catch typhoid fever again <span class="reference">(‘Symptoms and Treatment | Typhoid Fever | CDC’, 2018; ‘Typhoid fever - Symptoms and causes’, n.d.)</span>.</p>
+						<p><b>Cholera.</b> This is a very dangerous, bacterial disease. It spreads through contaminated water and causes diarrhoea. Although most people that are infected with cholera don’t become sick and show no symptoms that they have been exposed to it, some people do. People who don’t get sick can cause more contamination because the bacteria lives in their waste. People who do get sick usually show mild diarrhoea but 1 in 10 people who have more serious problems can die in a few hours. Symptoms of the more serious cholera include: diarrhoea that has a milky sort of appearance, something like water that has been used to rinse rice, nausea and vomiting, and <strong>severe</strong> dehydration. Dehydration the reason people die from this disease. Because of the diarrhoea and vomiting, the infected person loses a lot of electrolytes. A few symptoms cause by the dehydration are muscle cramps (due to the loss of sodium, chloride, and potassium), and shock. This is caused by the huge drop in blood volume which depletes levels of blood volume. Other symptoms can even be as serious as comas or seizures <span class="reference">(‘Cholera’, n.d.; ‘Cholera - Symptoms and causes’, n.d.)</span>.</p>
+					</ul>
+					<h3>Other diseases</h3>
+					<ul>
+						<p><b>Meningitis.</b> Meningitis is brought on generally by a viral infection, but can also be bacterial or fungal. Symptoms include neck or back pain, blotchy or red rashes, lethargy, fever, chills, loss of appetite, vomiting, irritability, light sensitivity, fast breathing, sleepiness, fear of loud sounds and pain in the muscles. More severe meningitis can even lead to seizures. This is due to the inflammation of the membranes, meninges, surrounding the brain and spinal cord. This disease is fatal within several days if not treated with an antibiotic <span class="reference">(‘Meningitis - Symptoms and causes’, n.d.)</span>.</p>
+					</ul>
+				</ul>
+			</ul>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_what_hydrometeorological_biohazards_are_and_what_they_do.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="When_and_Where_The_Disasters_Happened" class="topic">
+			<h2>Hurricane Katrina</h2>
+			<p>A good example of when an outbreak of disease hit after a disaster was Hurricane Katrina. The infamous disaster that rocked Florida and surrounding areas on August 25th had an initial death toll of 1,833. In the aftermath, there was an outbreak of West Nile Fever. This disease is caused by the virus, “West Nile Virus”. In a study, three weeks prior Hurricane Katrina, Louisiana had no cases of West Nile Fever. Three weeks after Hurricane Katrina made landfall, the amount of West Nile Fever cases increased to <em>11</em>; an alarming number. The reason for this is because of residual rainfall. Lower parts of the states made it hard for floodwaters to drain and, therefore, mosquitos, carriers of this, and other, diseases, started to breed <span class="reference">(Caillouët et al.; DeNoon, n.d.; Frank, n.d.; Huelskoetter, 2015; ‘Hurricane Katrina’, 2018; ‘Katrina Health Concerns’, 2005)</span>.</p>
+			</ul>
+
+			<h2>Hurricane Irma</h2>
+			<p>On September 10, Hurricane Irma touched down in Florida. It was the 5th costliest hurricane ever. In its wake, it left a trail of waste-water and raw sewage. According to reports from many renowned news companies such as the <i>Miami Herald</i> or from <i>The Washington Post</i>, <strong>28 million gallons</strong> of raw sewage was strewn throughout 22 counties because of the poorly designed sewage systems. Throughout many of these places, the sewage system ran in reverse. Instead of sewage going down the drains, it exploded back up causing more flooding and a serious biohazard that affected everyone. Not only that, there was a huge communication problem. Because of how much sewage was bubbling back up through drains all over the state, there were already going to be a lot of calls. This, in turn, created a lot of telephone traffic. People would call 28 times in three days and not get a single thing except a ringing sound in your ear from the dialling ringtone  <span class="reference">(Atkin, 2017; CBS/AP, 2017; ‘Hurricane Irma’, 2018; ‘Irma leaves a river of sewage flowing in a Florida neighborhood’, n.d.; Mufson & Dennis, 2017)</span>.</p>
+
+			<h2>Hurricane Maria</h2>
+			<p>Hurricane Maria is one of the most recent storm there is. Only about a year ago did it rock Puerto Rico and become the worst storm to hit that place. After the storm was over, Puerto Rico wasn’t in any liveable condition. Without clean water, no proper medicine, no electricity, and <b>no water or provisions</b>, the situation quickly deteriorated. A bout of <span id="leptospirosis" class="directory_link">leptospirosis</span> broke out right after Hurricane Maria. This was due to lack of information and the contaminated water. The Puerto Ricans were not inform so they drank the contaminated water, disgusting or not, and so many got infected with leptospirosis. The CNN (Cable News Network) and the Centro de Periodismo Investigativo (Centre for Investigative Journalism, CPI) had to sue the Puerto Rican Demographic Registry to obtain information from a Puerto Rican mortality database. The database had listed 26 deaths attributed to leptospirosis. At one point, the database stopped attributing the deaths caused by leptospirosis to Hurricane Maria. This meant that some deaths weren’t even recorded as deaths from the superstorm. One person’s death who wasn’t attributed to the storm was Daniel L. Vick, a 31 year old father from Cayey. He had shown all the signs of having leptospirosis, he was tested positive for leptospirosis, and, yet, his death wasn’t recorded as the fault of the storm’s <span class="reference">(Barclay & Campbell, 2017; Sutter, n.d.)</span>. This is one of the problems we aim to target in <span id="ideas" class="directory_link">our ideas</span>.</p>
+
+			<h2>2000 Mozambique Floods</h2>
+			<p>The 2000 Mozambique floods started in South Africa on February 8 where heavy rains travelled to Mozambique. This left dozens homeless. Survivors were already hit with disease; a bout of dysentery had broken out around the Limpopo Valley where the Limpopo river had broken its banks <span class="reference">(‘Mozambique Floods – March 2000 – International Rescue Corps’, n.d.; ‘WHO | Flooding and communicable diseases fact sheet’, n.d.)</span>. Further on, March 6 to be exact, at a Catholic church, hundreds of mother waited in a queue just to get rehydration fluids from to doctors and medication for malaria and tuberculosis. The sad thing was that the mothers either has to wait in line, listening to the torturing cries of their infants, begging for water, or choose to extinguish their thirst with stagnant pools of contaminated water from the floodwaters mingling with grass and dirt and even human corpses. Even more saddening is the fact that everything was caked in mud. The medicine is encrusted with dried up mud (not that there is much). Your shoes are filled with squelching with muddy grime. And the only thing you can do about anything is to wash the bandages with a small amount of water only to be left on the sludgy ground to dry or to grab a person with <span id="malaria" class="directory_link">malaria</span> to treat them only to watch somebody else die because you don’t have enough medicine … <span class="reference">(‘Mozambique: Amid the filth, the first sign of disease - Mozambique | ReliefWeb’, n.d.)</span></p>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_when_and_where_the_disasters_happened.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="Our_Ideas" class="topic">
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_header_our_ideas.png'); background-repeat: repeat;"></div>
+			<p>Well, presuming you’ve read the previous pages, you’re now moderately educated on what a hydrometeorological biohazard is. Of course, we can’t go too deep into what it is, but hopefully you’ve at least picked up on the basic meaning, and how it can affect people and things.</p>
+			<p>Our main idea was creating a group of people who help to fight the disease, insects brought on by it, respectful and proper disposal of corpses, and other biohazards. We don’t have a name, but it would consist of three different branches; medical, extermination, and disposal. Medical would take care of people who have already been affected, and extermination would cut back the hazards so they can’t affect any more people. Extermination would be doing things like culling insects and pest and destroying whatever residue is left of a disease, along with the cause. Medical would look after the people who’ve been affected already. And finally, disposal of corpses would be a search team that looks for dead bodies, including that of humans and pets and dispose of them in a proper and respectful way. Of course, certain people do some of these things to a certain degree, but there isn’t really any group completely focused on the <i>biohazards</i> of a disaster; rather, the more obvious affects, or the disaster itself. Hopefully, if we have enough people willing to fund this, or even better, participate, it can happen; unfortunately, that’s fairly unlikely, so what we’re trying to do at this point is spread awareness and ideas, and inform people on how to protect themselves.</p>
+			<p>Branching away from our main idea, there are also a few more specific ideas we came up with. These are more to do with specific problems, rather than the whole picture, but are just as important, perhaps even more so.</p>
+			<p>Firstly, we need to improve the infrastructure of man-made creations like sewers. It may seem silly, but poorly structured sewage systems can overflow and fill the streets with human waste, spreading disease and severely lowering the hygiene of the area it affects. The waste that’s strewn across the streets also attracts insects, which can spread disease as well. It’s a much bigger issue than we realise; in Hurricane Irma, this exact thing happened, so it’s not rare either. Although it may seem funny, it’s no laughing matter. During serious hurricanes, sewage usually starts to overflow and then flow in reverse, which results in biohazards, as diseases are spread by stray faeces, urine and other bodily fluids. When it does start to flow backwards, it goes back out the drain, providing a great way for diseases and bacteria to spread. This causes not only the spread of disease but severe flooding from the excess water spilt out of drains. Perhaps we could make it a regulation for areas that are constantly affected by floods, hurricanes, cyclone, etc. to have latches underneath the manhole to prevent backwards flow. In the instance of a drain that sits next to the curb, we could make a rule on how thick it has to be if it has to be attached to the ground, and the size of it to prevent as much backflow as possible.</p>
+			<p>We also need to put more money into the development of machines that can clean roads, pavements, parks, and other things after floods. We need to develop these machines to clean up sewage and wet trash, and a way to sanitise areas affected since it is an incredibly dangerous biohazard to have human faeces, grey water, floodwaters (which contain algae, moss, etc.), corpses, pets, other wildlife that lives in urban areas, and possibly marine animals.</p>
+			<p>Not only that we need to raise more awareness and inform more people about these disasters. When Hurricane Maria razed across the Caribbean, the media covered it significantly less than the other recent Hurricanes Irma and Harvey. Top U.S. media outlets mentioned “Harvey” and “Texas” had four times more than “Maria” and “Puerto Rico” when they respectively made landfalls. A slow response to the Hurricane by the U.S. government left the island in shambles and now, Puerto Rico is deep in a financial crisis. Most of the people have no power, and schools have been forced to shut down. <span class="reference">(Campbell, 2018; Campbell & Kiger, 2018; Mehta, 2017; Yglesias, 2018a, 2018b)</span>.</p>
+			<p>Along with that, there is also discrimination and denial. Following on Hurricane Maria, the initial death toll was 16, but American news outlet Vox found 81 cases of people who drowned, were crushed by debris or died due to not getting medical care. Research from top universities like Harvard, Penn State, and George Washington have pegged the number of deaths, both direct and indirect deaths from the aftermath, as 2,975. Trump denied the deaths as a conspiracy theory, and made some vaguely racist attacks on the mayor of San Juan, and also calling the Puerto Ricans as pushy, whiny people who haven’t seen a real disaster like Hurricane Katrina (actually, Katrina and Maria were extremely similar in power). Even Hispanic composer Lin-Manuel Miranda, who <i>unironically calls his Twitter followers “friendos”</i> on the regular, told Trump he was <em>“going straight to hell”</em> for his neglect on helping Puerto Rico <span class="reference">(Barclay, 2018; Barclay & Campbell, 2018; Campbell, 2018; Grady, 2017; Stuart, 2018; Yglesias, 2018a)</span>. We really need to stop this. In the present, it is harshly frowned upon to be discriminatory and idiotic to deny something even though the truth is right in front that person. So … why are people like Donald Trump still doing this? Is there something wrong with accepting the truth? We really need to get a grip on these sorts of things because they are not helping the world, they are ruining it, especially if the person has a lot of power.</p>
+			<p>As there will hopefully be many survivors, they’ll need somewhere to stay. Usually, these are tents and usually, there aren’t enough. As a result, multiple people have to cram into these. We were thinking of having a sort of bank full of tents for emergencies such as disasters, as to be prepared in the future. There will be three types of tents; minor injuries, non-life threatening illnesses and injuries, and life-threatening illnesses and injury. All tents will have the frame of the tent wrapped up inside the tent itself with a velcro tab, sort of like the ones you see on a parasol, to wrap it up. The minor injuries tent will have a small box for cuts, scratches, bumps, and bruises along with a week's provisions of canned food and water in another box. These canned foods will have to not cause gas/loose bowel movements, mainly because of health and safety concerns; it could spread further disease and lose precious fluids. These tents will be available to the public but will be set up by trained doctors, nurses, and paramedics which will then treat patients. The second type of tents, non-life threatening illnesses and injuries, will not be available to the public. Inside will be things like splints, various types of bandages, dressings, sterile gloves, and cleansing wipes. Food will not be available as eating food might worsen some injuries. Water will be available to wash and clean. The last type of tent will be more like a makeshift hospital. This tent will be able to house 10 people on mats. This tent will <em>definitely</em> not be available to the public as they may contain sharps (e.g. anaesthetic). No food packs will be included but water will be available to wash and clean. This tent will contain more medical aid than the non-life threatening injuries like sharps, heart monitors, defibrillators, and other basic medical instruments found in an ER; the only problem is that this might be hard to get into a tent, so we’d have to plan carefully when using these tents.</p>
+			<p>Now, for something we’ve mentioned before; locust swarms may technically not be biohazards, but they still fall into the same category in terms of the harmful after-effects of disasters. However, they aren’t known to carry any diseases, rather indirectly killing humans by eating their food sources. We could utilise locusts for food; this would both help the food crisis they create and lower their numbers, effectively reducing the problem. And insects are known to be exceptionally nutritious, too. All we’d need to find is an effective way to catch them, which wouldn’t be hard since they travel in giant clusters. Nets, anyone?</p>
+			<p>There is one more thing, and it’s one of the most important things we need during a natural disaster. Communication. As we have mentioned before (supposing you have read everything else before), after Hurricane Irma, the hurricane that left Florida covered in <em>poop</em>, there was a big communication problem. Whenever you tried to contact someone whether it be to see if your friends and family are okay or to call for help from the city, you fail horribly. This was because of how many people were calling all at the same time. Everyone is worried, scared, and losing their patience and, so, many phone lines are down. This is a serious problem because if someone is dying and you can’t contact the ambulance, you are in <em>big</em> trouble. We really need to have better ways to get our phone calls through. A better way to transmit them and a better way to protect the cell tower because these designs just aren’t cutting it. If we can’t do anything about the hardware of phones, maybe we can focus on productivity. We need more people answering calls at emergency call centres because we really don’t have enough people answering our calls. We need a special amount of people which can take calls during natural disasters, not only hydrometeorological ones, all of them.</p>
+			<p>These are our current ideas, and though <span id="procon" class="directory_link">they’re not perfect</span>, they still have many benefits, with collateral damage ... </p>
+		</div>
+
+		<div id="Pros_and_Cons" class="topic">
+			<p>So, we have quite a few ideas, and they’re obviously not perfect. A few of our ideas, such as the first where we hypothetically introduced animals to eat insects that spread the disease, had too many flaws to work effectively, so we scrapped them. Here are some pros and cons of our current idea;</p>
+			<h2>Pros</h2>
+			<ul>
+				<li>
+					<p>One of the obvious ones is that we’d help people; people who usually wouldn’t get help without us. We’d save many lives by both helping those already affected and preventing others from being affected. If that’s not a strong point, we don’t know what is.</p>
+				</li>
+				<li>
+					<p>Attention will be brought to the issue. Right now, there really isn’t much help for our cause; in fact, barely anybody pays attention to this problem, even though it can potentially be worse than the disaster itself. If we shed some light on the biohazards that are caused by natural disasters, both to the public and to governments, we can finally help those who are affected by this. We could educate the public on the dangers of biohazards that occur from natural disasters, so they’d be more aware of what to do in such situations and be more prepared.</p>
+				</li>
+				<li>
+					<p>There are many people in the world who want to help. Who want to change other people's lives. Or who simply just need a hobby or activity to do. With this, we can give these people an opportunity to both help fix a mostly ignored issue, and save lives while doing it. And, if they don’t want to do the grisly physical activities, and simply want to support, they can donate.</p>
+				</li>
+				<li>
+					<p>If we manage to obtain a sample of an unknown or under-examined disease, we could send it off to, say, science labs or otherwise. This could help develop a better cure or, even better, a vaccine; which would aid both our cause and the entire world. Look at what happened to tsunami lung. In the 2004 Indian Ocean Earthquake, a girl caught an what was an unknown disease <span class="reference">(Potera, 2005; Zamiska, 2005)</span>. Through further investigation, they were able to save the little girl from paralysis, or even death!</p>
+				</li>
+			</ul>
+
+			<p>Now along with pros, there are the unwanted cons, but then again, you can’t have one thing without the other … </p>
+
+			<h2>Cons</h2>
+			<ul>
+				<li>
+					<p>We’d need to be pretty convincing to get people to join our forces. It wouldn’t be for the faint of heart - they’d be helping people with terrible diseases, cleaning up bodily fluids and corpses, killing insects and any other animals that happen to spread the disease, and many other gory, disgusting things. We would need to find a good way to convince people to join.</p>
+				</li>
+				<li>
+					<p>Costs. We … don’t have much money, so we’d need lots of donations and perhaps, if possible, help from the government or other bigger groups who support our cause. Hopefully, we’d be earning money with what we do, but to start off we’d need some money. A way to counter this would be to use cheap alternatives to real insecticides until we build up enough funds to support ourselves.</p>
+				</li>
+				<li>
+					<p>We could cause disruptions based on what would be currently happening in the affected area. However, if the disruption is minor, this could be easily circumvented by simply organising when we’d come. We’d need lots of space as well, which would mean more work clearing up debris and other obstacles.</p>
+				</li>
+			</ul>
+
+			<p>So, for our ideas, they seem great but they already have a <em>lot</em> of cons. Our ideas will need quite a bit of further development but, hopefully, we will be able to implement these in the real world so day. But enough about us; what can <span id="you" class="directory_link"><em>you</em></span> do?</p>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_pros_and_cons.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="What_You_can_Do" class="topic">
+			<p>There are many things that you can do to protect yourself during these disasters. These little actions have big impacts. Like, if you brought and emergency kit, you would be saving a medicine and other medical needs.</p>
+			<p>We have made a list on the things that you should do during these disasters: </p>
+			<ul>
+				<p>Keep an eye on the news - by radio or on TV or on the internet. It is important to do this because it is important to communicate. If you read about Hurricane Irma, you would remember that there were communication problems. By watching the news, looking the disaster on the net, or listening to the radio for news, you are informed and can respond quickly.</p>
+				<p>Keep an emergency kit. This is one of the most important things to bring. By doing this, you can save resources needed for other people. This small act can save time and lives. Only bring it if you can do it safely, though.</p>
+				<ul>
+					<p>Some of the things your emergency kit should have is ID and other important documents; a 3-day supply of non-perishable food; a 3-day supply of water (3-4 litres/day, per person); cell phones with chargers; insect repellent; 3 days worth of supplies for your pets, if you have any; a two-week supply of prescription medicine; flashlight with extra batteries; basic hygiene items like toothbrushes, toothpaste, soap, hand sanitiser; among other things <span class="referece">(CDC, 2018)</span>.</p>
+					<p>Another compulsory thing for your emergency kit is a first aid kit. First aid kits should be tailored to the situation and needs, but a basic first aid kit needs crepe bandages of varying widths; hypoallergenic skin tape; triangular bandages; adhesive dressing strips, like bandaids, in different sizes; gauze swabs; combine and non-stick dressing pads; sterile eye pad; alcohol swabs; stainless steel scissors; disposable gloves; tweezers; thermal blanket; safety pins; a notepad and marker; sterile saline tubes; a resuscitation face shield; antiseptic face swabs; hand sanitizer; and a first aid booklet. First aid kits should be easily identifiable, in a container large enough to hold supplies and easy to open, and made of a material that protects your contents from dust, moisture, and contamination <span class="reference">(‘First aid kits | healthdirect’, n.d.)</span>.</p>
+					<p>A good thing to do during these disasters is to bring, and put on, insect repellent. As we have mentioned beforehand in the previous pages, residual rainfall can be a breeding haven for mosquitos that can spread some of the most dangerous diseases.</p>
+				</ul>
+			</ul>
+			<p>If you are someone who isn’t directly affected by the disaster, you can still help. One of the biggest methods is to donate; no matter the amount of money, every cent counts. If every person in the U.S. donated one dollar U.S. dollar, that would be approximately 325,700,000 dollars donated! If everyone donated 2 dollars, there would be double that amount, and so on. So if everyone donated <em>only 5 dollars</em>, we could donate over a billion dollars! Now if we extended the parameters to other big countries, we could be saving <em>millions upon millions</em> of lives.</p>
+			<p>Another way, if you are close to the area, is to volunteer to help rescue people. You don’t have to if you don’t want to but if you do (knowing fully that you are putting your own life at risk), you could help many people, and it would be more direct and possibly more rewarding than donating, though dangerous. This is one of the ways our main idea will work; anyone can volunteer to help our group.</p>
+			<p>Big organisations, companies, and the government all rely on the people, and this case isn’t any different; without your help, lives will be lost, and damages will take longer to be repaired. Even a small act can help; donating a couple dollars, maybe. And if you’re prepared enough, you can even volunteer, or participate in a more hands-on way. Regardless of the method you help by, be it direct or indirect, we all can help. Everything counts, no matter how small!</p>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_what_you_can_do.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="Our_Essay_on_Hydrometeorological_Biohazards" class="topic">
+			<div id="essay_title">
+				<h1 style="color: black; float: none;">Hydrometeorological Biohazards</h1>
+				<p><i>By Kayla Fairweather, Harry Le, Ashton Grant, and Gretchen Pronk</i></p>
+			</div>
+
+			<p>Imagine for a moment that suddenly, as you sit in your home, blissfully unaware of the outside, a sudden <i>whoosh</i> of noise greets your unsuspecting ears. A siren blares out; it’s the distinct sound of a flood siren. You look out of your window, a sudden sinking feeling swelling in your stomach, and see a wall of jagged blue tearing across the ocean. You dash down the stairs, hands rifling through your pockets for the cold, uneven metal texture of your keys. You get to your car in the nick of time, swerving out of the driveway and racing down the road. You think you’ve escaped, but the worst is yet to come. As you rocket across a bridge, all traffic laws out of the window, that jagged wall of blue crashes down. You see the wave that is about to cascade down on you, debris scattered along it; wood, bricks, concrete, and worst of all corpses strewn with seaweed. The seconds it takes to hit feels like hours. Soon, everything goes dark and silent as you’re thrown around in this pit of deep, deep blue.</p>
+			<p>Finally, the water decides to end its torment, at least for now. There’s a pit in your chest, weighing down on it. It leaves you breathless, and you gasp for air. The fire in your lungs eventually stops burning, as if the water’s washed it away. The car door has been ripped off and you’re drenched in mud, water, and brown who-knows-what, but you know one thing for sure; you’re not dead. Your whole body quaking, you slowly hobble out of your car, your mind blanked and your body wrinkled, bruised and numb. You look around. Your once developed and prospering city is now a mess of rubble and mud, towers that once cast long shadows over its people now reduced to nothing. In reality, that’s what it was. <i>Nothing</i>.</p>
+			<p>Over the next few days, you, along with other survivors, are put into shelters. You start getting terrible stomach pains that grab and twist your guts around like play-doh, and soon all you can do is groan in agony. The shelter officials give you painkillers, but the little white pills do nothing to stop it. Eventually, you get sent to one of the makeshift hospitals. Their diagnosis? Cholera with a sprinkling of E. Coli. They say you have a weak immune system and it is failing, leaving you in a serious, unstable condition. Throughout the next week, your life slowly wriggles out of your grasp, until suddenly it painfully slips away into the night to join the moon and stars above.</p>
+			<p>It may sound like a horror story a child tells their friends around a campfire or a twisted joke, but this could happen to you, and it’s not uncommon either. Many people survive the initial damage of a natural disaster, but end up passing away due to complications that occur after. You think that the flood is the worst part? Well, you guessed wrong. Almost 40% of all deaths caused by natural hydrometeorological disasters in evacuation camps are in fact not caused by the actual disaster itself but by the diseases that come from sewage systems, the bacteria that thrive of the corpses of people, or the moss and algae with million of organisms residing on them that wash up on shore <span class="reference">(Glutting, 2017)</span>.</p>
+			<p>Natural hydrometeorological disasters are natural disasters that involve atmospheric, hydrological, or oceanographic disasters. These may include; tsunamis, floods, tornadoes, cyclones and hurricanes, droughts, and desertification <span class="reference">(‘Hydro-meteorological hazards | United Nations Educational, Scientific and Cultural Organization’, n.d.)</span>. Note that our topic is about hydrometeorological biohazards. This means that we are going to be focused on biological threats to living organisms, namely humans. These are things such as blood and blood products, body fluids, biological waste, things that transmit disease (i.e. rats), and microorganisms <span class="reference">(‘6 Biohazard Examples’, n.d.)</span>.</p>
+			<p>A good example of this would be Hurricane Katrina. The infamous disaster that rocked Florida and surrounding areas on August 25th had an initial death toll of 1,833. In the aftermath, there was an outbreak of West Nile Fever. This disease is caused by the virus, “West Nile Virus”. In a study, three weeks prior Hurricane Katrina, Louisiana had no cases of West Nile Fever. Three weeks after Hurricane Katrina made landfall, the amount of West Nile Fever cases increased to 11. The reason for this is because of residual rainfall. Lower parts of the states made it hard for floodwaters to drain and, therefore, mosquitos, carriers of this, and other, diseases, started to breed <span class="reference">(Caillouët et al.; DeNoon, n.d.; Frank, n.d.; Huelskoetter, 2015; ‘Hurricane Katrina’, 2018; ‘Katrina Health Concerns’, 2005)</span>.</p>
+			<p>There are three ways of how these diseases can be spread. There are water-borne diseases, vector-borne diseases, and air-borne diseases. Water-borne diseases are dispersed via the contamination of water i.e. typhoid fever or leptospirosis. These water-borne diseases are often spread by disasters such as floods and hurricanes, mainly because of the sheer mass of water that they create. This water that they bring on can either be already impure or can become contaminated from the sewage systems or any other pre-existing bacteria in the city that, when exposed to a water source, spread rapidly. Vector-borne diseases are spread by the interaction of organisms that are infected with the disease and organisms that aren’t infected. These diseases then get passed on via; coughing, transference of bodily liquids, and most means of physical contact. Though an act may <em>seem</em> small, hugging a loved one when you have the flu, for example, provides a perfect opportunity for the virus to spread. The last type of disease is the airborne disease. These types of diseases are transferred through the community by air. These viruses and bacteria float through the air and infect the targeted organism when it lands on it. In modern times, these types of diseases are usually caused by coughing, sneezing or even simply breathing <span class="reference">(‘Vector-borne diseases’, 2017; ‘WHO | Flooding and communicable diseases fact sheet’, n.d.)</span>.</p>
+			<p>In our topic, we will be addressing all three; vector-borne, air-borne and water-borne diseases, as well as any other biohazards these natural disasters can cause. This will include, but won’t be restricted to: </p>
+			<ul>
+				<li><p>Water contamination</p></li>
+				<li><p>Insect population increases</p></li>
+				<li><p>The thriving of fungi</p></li>
+				<li><p>Swarms of locusts</p></li>
+			</ul>
+			<p>And other hazards that can come into play in the aftermath of a natural disaster.</p>
+			<p>Mosquitoes can be a traumatic problem during floods. A winged insect notorious for carrying diseases, they have wings on their back, and six legs horizontal to their thorax. Female mosquitoes have blood sacks above their abdomen which carry the blood they collect. Contrary to popular belief, only female feed off blood, as the males feed on nectar and fruit juice; females need the extra protein and iron for egg-bearing, but will generally feed on the same diet as males when not reproducing. As female mosquitoes feed off blood, they’re able to transmit any disease that they carry, as their proboscis (the mouth) is an easily accessible pathway into the bloodstream for bacteria and viruses. Mosquitoes are the cause of countless epidemics and viral disease outbreaks; diseases such as malaria, West Nile fever, dengue fever, yellow fever, and the Zika virus are all examples of diseases easily spread by mosquitoes <span class="reference">(‘Mosquito’, 2018)</span>.</p>
+			<p>However, disease-carriers aren’t the only threats. Locust swarms can be triggered by a few natural disasters, like droughts, where the climate becomes hot and dry; the perfect climate for breeding. Even though locusts don’t technically count as <i>biohazards</i>, we will still be discussing them. When certain species of grasshoppers begin to overpopulate an area, they can trigger locust swarms. There can be up to 150 million grasshoppers in every km2 they take up. They wreak havoc across farms, demolishing any crops they come across. And, when a place is experiencing a drought, which deprives the land of moisture and limits new plant growth, the effect can be devastating. Half a million locusts alone can eat as much as 2500 people would <span class="reference">(RESEARCHFEATURES, 2017)</span>; and when there’s around 100 million of them, that adds up to the amount of food equivalent to the amount 500,000 people would consume in a day!</p>
+			<p>Much has been done by charities and the government to help people being affected by disease but it’s not enough. Hurricane Irma was one the most disastrous hurricanes that had ever hit the regions in the Gulf of Mexico. Many national and international agencies helped. FEMA (Federal Emergency Management Agency), an agency of the United States Department of Homeland Security, donated 1 billion US dollars to the survivors left homeless by Hurricane Irma <span class="reference">(‘FEMA Assistance Tops $1 Billion for Florida Hurricane Irma Survivors | FEMA.gov’, n.d.)</span>. The UN Development Programme sent experts to help with the crisis. The World Food Programme even sent a plane carrying <b>80 metric tonnes</b> of food to people who had been affected by Hurricane Irma <span class="reference">(‘UN supporting national relief efforts as Hurricane Irma threatens nearly 50 million people’, 2017)</span>. But all this is still not enough to help the people affected by storms like this. 80 metric tonnes of food will not last that long. Those homeless people out there are going to be homeless and unemployed for a long, long time. People sent to help with the crisis isn’t going to help that much either. A few people can’t do much to clean up a mess that spreads all through Central America. And what about health and safety? Most of that 1 billion dollars is going to be spent on health and shelter. Not to mention blankets, mats, recovery, and cleanup. And this isn’t helped when countries like the UK don’t want to help by donating their foreign aid budget <span class="reference">(Agerholm, 2017; Belson, 2017)</span>.</p>
+			<p>We’ve got a few ideas for how to deflect these biohazards;</p>
+			<ul>
+				<li><p>Releasing animals that eat the insects that spread disease. Though this may work, it can pose threats to the animals released, who may not be used to the new environment and could turn into an invasive species (think of cane toads in Australia). It could also be dangerous to let them eat the infected insects and pests, as they could be affected by the diseases they carry. These potential problems make the idea pretty risky. This was the first idea we scratched out.</p></li>
+				<li><p>We were thinking of creating a group of people who help to fight the disease, insects brought on by it, respectful and proper disposal of corpses, and other biohazards. We don’t have a name, but it would consist of two different branches; medical, extermination, and disposal of corpses. Medical would take care of people who have already been affected, and extermination would cut back the hazards so they can’t affect any more people. Extermination would be doing things like culling insects and pest and destroying whatever residue is left of a disease, along with the cause. Medical would look after the people who’ve been affected already. And finally, disposal of corpses would be a search team that looks for dead bodies, including that of humans and pets and dispose of them in a proper and respectful way.</p></li>
+			</ul>
+			<p>The idea we chose was the latter, as the first had much too many cons to work correctly. These are some of the things they could work towards, along with what we’ve already stated.</p>
+			<ul>
+				<li><p>We need to improve the infrastructure of man-made creations like sewers. It may seem silly, but poorly structured sewage systems can overflow and fill the streets with waste, spreading disease and severely lowering the hygiene of the area it affects. The waste that’s strewn across the streets also attracts insects, which can spread disease as well. It’s a much bigger issue than we realise; in Hurricane Irma, this exact thing happened, so it’s not rare either. Although it may seem funny, it’s no laughing matter. During serious hurricanes, sewage usually starts to overflow and then flow in reverse, which results in biohazards, as diseases are spread by stray faeces, urine and other bodily fluids. When it does start to flow backwards, it goes back out the drain, providing a great way for diseases and bacteria to spread. This causes not only the spread of disease but severe flooding from the excess water spilt out of drains. Perhaps we could make it a regulation for areas that are constantly affected by floods, hurricanes, cyclone, etc. to have latches underneath the manhole to prevent backwards flow. In the instance of a drain that sits next to the curb, we could make a rule on how thick it has to be if it has to be attached to the ground, and the size of it to prevent as much backflow as possible.</p></li>
+				<li><p>We also need to put more money into the development of machines that can clean roads, pavements, parks, and other things after floods. We need to develop these machines to clean up sewage and wet trash. We also need a way to sanitise areas affected since it is an incredibly dangerous biohazard to have human faeces, grey water, floodwaters (which contain algae, moss, etc.), corpses, pets, other wildlife that lives in urban areas, and possibly marine animals.</p></li>
+				<li><p>As there will be many survivors, they will need somewhere to stay. Usually, these are tents and usually, there aren’t enough and, as a result, multiple people have to cram into these. We were thinking of having a sort of bank full of tents for emergencies such as these. There will be three types of tents. Minor injuries, non-life threatening illnesses and injuries, and life-threatening illnesses and injury. All tents will have the frame of the tent wrapped up inside the tent itself with a velcro tab, sort of like the ones you see on a parasol, to wrap it up. The minor injuries tent will have a small box for cuts, scratches, bumps, and bruises along with a week's provisions of canned food and water in another box. These canned foods will have to not cause gas/loose bowel movements, mainly because of health and safety concerns; it could spread further disease and lose precious fluids. These tents will be available to the public but will be set up by trained doctors, nurses, and paramedics which will then treat patients. The second type of tents, non-life threatening illnesses and injuries, will not be available to the public. Inside will be things like splints, various types of bandages, dressings, sterile gloves, and cleansing wipes. Food will not be available as eating food might worsen some injuries. Water will be available to wash and clean. The last type of tent will be more like a makeshift hospital. This tent will be able to house 10 people on mats. This tent will <strong>definitely</strong> not be available to the public as they may contain sharps (e.g. anaesthetic). No food packs will be included but water will be available to wash and clean. This tent will contain more medical aid than the non-life threatening injuries like sharps, heart monitors, defibrillators, and other basic medical instruments found in an ER.</p></li>
+				<li><p>Locust swarms may technically not be biohazards, but they still fall into the same category in terms of the harmful after-effects of disasters. However, they aren’t known to carry any diseases, rather indirectly killing humans by eating their food sources. We could utilise locusts for food; this would both help the food crisis they create and lower their numbers, effectively reducing the problem. And insects are known to be exceptionally nutritious, too. All we’d need to find is an effective way to catch them, which wouldn’t be hard since they travel in giant clusters. Nets, anyone?</p></li>
+			</ul>
+			<p>As you can see from the information shown above, the biohazards that natural disasters cause are lethal and, in some cases, boast a higher death toll than the immediate disaster. Unfortunately, this issue is often overlooked, and there aren’t many resources regarding what the government has done to help, which leads us to believe they really don’t do much in terms of trying to control the biohazards. In fact, this issue as a whole seems to be ignored; we had immense trouble even trying to find websites that showcase the troubles the biohazards cause. This stems down to things.</p>
+			<ol>
+				<li><p>Lack of funding. The places most susceptible to biohazards are often in poverty or have significantly less money than other countries since their infrastructure is often poor or outdated and they usually don’t have very good healthcare systems. This is a hard problem since the only way to really help them get into shape and fight back is help from other countries. Often allies will help, but one or two countries can only help so much. Poor countries are often overlooked as well, especially compared to the massive amount of support places like the U.S get when they experience natural disasters. A good example of this is the 2000 Mozambique floods where limited access to food, water, and shelter was the result of a lack of money.</p></li>
+				<li><p>Lack of knowledge. When Hurricane Maria razed across the Caribbean, the media covered it significantly less than the other recent Hurricanes Irma and Harvey. Top U.S. media outlets mentioned “Harvey” and “Texas” had four times more than “Maria” and “Puerto Rico” when they respectively made landfalls. A slow response to the Hurricane by the U.S. government left the island in shambles and now, Puerto Rico is deep in a financial crisis. Most of the people have no power, and schools have been forced to shut down. <span class="reference">(Campbell, 2018; Campbell & Kiger, 2018; Mehta, 2017; Yglesias, 2018)</span>.</p></li>
+				<li><p>Discrimination and denial. Following on Hurricane Maria, the initial death toll was 16, but American news outlet Vox found 81 cases of people who drowned, were crushed by debris or died due to not getting medical care. Research from top universities like Harvard, Penn State, and George Washington have pegged the number of deaths, both direct and indirect deaths from the aftermath, as 2,975. Trump denied the deaths as a conspiracy theory, and made some vaguely racist attacks on the mayor of San Juan, and also calling the Puerto Ricans as pushy, whiny people who haven’t seen a real disaster like Hurricane Katrina (actually, Katrina and Maria were extremely similar in power.). Even Hispanic composer Lin-Manuel Miranda, who <em>unironically calls his Twitter followers “friendos”</em> on the regular, told Trump he was “going straight to hell” for his neglect on helping Puerto Rico. <span class="reference">(Barclay, 2018; Barclay & Campbell, 2018; Campbell, 2018; Grady, 2017; Stuart, 2018; Yglesias, 2018)</span>.</p></li>
+			</ol>
+			<p>So, we have quite a few ideas, and they’re obviously not perfect. A few of our ideas, such as the first where we hypothetically introduced animals to eat insects that spread the disease, had too many flaws to work effectively, so we scrapped them. Here are some pros and cons of our current idea;</p>
+			<h2>PROS: </h2>
+			<ul>
+				<li><p>One of the obvious ones is that we’d help people; people who usually wouldn’t get help without us. We’d save many lives by both helping those already affected and preventing others from being affected. If that’s not a strong point, we don’t know what is.</p></li>
+				<li><p>Attention will be brought to the issue. Right now, there really isn’t much help our cause; in fact, barely anybody pays attention to this problem, even though it can potentially be worse than the disaster itself. If we shed some light on the biohazards that are caused by natural disasters, both to the public and to governments, we can finally help those who are affected by this. We could educate the public on the dangers of biohazards that occur from natural disasters, so they’d be more aware of what to do in such situations and be more prepared.</p></li>
+				<li><p>There are many people in the world who want to help. Who want to change other people's lives. Or who simply just need a hobby or activity to do. With this, we can give these people an opportunity to both help fix a mostly ignored issue, and save lives while doing it. And, if they don’t want to do the grisly physical activities, and simply want to support, they can donate.</p></li>
+				<li><p>If we manage to obtain a sample of an unknown or under-examined disease, we could send it off to, say, science labs or otherwise. This could help develop a better cure or, even better, a vaccine; which would aid both our cause and the entire world. Look at what happened to tsunami lung. In the 2004 Indian Ocean Earthquake, a girl caught an what was an unknown disease. Through further investigation, they were able to save the little girl from paralysis, or even death!</p></li>
+			</ul>
+			<h2>CONS:</h2>
+			<ul>
+				<li><p>We’d need to be pretty convincing to get people to join our forces. It wouldn’t be for the faint of heart - they’d be helping people with terrible diseases, cleaning up bodily fluids and corpses, killing insects and any other animals that happen to spread the disease, and many other gory, disgusting things. We would need to find a good way to convince people to join.</p></li>
+				<li><p>Costs. We … don’t have much money, so we’d need lots of donations and perhaps, if possible, help from the government or other bigger groups who support our cause. Hopefully, we’d be earning money with what we do, but to start off we’d need some money. A way to counter this would be to use cheap alternatives to real insecticides until we build up enough funds to support ourselves.</p></li>
+				<li><p>We could cause disruptions based on what would be currently happening in the affected area. However, if the disruption is minor, this could be easily circumvented by simply organising when we’d come. We’d need lots of space as well, which would mean more work clearing up debris and other obstacles.</p></li>
+			</ul>
+			<p>Though there are a few cons, as with every project, we think it’s safe to say that the positives outweigh the negatives. Let’s compare this to some cons of our first idea;</p>
+			<ul>
+				<li><p>Introduced animals commonly become invasive. The introduced predators could easily become a bigger problem than what they were supposed to rid of. An example of this would be the poisonous cane toads in Australia, who were originally introduced to lessen the numbers of a particular beetle species, but instead became pests that overran the country and stole food from and killed other animals, especially curious pets and native fauna.</p></li>
+				<li><p>Many diseases affect both animals and humans; the animals we introduce would have to be immune to the particular strand of disease or virus. Many forms of malaria can affect birds, and those that eat infected mosquitoes could easily become ill themselves. A prime example is swine flu. This infectious disease comes from pigs and, if we ever used them to try and exterminate an invading species that carried swine flu, then we could be facing a serious problem involving swine flu and lots of pig carcasses.</p></li>
+				<li><p>The animals introduced would have to adapt to the radically new, stressful lifestyle they’d suddenly be brought into. They could suffer tremendously, perhaps not even fulfilling their original purpose, and could easily die. It wouldn’t be a safe environment either; an area recently destroyed by a natural disaster would make the experience for the poor animals even more stressful. Most of them probably wouldn’t manage to live long enough to complete what they were introduced to do.</p></li>
+			</ul>
+			<p>When compared to these negatives, which, may we add, are only a few of the plethora we had, the difference is very clear. And though our current idea, of course, has some flaws, we don’t believe they’re big enough to override the positives.</p>
+			<p>So, we’ve covered the basics of our idea and what has been done (not much). Biohazards caused by such disasters are not only extremely dangerous but downright repulsive. And the worst part? Hardly anyone seems to be aware of the vast consequences of leaving debris, muck and who knows what else in the streets, and the contamination that can occur due to the aftermath. With our idea, we hope to not only lessen the impact of the biohazards caused by natural disasters, but inform the public about such problems in an attempt to prepare everyone and make it well-known that this is a serious issue, and it needs to be treated as such.</p>
+			<div style="position: relative; width: 100%; height: 100px; background: url('stem_footer_our_essay_on_hydrometeorological_biohazards.png'); background-repeat: repeat;"></div>
+		</div>
+
+		<div id="Gallery" class="topic">
+			<h2>Our Creations</h2>
+			<img src="favicon.ico">
+			<img src="homepage.png">
+			<video controls>
+					<source src="hydrometeorological_biohazards_animation.mp4">
+					Your browser does not support the video tag.
+			</video>
+			<img src="Umbrenite_Emblem.png">
+			<img src="what_hydrometeorological_biohazards_are_and_what_they_do.png">
+			<img src="when_and_where_the_disasters_happened.png">
+			<img src="our_ideas.png">
+			<img src="pros_and_cons.png">
+			<img src="what_you_can_do.png">
+			<img src="our_essay_on_hydrometeorological_biohazards.png">
+			<img src="gallery.png">
+			<img src="credits_and_references.png">
+			<h2></h2>
+		</div>
+
+		<div id="Credits_and_References" class="topic">
+			<h2 style="text-align: center;">Credits and Acknowledgements</h2>
+			<div style="text-align: center;">
+				<p>
+					Credits: 
+				</p>
+				<p style="margin-bottom: 40px;">Kayla Fairweather, Harry Le, Ashton Grant, and Gretchen Pronk</p>
+			</div>
+			<p>Thanks to everyone who contributed to the information we used to create this website of our's; listed in the bibliography below. Thank you also to <a href="https://en.scratch-wiki.info/w/images/Logo.png">Scratch</a>, the block code programming language, for the social media logo (which has been resized to fit into our footer) and Wikia for its social media logo as well.</p>
+			<p>A thanks also to Ahmed who created the Umbrenite logo we used today.</p>
+			<h2 style="text-align: center;">References</h2>
+			<div class="csl-bib-body" style="line-height: 2; margin-left: 3.25em; text-indent:-2em;">
+  			<div class="csl-entry">6 Biohazard Examples. (n.d.). Retrieved 18 September 2018, from <a href="https://www.aftermath.com//content/biohazard-examples/">https://www.aftermath.com//content/biohazard-examples/</a></div>
+				<div class="csl-entry">Agerholm, H. (2017, September 14). Hurricane Irma: UK will not spend foreign aid on disaster relief as overseas territories are ‘too wealthy’ | The Independent. Retrieved 19 September 2018, from <a href="https://www.independent.co.uk/news/uk/home-news/hurricane-irma-latest-uk-government-disaster-relief-foreign-aid-withheld-overseas-territories-too-a7945856.html">https://www.independent.co.uk/news/uk/home-news/hurricane-irma-latest-uk-government-disaster-relief-foreign-aid-withheld-overseas-territories-too-a7945856.html</a></div>
+				<div class="csl-entry">Atkin, E. (2017a, September 14). The Poop Problem Hurricane Irma Left Behind. Retrieved 30 October 2018, from <a href="https://slate.com/technology/2017/09/hurricane-irma-left-a-poop-problem-in-its-wake.html">https://slate.com/technology/2017/09/hurricane-irma-left-a-poop-problem-in-its-wake.html</a></div>
+				<div class="csl-entry">Atkin, E. (2017b, September 15). Florida’s Poop Nightmare Has Come True. <i>The New Republic</i>. Retrieved from <a href="https://newrepublic.com/article/144798/floridas-poop-nightmare-come-true">https://newrepublic.com/article/144798/floridas-poop-nightmare-come-true</a></div>
+				<div class="csl-entry">Barclay, E. (2018, September 15). Hurricane Maria: what we know about the death toll in Puerto Rico - Vox. Retrieved 19 September 2018, from <a href="https://www.vox.com/2018/9/13/17855414/trump-hurricane-maria-puerto-rico-death-toll">https://www.vox.com/2018/9/13/17855414/trump-hurricane-maria-puerto-rico-death-toll</a></div>
+				<div class="csl-entry">Barclay, E., &amp; Campbell, A. F. (2017, October 11). Everything that’s been reported about deaths in Puerto Rico is at odds with the official count. Retrieved 8 November 2018, from <a href="https://www.vox.com/science-and-health/2017/10/11/16424356/puerto-rico-official-hurricane-maria-death-toll">https://www.vox.com/science-and-health/2017/10/11/16424356/puerto-rico-official-hurricane-maria-death-toll</a></div>
+				<div class="csl-entry">Belluz, J. (2017, September 19). Flesh-eating bacteria, cancer-causing chemicals, and mold: Harvey and Irma’s lingering health threats. Retrieved 6 November 2018, from <a href="https://www.vox.com/science-and-health/2017/9/19/16325044/hurricane-2017-health-risks-irma-harvey-pollution-mold-mosquitoes-depression">https://www.vox.com/science-and-health/2017/9/19/16325044/hurricane-2017-health-risks-irma-harvey-pollution-mold-mosquitoes-depression</a></div>
+				<div class="csl-entry">Belson, R. (2017, September 7). French, Dutch send aid to Irma victims, but UK response criticized. Retrieved 19 September 2018, from <a href="https://www.politico.eu/article/french-dutch-send-aid-to-irma-victims-but-uk-response-criticized/">https://www.politico.eu/article/french-dutch-send-aid-to-irma-victims-but-uk-response-criticized/</a></div>
+				<div class="csl-entry">Biological hazard. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Biological_hazard&amp;oldid=857234641">https://en.wikipedia.org/w/index.php?title=Biological_hazard&amp;oldid=857234641</a></div>
+				<div class="csl-entry">Caillouët, K. A., Michaels, S. R., Xiong, X., Foppa, I., &amp; Wesson, D. M. (2008). Increase in West Nile Neuroinvasive Disease after Hurricane Katrina - Volume 14, Number 5—May 2008 - Emerging Infectious Diseases journal - CDC. <i>Emerging Infectious Diseases Journal</i>. <a href="https://doi.org/10.3201/eid1405.071066">https://doi.org/10.3201/eid1405.071066</a></div>
+				<div class="csl-entry">Campbell, A. F. (2018, September 13). Trump invents cruel conspiracy theory about Puerto Rico’s hurricane death toll - Vox. Retrieved 19 September 2018, from <a href="https://www.vox.com/2018/9/13/17854408/trump-hurricane-maria-death-toll-tweets">https://www.vox.com/2018/9/13/17854408/trump-hurricane-maria-death-toll-tweets</a></div>
+				<div class="csl-entry">Campbell, A. F., &amp; Kiger, R. (2018, June 15). About a quarter of Puerto Rico’s schools are shutting down. Here’s a look inside one. Retrieved 21 September 2018, from <a href="https://www.vox.com/policy-and-politics/2018/6/15/17455746/puerto-rico-hurricane-maria-schools-closing">https://www.vox.com/policy-and-politics/2018/6/15/17455746/puerto-rico-hurricane-maria-schools-closing</a></div>
+				<div class="csl-entry">CBS/AP. (2017, September 9). Hurricane Irma makes landfall in lower Florida Keys. Retrieved 30 October 2018, from <a href="https://www.cbsnews.com/news/hurricane-irma-track-update-florida-path-live-09-09-2017/">https://www.cbsnews.com/news/hurricane-irma-track-update-florida-path-live-09-09-2017/</a></div>
+				<div class="csl-entry">CDC. (2018, April 2). Emergency Kit Checklist for Kids and Families. Retrieved 20 November 2018, from <a href="https://www.cdc.gov/childrenindisasters/checklists/kids-and-families.html">https://www.cdc.gov/childrenindisasters/checklists/kids-and-families.html</a></div>
+				<div class="csl-entry">CDC-Centers for Disease Control and Prevention. (2018, April 11). CDC - Malaria - About Malaria - Disease. Retrieved 1 November 2018, from <a href="https://www.cdc.gov/malaria/about/disease.html">https://www.cdc.gov/malaria/about/disease.html</a></div>
+				<div class="csl-entry">Cholera. (n.d.). Retrieved 9 November 2018, from <a href="http://www.who.int/news-room/fact-sheets/detail/cholera">http://www.who.int/news-room/fact-sheets/detail/cholera</a></div>
+				<div class="csl-entry">Cholera - Symptoms and causes. (n.d.). Retrieved 9 November 2018, from <a href="http://www.mayoclinic.org/diseases-conditions/cholera/symptoms-causes/syc-20355287">http://www.mayoclinic.org/diseases-conditions/cholera/symptoms-causes/syc-20355287</a></div>
+				<div class="csl-entry">Cordeiro, M. (2017, September 18). Hurricane Irma left an estimated 10,000 people homeless in the Florida Keys. Retrieved 19 September 2018, from <a href="https://www.orlandoweekly.com/Blogs/archives/2017/09/18/irma-left-estimated-10000-people-homeless-in-florida-keys">https://www.orlandoweekly.com/Blogs/archives/2017/09/18/irma-left-estimated-10000-people-homeless-in-florida-keys</a></div>
+				<div class="csl-entry">Dengue fever - Symptoms and causes. (n.d.). Retrieved 1 November 2018, from <a href="https://www.mayoclinic.org/diseases-conditions/dengue-fever/symptoms-causes/syc-20353078">https://www.mayoclinic.org/diseases-conditions/dengue-fever/symptoms-causes/syc-20353078</a></div>
+				<div class="csl-entry">DeNoon, D. J. (n.d.). Hurricane Katrina: Health Aftermath. Retrieved 18 September 2018, from <a href="https://www.webmd.com/a-to-z-guides/news/20050831/hurricane-katrina-health-aftermath">https://www.webmd.com/a-to-z-guides/news/20050831/hurricane-katrina-health-aftermath</a></div>
+				<div class="csl-entry">Federal Emergency Management Agency. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Federal_Emergency_Management_Agency&amp;oldid=860003173">https://en.wikipedia.org/w/index.php?title=Federal_Emergency_Management_Agency&amp;oldid=860003173</a></div>
+				<div class="csl-entry">FEMA Assistance Tops $1 Billion for Florida Hurricane Irma Survivors | FEMA.gov. (2018, April 19). Retrieved 19 September 2018, from <a href="https://www.fema.gov/news-release/2018/04/19/fema-assistance-tops-1-billion-florida-hurricane-irma-survivors">https://www.fema.gov/news-release/2018/04/19/fema-assistance-tops-1-billion-florida-hurricane-irma-survivors</a></div>
+				<div class="csl-entry">First aid kits | healthdirect. (n.d.). Retrieved 20 November 2018, from <a href="https://www.healthdirect.gov.au/first-aid-kits">https://www.healthdirect.gov.au/first-aid-kits</a></div>
+				<div class="csl-entry">Frank, B. (n.d.). The Health Effects of Hurricane Katrina. Retrieved 18 September 2018, from <a href="https://serc.carleton.edu/NAGTWorkshops/health/case_studies/hurricane_Katrina.html">https://serc.carleton.edu/NAGTWorkshops/health/case_studies/hurricane_Katrina.html</a></div>
+				<div class="csl-entry">Glutting, J.-P. (2017, May 11). The Relationship Between Severe Flooding and Disease. Retrieved 18 September 2018, from <a href="https://www.air-worldwide.com/Blog/The-Relationship-Between-Severe-Flooding-and-Disease/">https://www.air-worldwide.com/Blog/The-Relationship-Between-Severe-Flooding-and-Disease/</a></div>
+				<div class="csl-entry">Grady, C. (2017, October 2). Hamilton star Lin-Manuel Miranda: Trump is “going straight to hell.” - Vox. Retrieved 19 September 2018, from <a href="https://www.vox.com/culture/2017/10/2/16400388/hamilton-composer-lin-manuel-miranda-donald-trump-going-straight-to-hell">https://www.vox.com/culture/2017/10/2/16400388/hamilton-composer-lin-manuel-miranda-donald-trump-going-straight-to-hell</a></div>
+				<div class="csl-entry">Huelskoetter, T. (2015, August 20). Hurricane Katrina’s Health Care Legacy. Retrieved 18 September 2018, from <a href="https://www.americanprogress.org/issues/healthcare/reports/2015/08/20/119670/hurricane-katrinas-health-care-legacy/">https://www.americanprogress.org/issues/healthcare/reports/2015/08/20/119670/hurricane-katrinas-health-care-legacy/</a></div>
+				<div class="csl-entry">Hurricane Irma. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Hurricane_Irma&amp;oldid=866359475">https://en.wikipedia.org/w/index.php?title=Hurricane_Irma&amp;oldid=866359475</a></div>
+				<div class="csl-entry">Hurricane Katrina. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Hurricane_Katrina&amp;oldid=859419993">https://en.wikipedia.org/w/index.php?title=Hurricane_Katrina&amp;oldid=859419993</a></div>
+				<div class="csl-entry">Hydro-meteorological hazards | United Nations Educational, Scientific and Cultural Organization. (n.d.). Retrieved 18 September 2018, from <a href="http://www.unesco.org/new/en/natural-sciences/special-themes/disaster-risk-reduction/natural-hazards/hydro-meteorological-hazards/">http://www.unesco.org/new/en/natural-sciences/special-themes/disaster-risk-reduction/natural-hazards/hydro-meteorological-hazards/</a></div>
+				<div class="csl-entry">Irma leaves a river of sewage flowing in a Florida neighborhood. (n.d.). Retrieved 30 October 2018, from <a href="https://www.miamiherald.com/news/weather/hurricane/article173334931.html">https://www.miamiherald.com/news/weather/hurricane/article173334931.html</a></div>
+				<div class="csl-entry">Katrina Health Concerns. (2005, September 6). Retrieved 18 September 2018, from <a href="https://www.jhsph.edu/news/news-releases/2005/katrina/katrina_health.html">https://www.jhsph.edu/news/news-releases/2005/katrina/katrina_health.html</a></div>
+				<div class="csl-entry">LEPDT - Clinical: Leptospira, IgM, Serum. (n.d.). Retrieved 1 November 2018, from <a href="https://www.mayomedicallaboratories.com/test-catalog/Clinical+and+Interpretive/65183">https://www.mayomedicallaboratories.com/test-catalog/Clinical+and+Interpretive/65183</a></div>
+				<div class="csl-entry">Leptospirosis | CDC. (2017, November 9). Retrieved 1 November 2018, from <a href="https://www.cdc.gov/leptospirosis/index.html">https://www.cdc.gov/leptospirosis/index.html</a></div>
+				<div class="csl-entry">Malaria - Symptoms and causes. (n.d.). Retrieved 1 November 2018, from <a href="https://www.mayoclinic.org/diseases-conditions/malaria/symptoms-causes/syc-20351184">https://www.mayoclinic.org/diseases-conditions/malaria/symptoms-causes/syc-20351184</a></div>
+				<div class="csl-entry">Mehta, D. (2017, September 28). The Media Really Has Neglected Puerto Rico. Retrieved 20 September 2018, from <a href="https://fivethirtyeight.com/features/the-media-really-has-neglected-puerto-rico/">https://fivethirtyeight.com/features/the-media-really-has-neglected-puerto-rico/</a></div>
+				<div class="csl-entry">Meningitis - Symptoms and causes. (n.d.). Retrieved 1 November 2018, from <a href="https://www.mayoclinic.org/diseases-conditions/meningitis/symptoms-causes/syc-20350508">https://www.mayoclinic.org/diseases-conditions/meningitis/symptoms-causes/syc-20350508</a></div>
+				<div class="csl-entry">Mosquito. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Mosquito&amp;oldid=858573175">https://en.wikipedia.org/w/index.php?title=Mosquito&amp;oldid=858573175</a></div>
+				<div class="csl-entry">Mozambique: Amid the filth, the first sign of disease - Mozambique | ReliefWeb. (n.d.). Retrieved 31 October 2018, from <a href="https://reliefweb.int/report/mozambique/mozambique-amid-filth-first-sign-disease">https://reliefweb.int/report/mozambique/mozambique-amid-filth-first-sign-disease</a></div>
+				<div class="csl-entry">Mozambique Floods – March 2000 – International Rescue Corps. (n.d.). Retrieved 31 October 2018, from <a href="http://www.intrescue.info/hub/index.php/missions/mozambique-floods-march-2000/">http://www.intrescue.info/hub/index.php/missions/mozambique-floods-march-2000/</a></div>
+				<div class="csl-entry">Mufson, S., &amp; Dennis, B. (2017, September 15). In Irma’s wake, millions of gallons of sewage and wastewater are bubbling up across Florida. Retrieved 30 October 2018, from <a href="https://www.washingtonpost.com/news/energy-environment/wp/2017/09/15/in-irmas-wake-millions-of-gallons-of-sewage-and-wastewater-are-bubbling-up-across-florida/">https://www.washingtonpost.com/news/energy-environment/wp/2017/09/15/in-irmas-wake-millions-of-gallons-of-sewage-and-wastewater-are-bubbling-up-across-florida/</a></div>
+				<div class="csl-entry">Parasitism. (2018). In <i>Wikipedia</i>. Retrieved from <a href="https://en.wikipedia.org/w/index.php?title=Parasitism&amp;oldid=869754634">https://en.wikipedia.org/w/index.php?title=Parasitism&amp;oldid=869754634</a></div>
+				<div class="csl-entry">Potera, C. (2005). Infectious Disease: In Disaster’s Wake: Tsunami Lung. <i>Environmental Health Perspectives</i>, <i>113</i>(11), A734.</div>
+				<div class="csl-entry">RESEARCHFEATURES. (2017, June 30). Locust swarms: the evolution of a powerful force of nature. Retrieved 19 September 2018, from <a href="https://researchfeatures.com/2017/06/30/locust-swarms-powerful-force-nature/">https://researchfeatures.com/2017/06/30/locust-swarms-powerful-force-nature/</a></div>
+				<div class="csl-entry">Stuart, E. (2018, September 15). Trump denies Puerto Rico death count again as Hurricane Florence hits - Vox. Retrieved 19 September 2018, from <a href="https://www.vox.com/policy-and-politics/2018/9/15/17863494/trump-puerto-rico-tweet-hurricane-maria">https://www.vox.com/policy-and-politics/2018/9/15/17863494/trump-puerto-rico-tweet-hurricane-maria</a></div>
+				<div class="csl-entry">Sutter, J. D. (n.d.). The hidden ‘outbreak’ in Puerto Rico. Retrieved 8 November 2018, from <a href="https://www.cnn.com/2018/07/03/health/sutter-leptospirosis-outbreak-puerto-rico-invs/index.html">https://www.cnn.com/2018/07/03/health/sutter-leptospirosis-outbreak-puerto-rico-invs/index.html</a></div>
+				<div class="csl-entry">Symptoms and Treatment | Typhoid Fever | CDC. (2018, September 26). Retrieved 1 November 2018, from <a href="https://www.cdc.gov/typhoid-fever/symptoms.html">https://www.cdc.gov/typhoid-fever/symptoms.html</a></div>
+				<div class="csl-entry">Symptoms, Diagnosis, &amp; Treatment | West Nile Virus | CDC. (2018, October 18). Retrieved 2 November 2018, from <a href="https://www.cdc.gov/westnile/symptoms/index.html">https://www.cdc.gov/westnile/symptoms/index.html</a></div>
+				<div class="csl-entry">Typhoid fever - Symptoms and causes. (n.d.). Retrieved 1 November 2018, from <a href="https://www.mayoclinic.org/diseases-conditions/typhoid-fever/symptoms-causes/syc-20378661">https://www.mayoclinic.org/diseases-conditions/typhoid-fever/symptoms-causes/syc-20378661</a></div>
+				<div class="csl-entry">UN supporting national relief efforts as Hurricane Irma threatens nearly 50 million people. (2017, September 7). Retrieved 19 September 2018, from <a href="https://news.un.org/en/story/2017/09/564482-un-supporting-national-relief-efforts-hurricane-irma-threatens-nearly-50">https://news.un.org/en/story/2017/09/564482-un-supporting-national-relief-efforts-hurricane-irma-threatens-nearly-50</a></div>
+				<div class="csl-entry">Vector-borne diseases. (2017, October 31). Retrieved 18 September 2018, from <a href="http://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases">http://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases</a></div>
+				<div class="csl-entry">Watson, J. T., Gayer, M., &amp; Connolly, M. A. (2007). Epidemics after Natural Disasters. <i>Emerging Infectious Diseases</i>, <i>13</i>(1), 1–5. <a href="https://doi.org/10.3201/eid1301.060779">https://doi.org/10.3201/eid1301.060779</a></div>
+				<div class="csl-entry">West Nile virus - Symptoms and causes. (n.d.). Retrieved 2 November 2018, from <a href="https://www.mayoclinic.org/diseases-conditions/west-nile-virus/symptoms-causes/syc-20350320">https://www.mayoclinic.org/diseases-conditions/west-nile-virus/symptoms-causes/syc-20350320</a></div>
+				<div class="csl-entry">West Nile Virus Infection Prevention, Treatment &amp; Transmission. (n.d.). Retrieved 29 October 2018, from <a href="https://www.medicinenet.com/west_nile_encephalitis/article.htm">https://www.medicinenet.com/west_nile_encephalitis/article.htm</a></div>
+				<div class="csl-entry">WHO | Flooding and communicable diseases fact sheet. (n.d.). Retrieved 18 September 2018, from <a href="http://www.who.int/hac/techguidance/ems/flood_cds/en/">http://www.who.int/hac/techguidance/ems/flood_cds/en/</a></div>
+				<div class="csl-entry">WHO | Waterborne disease related to unsafe water and sanitation. (n.d.). Retrieved 18 September 2018, from <a href="http://www.who.int/sustainable-development/housing/health-risks/waterborne-disease/en/">http://www.who.int/sustainable-development/housing/health-risks/waterborne-disease/en/</a></div>
+				<div class="csl-entry">Yglesias, M. (2018a, May 30). Trump and Hurricane Maria: the true death toll in Puerto Rico - Vox. Retrieved 19 September 2018, from <a href="https://www.vox.com/2018/5/30/17407750/puerto-rico-maria-death-toll">https://www.vox.com/2018/5/30/17407750/puerto-rico-maria-death-toll</a></div>
+				<div class="csl-entry">Yglesias, M. (2018b, August 29). Trump’s continued indolent response to Hurricane Maria is our worst fears about him come true. Retrieved 21 September 2018, from <a href="https://www.vox.com/2018/8/29/17797466/trump-hurricane-maria-puerto-rico-response-death-toll">https://www.vox.com/2018/8/29/17797466/trump-hurricane-maria-puerto-rico-response-death-toll</a></div>
+				<div class="csl-entry">Zamiska, N. (2005, June 23). ‘Tsunami Lung’ Strikes Survivors; Doctors Fear Widespread Cases. Retrieved 5 November 2018, from <a href="http://www.wsj.com/articles/SB111947006719566775">http://www.wsj.com/articles/SB111947006719566775</a></div>
+				<div class="csl-entry">Zika virus command center leads biggest military operation in Brazil’s history | World news | The Guardian. (n.d.). Retrieved 23 October 2018, from <a href="https://www.theguardian.com/world/2016/mar/30/brazil-zika-war-virus-military-operation">https://www.theguardian.com/world/2016/mar/30/brazil-zika-war-virus-military-operation</a></div>
+			</div>
+		</div>
+		<footer>
+			<img id="footerico" src="favicon.ico" style="display: inline-block; margin: 10px;" width="75px">
+			<p style="display: inline-block; position: absolute; margin-left: 10px;">&copy; <span id="copyright_year"></span> HDB1, Milo, Sasha, Ashton Grant</p>
+			<a href="https://theumbrenitesofficialsite.weebly.com/">
+				<img class="icolinks" src="Umbrenite_Emblem.png" height="32px">
+			</a>
+			<a href="https://scratch.mit.edu/users/InvasionUmbrenites/">
+				<img class="icolinks" src="scratch_social_media_logo.png" height="32px">
+			</a>
+			<a href="http://umbrenites.wikia.com/wiki/Umbrenites_Wiki">
+				<img class="icolinks" src="wikia_social_media_icon_Dark_Knight.png">
+			</a>
+		</footer>
+	</body>
+</html>

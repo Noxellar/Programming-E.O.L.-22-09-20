@@ -1,0 +1,9 @@
+#!/bin/sh
+[Desktop Entry]
+Name=Gdrive Application Launcher
+Exec=gdrive.sh
+Terminal=false
+Type=Application
+Icon=google-drive
+Categories=Network;System;Office;Utility;Education;
+Comment=Launcher for Gdrive synchronisation

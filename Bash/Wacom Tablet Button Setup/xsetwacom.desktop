@@ -1,0 +1,9 @@
+#!/bin/sh
+[Desktop Entry]
+Name=Wacom Tablet Button Setup
+Terminal=false
+Type=Application
+Icon=/home/harryl/.icons/Adwaita++-Colorful/devices/32/input-tablet.svg
+Categories=Graphics;Preferences;
+Comment=Wacom Intuos S Tablet Setup
+Exec=xsetwacom.sh

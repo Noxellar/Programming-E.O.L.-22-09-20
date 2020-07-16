@@ -1,0 +1,25 @@
+$Page Benvenuto in Live!
+$TargetName Welcome to Live!
+
+L'idea musicale che hai avviato dal tuo browser è ora pronta a suonare in Ableton Live.
+
+In Live noi chiamiamo /clip/ questi modelli musicali. Le clip appaiono così:
+Clip.png
+
+Per ascoltare una clip cliccane il pulsante *Play:*
+PlayButton.png
+
+Se hai effettuato l'esportazione da una delle pagine di "esempio", vedrai varie clip. Puoi avviarne la riproduzione simultanea cliccando sul pulsante Play *Master:*
+MasterPlay.png
+
+Per interrompere la riproduzione premi la barra spaziatrice della tastiera del computer.
+
+Per modificare le note di una clip fai doppio clic in qualsiasi punto della clip per selezionarla. Questo visualizzerà le note nella parte inferiore della finestra. Ora puoi spostare ed eliminare le note proprio come hai fatto nel tuo browser.
+Notes.png
+
+*Come continuare*
+-> Fai più musica $Link nel tuo browser. <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html>
+-> Apprendi di più su Live usando le $Link lezioni incorporate. <Lesson:Internal/Toc>
+
+$Comment Status: Translate
+$Comment Translation Status: Up-to-date

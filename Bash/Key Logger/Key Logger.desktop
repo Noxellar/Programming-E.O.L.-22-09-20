@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[Desktop Entry]
+Name=Key Logger
+Exec=logger.sh
+Terminal=false
+Type=Application
+Icon=preferences-desktop-keyboard.svg
+Categories=System;Utility;
+Comment=Key Logger

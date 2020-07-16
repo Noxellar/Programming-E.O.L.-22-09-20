@@ -1,0 +1,25 @@
+$Page ¡Bienvenido/a a Live!
+$TargetName Welcome to Live!
+
+La idea musical que comenzó en su navegador ahora está ya lista para reproducirla en Ableton Live.
+
+En Live, llamamos a estos patrones musicales /clips./ Los clips tienen esta apariencia:
+Clip.png
+
+Para escuchar un clip, haga clic en su botón *Play:*
+PlayButton.png
+
+Si exportó desde una de las páginas del "playground", verá múltiples clips. Puede comenzar la reproducción de todos haciendo clic en el botón *Master:*
+MasterPlay.png
+
+Para detener la reproducción, pulse la barra espaciadora del teclado de su ordenador.
+
+Para ajustar las notas de un clip, haga doble clic en cualquier lugar del clip para seleccionarlo. Esto mostrará las notas cerca de la parte inferior de la ventana. Ahora puede mover y borrar notas justo de la misma forma que lo hizo en su navegador.
+Notes.png
+
+*A donde ir desde aquí*
+-> Haga más música $Link en su navegador. <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html>
+-> Aprenda más cosas de Live usando las $Link lecciones incorporadas. <Lesson:Internal/Toc>
+
+$Comment Status: Translate
+$Comment Translation Status: Up-to-date

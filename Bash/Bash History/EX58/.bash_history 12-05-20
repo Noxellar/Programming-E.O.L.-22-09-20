@@ -1,0 +1,2000 @@
+dotnet run
+man dotnet
+clear
+apt search donet
+apt search dotnet
+/usr/bin/python3 -m pip install -U pylint --user
+pip3 install setuptools
+/usr/bin/python3 -m pip install -U pylint --user
+/usr/bin/python3 -m pip install -U autopep8 --user
+/usr/bin/python3 /home/harryl/.vscode/extensions/ms-python.python-2020.1.58038/pythonFiles/lib/python/new_ptvsd/no_wheels/ptvsd/launcher "/home/harryl/Desktop/Programming/Python/Harry's Game of Life/main.py" 
+cd "Desktop/Programming/Crystal Sapphires"
+npm
+npm --help
+clear
+man npm
+clear
+cd "Desktop/Programming/Crystal Sapphires"
+clear
+npm install
+npm install yosay
+clear
+npm install vsce
+npm
+nodejs
+clear
+node-js
+'/home/harryl/Downloads/node-v12.15.0-linux-x64/bin/npm'
+cd Downloads/node-v12.15.0-linux-x64
+clear
+cd bin
+clear
+./node
+clear
+./npm
+'/home/harryl/Downloads/node-v12.15.0-linux-x64/bin/node' 
+'/home/harryl/Downloads/node-v12.15.0-linux-x64/bin/npm' 
+clear
+clear
+ping google.com
+xkill
+dotnet
+clear
+lspci | grep -i broadcom
+lspci
+lspci | grep -i wireless
+iwconfig wlan0 | grep -i --color quality
+iwconfig wlan1 | grep -i --color quality
+iwconfig wlan2 | grep -i --color quality
+watch -n 1 cat /proc/net/wireless
+ping google.com
+xkill
+dotnet run
+ping google.com
+'/home/harryl/Downloads/opt/minecraft-launcher/minecraft-launcher' 
+ping 8.8.8.8
+ping google.com
+xkill
+mesa
+ping google.com
+xkill
+ping google.com
+iftop
+nethogs
+top
+clear
+top | less
+clear
+top | more
+netstat
+clear
+netstat -tup
+man netstat
+netstat
+watch netstat
+claer
+clear
+watch netstat | less
+claer
+clear
+netstat
+tcpdump
+clear
+netstat -cW
+watch sensosr
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+PROTON_LOG=1 %command% STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+cd Downloads/dist
+./bin/wine
+./bin/wine Downloads/installbackupandsync.exe
+./bin/wine '/home/harryl/Downloads/installbackupandsync.exe'
+clear
+./bin/wine64 '/home/harryl/Downloads/installbackupandsync.exe'
+clear
+./bin/wine64 --help
+man ./bin/wine64
+clear
+cd Downloads/wine
+clear
+./configure --prefix=./
+./configure --prefix=~/Downloads/wine
+./configure --prefix=$HOME/Downloads/wine
+./configure
+./configure --prefix=$HOME/Downloads/wine --enable-win64
+./configure --prefix=$HOME/Downloads/wine --enable-win64 --without-x
+./make
+clear
+make
+./configure --prefix=$HOME/Downloads/wine --enable-win64 --without-x --without-fonts
+./configure --prefix=$HOME/Downloads/wine --enable-win64 --without-x --without-freetype
+make
+clear
+./wine notepad
+clear
+make
+cd {wine-source-folder}
+cd Downloads/wine
+mkdir build && cd build && ../configure && make depend && make
+clear
+apt-get wine
+apt-get
+clear
+apt-get download wine
+apt-get download wine.deb
+apt-get download wine
+clear
+apt-get download wine-stable
+cd Downloads/.wine
+clear
+./opt/wine-stable/bin/wine
+clear
+./opt/wine-stable/bin/notepad
+./opt/wine-stable/bin/winemaker
+man ./opt/wine-stable/bin/winemaker
+clear
+./opt/wine-stable/bin/winemaker --help
+./opt/wine-stable/bin/wineserver
+xkill
+ping google.com
+steam
+steam
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/708340' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Shark Simulator/shark_simulator.exe'
+clear
+STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/708340' '/home/harryl/.local/share/Steam/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Shark Simulator/shark_simulator.exe'
+clear
+STEAM_COMPAT_DATA_PATH='/home/harryl/.local/share/Steam/steamapps/compatdata/708340' '/home/harryl/.local/share/Steam/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Shark Simulator/shark_simulator.exe'
+clear
+'/home/harryl/Desktop/Programming/Crystal Sapphires/node_modules/.bin/vsce'
+clear
+'/home/harryl/Desktop/Programming/Crystal Sapphires/node_modules/.bin/vsce' login xenoxriar
+wine
+wine '/home/harryl/Downloads/.installbackupandsync.exe'
+wine
+clear
+eixt
+exit
+exit
+bash -c "$(dirname $(readlink -f %k))/zotero -url %U"
+'/home/harryl/Zotero/Zotero_linux-x86_64/zotero'
+wget http://cdimage.ubuntu.com/daily-live/current/focal-desktop-amd64.iso
+man tar
+ping google.com
+tar -cvJf Downloads/focal-desktop-amd64.iso.tar.xz Downloads/focal-deskop-amd64.iso
+clear
+tar -cvJf Downloads/focal-desktop-amd64.iso.tar.xz Downloads/focal-desktop-amd64.iso
+ping google.com
+clea
+clear
+ncurses-bin
+c++
+clear
+cpp
+cc
+cinnamon-driver-manager
+xkill
+gdrive sync download --delete-extraneous ${string[1]} ${string[0]}
+gdrive --help
+gdrive help
+gdrive help download
+gdrive help upload
+clear
+gdrive help sync
+gdrive help sync download
+gdrive sync download --delete-extraneous 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n Documents/Schoolwork
+gdrive sync download --delete-extraneous 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd Documents/Drawings
+clear
+gdrive sync download --delete-extraneous 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd Desktop/Drawings
+gdrive sync download --keep-local --delete-extraneous 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd Desktop/Drawings
+ping clea
+clear
+ping 8.8.8.8
+gdrive help sync
+gdrive sync upload .gdrive 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz
+gdrive sync upload --delete-extraneous --keep-remote .gdrive 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz
+wine
+clear
+PROTON_LOG=1 %command%
+PROTON_LOG=1 %command% PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+"PROTON_LOG=1 %command%" PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+PROTON_LOG=1 %command% PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+PROTON_LOG=1 %command% PROTON_NO_ESYNC=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+PROTON_LOG=1 %command% PROTON_NO_ESYNC=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+PROTON_NO_ESYNC=1 PROTON_LOG=1 %command% PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+PROTON_NO_ESYNC=1 PROTON_LOG=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.steam/root/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+clear
+PROTON_NO_ESYNC=1 PROTON_LOG=1 PROTON_DUMP_DEBUG_COMMANDS=1 STEAM_COMPAT_DATA_PATH='/home/harryl/.steam/root/steamapps/compatdata/17390' '/home/harryl/.local/share/Steam/steamapps/common/Proton 5.0/proton' run '/home/harryl/.steam/root/steamapps/common/Spore/runme.exe'
+sudo add-apt-repository ppa:wine/wine-builds
+clear
+man wine
+wine
+clear
+wine Downloads/.gdrive.exe
+clear
+wine Downloads/.gdrive.exe
+clear
+clear
+sudo wine Downloads/.gdrive.exe
+clear
+wine Downloads/.gdrive.exe
+factor 48
+factor 18
+man factor
+wintricks
+clear
+winetricks
+env WINEPREFIX="/home/harryl/.wine" wine C:\\windows\\command\\start.exe /Unix /home/harryl/.wine/dosdevices/c:/users/harryl/Start\ Menu/Programs/Backup\ and\ Sync\ from\ Google/Backup\ and\ Sync\ from\ Google.lnk
+wine Downloads/.gsync.msi
+clear
+wine Downloads/.gsync.msi
+clear
+env WINEPREFIX="/home/harryl/.wine" wine C:\\windows\\command\\start.exe /Unix /home/harryl/.wine/dosdevices/c:/users/harryl/Start\ Menu/Programs/Backup\ and\ Sync\ from\ Google/Backup\ and\ Sync\ from\ Google.lnk
+clear
+apt-cache depends wine
+env WINEPREFIX="/home/harryl/.wine" wine C:\\windows\\command\\start.exe /Unix /home/harryl/.wine/dosdevices/c:/users/harryl/Start\ Menu/Programs/Backup\ and\ Sync\ from\ Google/Backup\ and\ Sync\ from\ Google.lnk
+wine
+python3 Downloads/a.py
+python3 Downloads/a.py
+clear
+python3 Downloads/a.py
+xkill
+keepass2 %f
+http://cdimage.ubuntu.com/daily-live/current/focal-desktop-amd64.iso
+clear
+wget http://cdimage.ubuntu.com/daily-live/current/focal-desktop-amd64.iso
+clear
+exity
+exit
+grep MHz /proc/cpuinfo 
+clear
+watch grep MHz /proc/cpuinfo 
+clear
+man watch
+clear
+watch -n 0 grep MHz /proc/cpuinfo 
+gdrive list
+ar
+sensors
+gdrive sync download 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3 .config/libreoffice
+gdrive sync download --keep-local 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3 .config/libreoffice
+gdrive sync download 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n Documents/Schoolwork
+gdrive.sh
+debugfs -w /dev/mapper.wks01-root
+extundelete
+clear
+sudo apt install extundelete
+clear
+man extundelete
+gdrive sync download 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz .gdrive
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+gdrive sync upload .config/libreoffice 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3
+gdrive.sh
+clear
+gdrive sync upload Downloads/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+gdrive sync --delete-extraneous upload Downloads/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+gdrive sync upload --delete-extraneous Downloads/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+man gio
+duplicity
+claer
+gio list "google-drive://Harry.Le4@education.nsw.gov.au
+clear
+gio list "google-drive://Harry.Le4@education.nsw.gov.au"
+gio google-drive://Harry.Le4@educatio.
+clear
+gio google-drive://Harry.Le4@education.nsw.gov.au/Computer
+claewr
+clear
+gio list "google-drive://Harry.Le4@education.nsw.gov.au/Computers"
+logger.sh
+~/Zotero/Zotero/zotero
+gdrive.sh
+gdrive.sh
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+clear
+gdrive sync upload .config/libreoffice 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3
+gdrive sync upload .gdrive 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz
+gdrive sync upload --keep-remote .gdrive 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz
+pidof
+pidof 1111
+pidof 0000
+pidof 999
+clear
+exti
+pidof 18687
+man pidof
+clear
+pidof gdrive.sh
+pidof -x gdrive.sh
+man trap
+clear
+trap
+man pidof
+gdrive.sh
+clea
+rexit
+sudo apt install gparted
+man apt upgrade
+gdrive list help
+gdrive help list
+gdrive list
+gdrive -n 9999999999999 list
+gdrive -n 999 list
+gdrive -m 999 list
+gdrive list -m 999
+clear
+gdrive list -m 999999999999999999 > Downloads/log.txt
+gdrive.sh
+clear
+gdrive.sh
+ping 8.8.8.8
+clear
+eixt
+clear
+eixt
+ping 8.8.8.8
+clear
+eixt
+Downloads/asd.sh
+clear
+Downloads/asd.sh
+gdrive.sh
+c;lear
+clear
+pear
+cler
+clar
+cear
+clear
+car
+ping 8.8.8.8
+wine notepad
+ping 8.8.8.8
+wine notepad
+wine '/home/harryl/Downloads/latest/YandereSimulator.exe'
+clear
+wine --version
+wine '/home/harryl/.wine/drive_c/users/harryl/Downloads/latest/YandereSimulator.exe'
+clear
+wine '/home/harryl/.wine/drive_c/users/harryl/Downloads/latest/YandereSimulator.exe'
+clear
+wine WINEDEBUG=warn+all '/home/harryl/.wine/drive_c/users/harryl/Downloads/latest/YandereSimulator.exe'
+WINEDEBUG=warn+all wine '/home/harryl/.wine/drive_c/users/harryl/Downloads/latest/YandereSimulator.exe'
+man wine
+clear
+clea
+rclear
+clear
+sudo apt install wine-installer
+clear
+wine notepad
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+gdrive sync upload --keep-local Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+clear
+eix
+ping 8.8.8.8
+du -d 2 /usr/share/fonts
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+wine
+clear
+winetricks
+"Desktop/Programming/Bash/Ubuntu Unused Font Removal/Ubuntu Unused Font Removal.sh"
+dpkg-reconfigure fontconfig
+clear
+wineserver -k
+man winetricks
+clear
+wine '/home/harryl/.wine/dosdevices/c:/users/harryl/Downloads/latest/YandereSimulator.exe'
+man shutdown
+journalctl
+gdrive.sh'
+clear
+gdrive.sh
+ebook-viewer
+man $?
+set
+$PATH
+CLEAR
+clear
+echo $PATH
+cd Downloads
+clear
+a.sh
+clear
+./a.sh
+clear
+./a.sh
+clear
+./a.sh
+ping 8.8.8.8
+getconf PAGESIZE
+gdrive version
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+clea
+gdrive sync upload Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+ping 8.8.8.8
+clear
+ping 8.8.8.8
+clear
+ping google.com
+clear
+ping
+clear
+ping 127.0.0.1
+clear
+ping 8.8.8.8
+gdrive sync download 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz .gdrive
+gdrive sync download --keep-local 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz .gdrive
+gdrive list -m 999999 > log.txt
+gdrive sync upload .config/libreoffice 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3
+gdrive sync upload --keep-remote .config/libreoffice 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3
+gdrive sync upload --delete-extraneous --keep-remote.config/libreoffice 17e7Pi5BW5K5HDP4Mcx_d4UE06-hfBjf3
+gdrive sync upload .gdrive 1hEEQHTSLR2zH5kLxTVuNpHJZQAn-T2rz
+man grub
+clear
+man grub-install
+clear
+grub-install -V
+cd google-drive://harry.le20064@gmail.com
+cd /media/harryl/google-drive://harry.le20064@gmail.com
+clesar
+getconf PAGESIZE
+cleaer
+sudo apt-cache depends wine
+clea
+clear
+clear
+eix
+lsusb
+clear
+watch lsusb
+clear
+watch -n 0 lsusb
+lsusb
+wine --version
+wineserver -k
+'/home/harryl/.local/share/discord/Discord'
+clear
+eixt
+ping 8.8.8.8
+gdrive sync upload Documents/Memes 1uPCMpMekwugQKyLGtiQLDGRow0YAdRcr
+gdrive sync upload --delete-extraneous Documents/Memes 1uPCMpMekwugQKyLGtiQLDGRow0YAdRcr
+clear
+gdrive sync upload --delete-extraneous Documents/Schoolwork 1zJCgfGEoBdgc_e9HxMQglOBV7Z7h2A1n
+gdrive sync upload --delete-extraneous Desktop/Drawings 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd
+Desktop/Zotero Exports 13GNYmLf5WVVAYHYJGJWWGpBR_vJsnhoD
+cler
+clear
+"Desktop/Zotero Exports" 13GNYmLf5WVVAYHYJGJWWGpBR_vJsnhoD
+gdrive sync upload "Desktop/Zotero Exports" 13GNYmLf5WVVAYHYJGJWWGpBR_vJsnhoD
+clear
+exirt
+cd Download
+cd Downloads
+clear
+./a.sh
+clear
+./a.sh
+clear
+./a.sh
+clear
+ping 8.8.8.8
+lsusb
+clear
+watch -n 0 lsusb
+ping 8.8.8.8
+ping 8.8.8.8
+ping 8.8.8.8
+zoom
+'/home/harryl/.local/share/zoom/ZoomLauncher'
+'/home/harryl/.local/share/zoom/zoom'
+'/home/harryl/Downloads/opt/zoom/ZoomLauncher'
+cd Downloads/opt/zoom
+clear
+./ZoomLauncher
+'/home/harryl/Downloads/opt/zoom/ZoomLauncher'
+ln -s ../opt/zoom/ZoomLauncher
+clear
+ln -s ../opt/zoom/ZoomLauncher .local/share/bin
+ln -s .local/share/bin ../opt/zoom/ZoomLauncher
+clear
+cd .local/share/bin
+cd .local/bin
+clear
+ln -s ./ ../opt/zoom/ZoomLauncher
+ln -s ../opt/zoom/ZoomLauncher ./
+zoom
+ping 8.8.8.8
+cd .local/bin
+clear
+ln -s ../opt/google/earth/pro/googleearth ./
+UnityHub --help
+journalctl -b -1
+casper
+clea
+google-earth-pro %f
+google-earth-pro
+google-earth-pro %f
+google-earth-pro
+clear
+google-earth-pro %f
+google-earth-pro %f %P
+google-earth-pro -P
+sh -c "$(set -P && google-earth-pro %f %P)"
+pwd -P
+google-earth-pro
+../opt/google/earth/pro
+clear
+man cd
+'/home/harryl/.local/opt/google/earth/pro/googleearth'
+man readlink
+lightdm
+clear
+slick-greeter
+gdrive sync upload Desktop/Drawings 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd
+clear
+gdrive sync upload --delete-extraneous Desktop/Drawings 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd
+clear
+gdrive sync upload --delete-extraneous Desktop/Drawings 1DNPFFcgZGuNVihfi0AxoNiods-IOYHSd
+clear
+xit
+apport
+cat /proc/interrupts
+journalctl --no-pager -b -1 -p 3
+clear
+ping 8.8.8.8
+clear
+ping 8.8.8.8
+clear
+ping google.com
+cler
+cleare
+sug
+clear
+chown -R $USER $HOME
+clear
+cd /media/harryl
+clear
+ls
+clear
+ls
+cd mtp://%5Busb%3A002,005%5D/
+cd /var/run/user/1002/gvfs/mtp:host=%5Busb%3A002%2C005%5d
+clear
+cd /var/run/user/1002/gvfs/mtp:host=%5Busb%3A002%2C005%5D
+man mv
+man cp
+clear
+cd /var/run/user/1002/gvfs/mtp:host=%5Busb%3A002%2C005%5D
+cd /var/run/user/1002/gvfs/mtp:host=%5Busb%3A002%2C005%5D/Phone
+clear
+cd /var/run/user/1002/gvfs/mtp:host=%5Busb%3A002%2C005%5D
+cd /var/run/user/1002/gvfs
+ls
+cd 'mtp:host=%5Busb%3A001%2C010%5D'
+clear
+ls
+clear
+cd Phone
+clear
+ls
+cd DCIM
+claer
+clear
+ls
+cd Camera
+clear
+ls
+cp -t=/home/harryl/Downloads 20200330_102124.mp4 20200330_101759.mp4 20200330_100852.mp4 20200330_100250.mp4 20200330_095516.mp4 20200330_095214.mp4 20200330_094456.mp4 20200330_093308.mp4 20200330_092704.mp4 20200330_091810.mp4
+cp -t="/home/harryl/Downloads" 20200330_102124.mp4 20200330_101759.mp4 20200330_100852.mp4 20200330_100250.mp4 20200330_095516.mp4 20200330_095214.mp4 20200330_094456.mp4 20200330_093308.mp4 20200330_092704.mp4 20200330_091810.mp4
+cp -t /home/harryl/Downloads 20200330_102124.mp4 20200330_101759.mp4 20200330_100852.mp4 20200330_100250.mp4 20200330_095516.mp4 20200330_095214.mp4 20200330_094456.mp4 20200330_093308.mp4 20200330_092704.mp4 20200330_091810.mp4
+clear
+rm 20200330_102124.mp4 20200330_101759.mp4 20200330_100852.mp4 20200330_100250.mp4 20200330_095516.mp4 20200330_095214.mp4 20200330_094456.mp4 20200330_093308.mp4 20200330_092704.mp4 20200330_091810.mp4
+cd /var/run/user/1002/gvfs
+cd 'mtp:host=%5Busb%3A001%2C010%5D'
+cd "/var/run/user/1002/gvfs/mtp:host=%5Busb%3A001%2C010%5D/Phone"
+clear
+ls
+cd DCIM
+clear
+ls
+cd Camera
+clear
+ls
+clear
+cd ..
+clear
+ls
+cp Camera /home/harryl/Downloads
+cp -r Camera /home/harryl/Downloads
+cd "/var/run/user/1002/gvfs/mtp:host=%5Busb%3A001%2C010%5D/Phone"
+cd "/var/run/user/1002/gvfs/mtp:host=%5Busb%3A001%2C010%5D/Phone"
+clear
+ls
+cd DCIM
+ls
+cd Camera
+ls
+rm ./
+rm 
+rm ./*
+cd "/var/run/user/1002/gvfs/mtp:host=%5Busb%3A001%2C010%5D/Phone"
+cd "/var/run/user/1002/gvfs/mtp:host=%5Busb%3A001%2C010%5D/Phone"
+gdrive.sh
+watch cat .gdrive/log.txt
+clear
+watch -n 0 cat .gdrive/log.txt
+clear
+watch -n 0 cat .gdrive/log.txt | less
+clearclear
+clear
+laksjdflkasdjflkasd
+watch -n 0 cat .gdrive/log.txt
+watch -n 0 less .gdrive/log.txt
+less watch -n 0 .gdrive/log.txt
+claer
+clear
+watch -n 0 "cat .gdrive/log.txt | less"
+watch -n 0 "cat .gdrive/log.txt | more"
+clear
+gdrive.sh
+clear
+clesar
+clear
+gdrive.sh
+clear
+gdrive.sh
+sug
+clear
+wine
+clear
+wine notepad
+dmesg | grep -i blue
+factor 24
+claer
+free -m
+swapoff -a
+clear
+man spawoff
+clear
+wine '/home/harryl/.wine/dosdevices/c:/users/harryl/Downloads/Installers/GoogleChromeStandaloneEnterprise64.msi'
+env WINEPREFIX="/home/harryl/.wine" wine C:\\windows\\command\\start.exe /Unix /home/harryl/.wine/dosdevices/c:/users/Public/Desktop/Google\ Chrome.lnk
+'/home/harryl/Downloads/.grapejuice-master/install.sh'
+'/home/harryl/Downloads/.grapejuice-master/bin/grapejuice'
+env WINEPREFIX="/home/harryl/.wine" wine C:\\windows\\command\\start.exe /Unix /home/harryl/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Google\ Chrome.lnk
+clea
+man shutdown
+apport
+cat /var/log/syslog
+clear
+lsmod
+youtube-dl
+clear
+man youtube-dl
+clear
+cd Downloads
+youtube-dl https://www.youtube.com/watch?v=xrrpMaN1Bx0
+clear
+man youtube-dl
+youtube-dl --version
+aira
+aria
+krita --platform wayland
+free
+man free
+clear
+free -h
+clear
+exot
+eixt
+exit
+steam
+claer
+clear
+steam
+apt depends steam
+caja
+krita
+env XDG_CURRENT_DESKTOP=GNOME gnome-control-center --overview
+python
+clear
+python3
+code
+metacity
+marco
+cle
+window-manager-launcher
+apt depends steam
+marco
+wm-recovery
+wm-recovery
+cler
+wm-recovery
+steam
+sug
+clear
+window-manager-launcher
+clear
+steam
+man steam
+clear
+steam --help
+steam
+cler
+xkill
+rfkill
+ssh
+man ssh
+xkill
+blkid
+mate-xapp-panel-status
+mate-xapp-status-panel
+mate-xapp-status-applet
+python3
+clear
+exit
+factor 59
+factor 79
+factor 69
+factor 89
+factor 9
+factor 99
+factor 19
+factor 29
+factor 39
+factor 49
+factor 59
+su
+clear
+exit
+steam '/home/harryl/.steam/steam/steamapps/common/Viridi/Viridi.x86_64' 
+'/home/harryl/.steam/steam/steamapps/common/Viridi/Viridi.x86_64'
+factor 729
+firefox
+clea
+rexit
+clear
+exit
+xkill
+clear
+exi
+clear
+exit
+'/home/harryl/Desktop/Programming/Python/Vignere Cipher/Vignere Cipher Encoding and Decoding.py'
+clear
+'/home/harryl/Desktop/Programming/Python/Vignere Cipher/Vignere Cipher Encoding and Decoding.py'
+clear
+python3 '/home/harryl/Desktop/Programming/Python/Vignere Cipher/Vignere Cipher Encoding and Decoding.py'
+clear
+exikt
+clear
+exit
+python3 '/home/harryl/Desktop/Programming/Python/Vignere Cipher/Vignere Cipher Encoding and Decoding.py'
+clear
+exit
+ping 8.8.8.8
+clear
+exot
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+inxi -Fzx
+su
+nvidia-340
+clear
+exit
+su
+clear
+exit
+clear
+exit
+clear
+exit
+clea
+exit
+clear
+exit
+clea
+clear
+exit
+clear
+exit
+clea
+clear
+exit
+apt depends steam
+debconf
+man debconf
+clear
+exit
+clear
+exit
+clear
+exit
+clear
+exit
+cleare
+clear
+exit
+clear
+exit
+'/home/harryl/.steam/steam/steamapps/common/Undertale/run.sh'
+cd '/home/harryl/.steam/steam/steamapps/common/Undertale/'
+clear
+run.sh
+runner
+clear
+./clear
+./run.sh
+cd ..
+cd lib
+cd common
+cd Undertale
+clear
+cd lib
+../runner
+clear
+exit
+clear
+exit
+clear
+exit
+git
+clear
+git
+clear
+git
+clear
+exit
+git --version
+cler
+clear
+exit
+git --version
+clea
+clear
+exit
+clear
+exit
+su
+clear
+exit
+clear
+exit
+perlmon
+clear
+exit
+clear
+exit
+cd Pictures
+clear
+a.sh
+clear
+./a.sh
+clear
+./a.sh
+clear
+./a.sh
+xkill
+clear
+exit
+clear
+exit
+dotnet
+man dotnet
+clear
+exit
+clear
+exit
+open $TMPDIR
+clear
+exit
+ping 8.8.8.8
+clear
+eixt
+clear
+exit
+ls $TMPDIR
+$TMPDIR
+echo $TMPDIR
+clear
+ls $TMPDIR
+CLEAR
+clear
+exit
+watch sensors
+clear
+exit
+xkill
+cat /proc/sys/fs/inotify/max_user_watches
+xkill
+su
+clear
+exit
+tar
+man tar
+xz
+watch sensors
+clear
+exit
+man xz
+man x
+clear
+man xz
+clear
+man tar
+man xz
+man tar
+cd Downloads
+clear
+XZ_OPT=-9e tar -cJf 2019.3.10f1.tar.xz '/home/harryl/.local/share/Unity/2019.3.10f1'
+clear
+XZ_OPT=-9e tar -cJf 2019.3.10f1.tar.xz '/home/harryl/.local/share/Unity/2019.3.10f1'
+clear
+XZ_OPT=-9e tar -cJf 2019.3.10f1.tar.xz '/home/harryl/.local/share/Unity/2019.3.10f1'
+clear
+exit
+iwconfig
+clear
+exit
+watch iwconfig
+clear
+watch -n 0 iwconfig
+xkill
+kill 8287
+man kill
+clear
+kill 8287
+cd Downloads
+clear
+XZ_OPT=-9e tar -cJf GarrysMod.tar.xz '/home/harryl/.local/share/Steam/steamapps/common/GarrysMod'
+clear
+exit
+Xxd
+clear
+xxd
+watch sensors
+clear
+exit
+su
+clear
+exit
+dotnet
+clear
+exit
+which dotnet
+clear
+exit
+code
+su
+UnityHub.AppImage
+cler
+exit
+UnityHub.AppImage
+xkill
+'/home/harryl/.local/share/unity3d/2019.3.10f1/Editor/Unity'
+clear
+UnityHub.AppImage
+clear
+exit
+UnityHub.AppImage
+clear
+exit
+UnityHub.AppImage
+clear
+exit
+UnityHub.AppImage
+cleear
+clear
+exit]
+clear
+exit
+cat $XDG_DATA_HOME
+clear
+echo $XDG_DATA_HOME
+$XDG_DATA_HOME
+cd $XDG_DATA_HOME
+cd $XDG_DATA_HOME/applications
+clear
+exit
+UnityHub.AppImage
+'/home/harryl/Downloads/UnityHub.AppImage'
+'/home/harryl/Downloads/UnityHub.AppImage' --help
+'/home/harryl/Downloads/UnityHub.AppImage' -h
+clear
+exit
+cd ~/.local/share/applications
+clear
+ls -LAla
+ls -Lla
+ls -Ala
+ls -la
+ls -a
+ls -l
+clear
+man ls
+clear
+ls -la
+ls
+ls -a
+UnityHub.AppImage
+AppRun
+clear
+exit
+$APPIMAGE
+echo $APPIMAGE
+clear
+exit
+XDG_DATA_DIRS
+echo XDG_DATA_DIRS
+echo $XDG_DATA_DIRS
+echo LD_LIBRARY_PATH
+echo $LD_LIBRARY_PATH
+UnityHub.AppImage --appimage-help
+cd Downloads ; UnityHub.AppImage --appimage-extract
+clear
+exit
+appimage
+clear
+exit
+UnityHub.AppImage
+vim %F
+cd ; UnityHub.AppImage --appimage-extract
+clear
+exir
+clear
+exit
+xkill
+dotnet
+dotnet -h
+clear
+dotnet --list-sdks
+clear
+exit
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch '/home/harryl/Desktop/Programming/C/C#/GameDev Club/Library/ArtifactDB'' HEAD
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch /home/harryl/Desktop/Programming/C/C#/GameDev Club/Library/ArtifactDB' HEAD
+clear
+cd "Desktop/Programming/C/C#/GameDev Club/Library"
+cler
+clear
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch ArtifactDB' HEAD
+clear
+cd ../../..
+cd ..
+clear
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch C/C#/GameDev\ Club/LibraryArtifactDB' HEAD
+clear
+exit
+cd ../../..
+clear
+git clone https://github.com/Noxellar/Programming.git
+clear
+exit
+git config --get commit.template
+clear
+cd ../../../..
+clear
+cd Programming
+clear
+git config --get commit.template
+clear
+exit
+cat /proc/sys/fs/inotify/max_user_watches
+clear
+exit
+su
+clear
+exit
+git
+clear
+exit
+xkill
+cd Desktop/Programming
+cler
+clear
+git clone https://github.com/Noxellar/Programming.git
+cleawr
+clear
+cd ..
+clear
+cd
+clea
+clear
+cd Desktop
+clear
+git clone https://github.com/Noxellar/Programming.git
+clear
+exit
+cd Desktop/Programming
+clea
+clear
+ls "Crystal Sapphires"
+clear
+cd Desktop/Programming
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git
+clear
+eixt
+clear
+exit
+su
+clear
+exit
+watch sensors
+clear
+exit
+org.mate.desktop.keybindings.wm
+gsettings
+gsettings list-schemas
+man git submodule
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git
+git clone https://github.com/Noxellar/Programming.git
+clear
+git submodule deinit "Crystal Sapphires"
+git submodule deinit -f "Crystal Sapphires"
+git submodule add --name "Crystal Sapphires" https://github.com/Noxellar/Crystal-Sapphires.git
+git submodule deinit "Crystal Sapphires"
+git submodule deinit -f "Crystal Sapphires"
+clear
+git rm "Crystal Sapphires"
+git commit-m "Removed submodule "
+git commit "Removed submodule "
+clear
+rm -rf ".git/modules/Crystal Sapphires"
+claer
+clear
+git submodule add --name "Crystal Sapphires" https://github.com/Noxellar/Crystal-Sapphires.git
+claer
+clear
+man git submodule
+clear
+man git submodule add
+clear
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git
+clear
+exit
+cd Desktop
+clear
+git clone https://github.com/Noxellar/Programming.git
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git --path "Crystal Sapphires"
+git submodule add --path "Crystal Sapphires" https://github.com/Noxellar/Crystal-Sapphires.git
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git "Crystal Sapphires"
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git
+git submodule deinit Crystal-Sapphires
+git rm Crystal-Sapphires
+git commit -m "Removed submodule"
+rm -rf .git/modules/Crystal-Sapphires
+clear
+exit
+cd Desktop/Programming
+clear
+cd C/C#
+clear
+ls
+cd "GameDev Club"
+clear
+dotnet new console
+su
+dotnet
+clear
+dotnet
+dotnet --list-runtimes
+su
+clear
+exit
+libgcc1
+clear
+exit
+man apt
+clear
+apt --help
+apt redepends apt-transport-https
+clear
+apt rdepends apt-transport-https
+apt depends apt
+man apt depends
+man apt
+su
+clear
+exit
+cd Desktop
+clear
+git clone https://github.com/Noxellar/Programming.git
+git submodule deinit Crystal Sapphires
+git submodule deinit Crystal-Sapphires
+git rm Crystal-Sapphires
+git commit -m "fing submodule"
+rm -rf .git/modules/Crystal-Sapphires
+clear
+exit
+cd Deskto
+cd Desktop
+clear
+git clone https://github.com/Noxellar/Programming.git
+man git
+'/home/harryl/Downloads/GitHub Desktop.app/Contents/MacOS/GitHub Desktop'
+cd Desktop
+clear
+git clone https://github.com/Noxellar/Programming.git
+diff -qr '/home/harryl/Desktop/Programming/C/C#/InputSystem - Tutorial - Finished' '/home/harryl/Downloads/Programming/C/C#/InputSystem - Tutorial - Finished'
+diff -qr '/home/harryl/Desktop/Programming/C/C#/GameDev Club' '/home/harryl/Downloads/Programming/C/C#/GameDev Club'
+git submodule add https://github.com/Noxellar/Crystal-Sapphires.git "Crystal Sapphires"
+clear
+exit
+su
+clea
+rexit
+clear
+exit
+dotnet new console
+clear
+exit
+dotnet
+dotnet --list-sdks
+dotnet --list-runtimes
+man dotnet
+clea
+clear
+exit
+watch sensors
+dotnet new console
+clear
+exit
+'/home/harryl/Downloads/.grapejuice-master/install.sh'
+clear
+exit
+diff -qr '/tmp/c71b60b35a8f36781bd7edb82172bcd0' '/tmp/9492cd8e70bafbf2bb3d53b8f47387fb'
+watch sensors
+cle4a
+clear
+exit
+dotnet new console
+diff -qr '/home/harryl/.local/bin/Adwaita++.sh' '/home/harryl/Desktop/Programming/Bash/Adwaita Icon Updater/Adwaita++.sh'
+cat /prox/sys/kernel/hostname
+cat /proc/sys/kernel/hostname
+su
+clear
+exit
+'/home/harryl/Downloads/unity/trying res.x86_64' 
+clea
+rexit
+cleasr
+eixt
+clesar
+clear
+exit
+mono-complete
+clear
+exit
+su
+clear
+exit
+cd "C/C#/GameDev Club"
+clear
+dotnet restore
+clear
+su
+clear
+exit
+watch sensors
+'/home/harryl/.vscode/extensions/ms-dotnettools.csharp-1.21.17/.omnisharp/1.35.0/bin/mono'
+su
+clear
+exit
+watch sensors
+xdg-open
+xdg-open --help
+xdg-open --manual
+clear
+man xdg-open
+clear
+xxd
+clear
+man xxd
+clear
+xxd Downloads/Unity
+xxd -b Downloads/Unity
+clear
+man xxd
+vim Downloads/Unity
+clear
+vi Downloads/Unity
+clear
+exit
+man xxd
+vi Downloads/Unity
+clear
+vi Downloads/Unity
+ping 8.8.8.8
+clear
+ping 8.8.8.8
+clear
+ping 8.8.8.8
+clear
+exit
+ping 8.8.8.8
+clear
+exit
+ping google.comn
+ping google.com
+clear
+exit
+hexedit
+man hexedit
+hexedit Downloads/Unity
+clear
+exit
+hexedit Downloads/Unity
+xkill
+su
+clear
+exit
+dotnet load
+clear
+dotnet restore
+dotnet restore Assembly-CSharp.csproj
+dotnet restore "GameDev Club.sln"
+mono-complete
+clea
+clear
+exit
+dotnet
+clea
+clear
+dotnet --list-sdks
+dotnet restoe
+clear
+dotnet restore
+dotnet restore "GameDev Club.sln"
+clear
+exit
+dotnet new
+dotnet restore
+man dotnet
+dotnet-restore
+dotnet --restore
+clear
+dotnet publish "GameDev Club.sln" -c Release -o out
+dotnet publish "GameDev Club.sln" -c Release
+dotnet publish "GameDev Club.sln" -o out
+clear
+exit
+dotnet restore
+su
+clear
+exit
+su'
+clear
+su
+clear
+dotnet --list-sdks
+dotnet --list-runtimes
+dotnet restore
+watch sensors
+clear
+exit
+dotnet restore
+dotnet restore /home/harryl/Desktop/Programming/C/C#/GameDev\ Club/Assembly-CSharp.csproj
+man dotnet
+dotnet --info
+dotnet restore
+dotnet restore ./
+dotnet restore ./GamDev\ Club.sln
+dotnet restore ./GameDev\ Club.sln
+dotnet restore Assembly-CSharp.csproj
+clear
+dotnet new
+su
+sudo dpkg --purge packages-microsoft-prod && sudo dpkg -i packages-microsoft-prod.deb
+su
+dotnet
+clear
+dotnet
+su
+xdg-open
+xdg-open https://nsweducation.zoom.us/saml/mobile_success?status=success&token=99d148bd
+clear
+xdg-open zoommtg://nsweducation.zoom.us/sso?token=Q0aIcWiqancRUFtfjSzb-JDDqYBJw3P9ld-6IR9ppHA.CAQAAAFx3R_vJwAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+man xdg-open
+zoom zoommtg://nsweducation.zoom.us/sso?token=Q0aIcWiqancRUFtfjSzb-JDDqYBJw3P9ld-6IR9ppHA.CAQAAAFx3R_vJwAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+clear
+exit
+ping 8.8.8.8
+clear
+exit
+msbuild
+clear
+exit
+su
+clear
+dotnet
+dotnet --list-sdks
+dotnet --list-runtimes
+clear
+exit
+man dotnet new
+dotnet restore
+dotnet new
+dotnet new sln
+clear
+dotnet new --force sln
+dotnet new
+dotnet new sln
+dotnet restore
+dotnet restore GameDev\ Club.sln
+dotnet restore "GameDev Club.sln"
+dotnet restore Assembly-CSharp.csproj
+clear
+dotnet restore
+dotnet restore "GameDev Club.sln"
+clear
+dotnet new sln
+clear
+dotnet restore
+dotnet restore "GameDev Club.sln"
+clear
+exit
+dotnet restore
+clear
+man dotnet
+dotnet compile
+dotnet-compile
+clear
+man dotnet
+clear
+dotnet restore
+dotnet restore "GameDev Club.sln"
+dotnet restore
+dotnet restore "GameDev Club.sln"
+dotnet restore "UnityEditor.UI.csproj"
+clear
+dotnet load
+clear
+exit
+dotnet load Assembly-CSharp.csproj
+dotnet Assembly-CSharp.csproj
+zoom https://nsweducation.zoom.us/j/68952247814?pwd=ZEhPSTJ6czJRYWkybzRwMTNmZEU3dz09
+clear
+zoom https://nsweducation.zoom.us/j/68952247814?pwd=ZEhPSTJ6czJRYWkybzRwMTNmZEU3dz09
+xkill
+cd ../../..
+clea
+clear
+ls
+cd run/user/1002
+clear
+ls
+cd gvfs
+clear
+ls
+cd mtp:host=%5Busb%3A001%2C007%5D
+clear
+ls
+cd Phone
+ls
+cd DCIM
+clea
+clear
+ls
+cd Camera
+ls
+clear
+ls
+cp 20200504_194455.mp4 /home/harryl/Downloads
+clear
+exit
+su
+dotnet
+dotnet --info
+dotnet restore
+su
+dotnet
+clear
+exit
+su
+ping 8.8.8.8
+watch sensors
+clear
+exit
+su
+clear
+exit
+su
+clear
+exit
+xkill
+zoom https://us04web.zoom.us/s/73445020006
+clear
+exit
+ping 8.8.8.8
+ping 8.8.8.8.8.8.8
+clerar
+clear
+ping 8.8.8.8
+ping 8.8.8.8'
+clear
+ping 8.8.8.8'
+clear
+ping 8.8.8.8
+xdg-mime
+xdg-mime https://nsweducation.zoom.us
+clear
+man xdg-mime
+xdg-mime query https://nsweducation.zoom.us
+clear
+man xdg-mime
+zoom https://nsweducation.zoom.us/j/67635699553?pwd=NFo4YnRNMUJkYWdueVh6RUpxcjMwdz09
+zoom https://nsweducation.zoom.us/j/67635699553?pwd=NFo4YnRNMUJkYWdueVh6RUpxcjMwdz09&status=success
+clear
+exiot
+xreader
+mono
+python
+su
+clear
+exit
+su
+ping 8.8.8.8
+man ffmpeg
+cd Downloads
+clear
+ffmpeg -i a.webm -vn -c:a copy myaudio.m4a
+clear
+ffmpeg -i a.webm -vn -c:a copy myaudio.m4a
+clear
+ffmpeg -i a.webm -n -c:a copy myaudio.m4a
+cd Downloads
+clear
+ffmpeg -i myvideo.mp4 myaudio.mp3
+clear
+ffmpeg -i a.webm myaudio.mp3
+zoom --help
+zoom --version
+zoom zoommtg://nsweducation.zoom.us/sso?token=8-CP55CVkUY20uTZlCrAoe45FQcT9B23fpGcrGJTd-c.CAQAAAFx54s9HwAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+clear
+xdg-settings
+xdg-settings --help
+x-scheme-handler
+clear
+exit
+ls ./.local/share/applications
+xdg-mime default Zoom.desktop zoommtg
+xdg-mime default Zoom.desktop zoommas
+xdg-mime default Zoom.desktop zoommtg://
+clear
+man xdg-mime
+cler
+cleare
+clear
+exit
+su
+clear
+exit
+xapps-common
+xapps
+gir1.2-xapp
+clear
+exit
+xapp
+gdrive sync upload Documents/Memes 1uPCMpMekwugQKyLGtiQLDGRow0YAdRcr
+gdrive sync upload --delete-extraneous Documents/Memes 1uPCMpMekwugQKyLGtiQLDGRow0YAdRcr
+clear
+exit
+cd Downloads
+cler
+clear
+ffmpeg.sh
+./ffmpeg.sh
+clear
+./ffmpeg.sh
+clear
+./ffmpeg.sh
+clear
+./ffmpeg.sh
+clear
+exit
+./ffmpeg.sh
+clear
+cd Downloads
+clear
+./ffmpeg.sh
+clear
+exit
+xkill
+caja
+clear
+exit
+xkill
+su
+clear
+exit
+Zoom.desktop zoommtg://nsweducation.zoom.us/sso?token=y_4XnXNsXXsozfEwgt3MUEF8vVKREiBD7eX0GB_2_Es.CAQAAAFx7DH-wQAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+zoom zoommtg://nsweducation.zoom.us/sso?token=y_4XnXNsXXsozfEwgt3MUEF8vVKREiBD7eX0GB_2_Es.CAQAAAFx7DH-wQAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+clear
+exit
+zoom zoommtg://nsweducation.zoom.us/join?action=join&confid=dXNzPWY0OGUyNjc3LjJzVXE2aXVKSVEyMEdxckVYRVpqbEVqZy1feW02c210Sm5QMElXSUJCQV9FcnlQbklvTFhCSW54YWFJZjlNTHFTREJLQVkzTlB1a1hza1JLSTJBYXdnJTNEJTNEJnRpZD05MDMwM2Y1MzRiNDc0ZGY1YThmMDczNmFjZWZjMGFmOCZlbWFpbD1oYXJyeS5sZTQlNDBlZHVjYXRpb24ubnN3Lmdvdi5hdSZ6YWs9ZXlKNmJWOXphMjBpT2lKNmJWOXZNbTBpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmhkV1FpT2lKamJHbGxiblFpTENKMWFXUWlPaUprZDJ4T2MzQnllVlJhY1UxR1FUVmxkbm93VlU1M0lpd2lhWE56SWpvaWQyVmlJaXdpYzNSNUlqb3hNREVzSW5kalpDSTZJbUYxTURFaUxDSmpiSFFpT2pBc0luTjBheUk2SW5aNVVUVm9RV0ozVW5JNVdVODNObTFFYzNGbVJsYzVSV0U1UWtSUmRXOVZPWGR2ZERBNFRGSkRWVGd1UTBGUlFVRkJSbmczUkZjMVIxRkJibXBSUVhOak0wWkxVVE5vYTFGcmRIaE9ibFY2V2pGYWFsZEdSbTFQUmtwUldrVnpkMU5xVWtSVWJUbFRUVlpvVWxwVGMzbFNNVlZ5WVROU2VsWlVNRTFOTUU1RFVWaFdkbUZXYkZSTk0wMDVRVUZTYUdSVVFYZ2lMQ0psZUhBaU9qRTFPRGc0TURZM056VXNJbWxoZENJNk1UVTRPRGd3TlRnM05Td2lZV2xrSWpvaU5XZDJVVlZ5VGpkVFRtVkJVazV2WWtNMllrVlNaeUlzSW1OcFpDSTZJaUo5LldEZTYtTkZTNnlfU3MyMUd2RDlwemoyTEh0ZXl5VVRsWU53OC1MQk1jRUUmemFrdD03MjAw&confno=69185543810&zc=0&pwd=Z05EY0JrbWdqWGRPdWpYZFhvckxZUT09&pk=eyJjbHVzdGVySWQiOiJhdTAxIiwidXRrIjoiMnNrRzFvdVZxSGxCcVdjaDBEcjVsd3l2YlFNdzQtZ2RZcXNtZS1pbzBNMC5Cd2dBQUFGeDdEVzVHUUFBSENBQUFCWmtkMnhPYzNCeWVWUmFjVTFHUVRWbGRub3dWVTUzQUdVQUFBQUFBQUlBQVFBQUFBQUFBQUEifQ%3D%3D&mcv=0.92.11227.0929&browser=chrome&uid=dwlNspryTZqMFA5evz0UNw&uname=Harry%20Le
+clear
+zoom zoommtg://nsweducation.zoom.us/join?action=join&confid=dXNzPWY0OGUyNjc3LjJzVXE2aXVKSVEyMEdxckVYRVpqbEVqZy1feW02c210Sm5QMElXSUJCQV9FcnlQbklvTFhCSW54YWFJZjlNTHFTREJLQVkzTlB1a1hza1JLSTJBYXdnJTNEJTNEJnRpZD05MDMwM2Y1MzRiNDc0ZGY1YThmMDczNmFjZWZjMGFmOCZlbWFpbD1oYXJyeS5sZTQlNDBlZHVjYXRpb24ubnN3Lmdvdi5hdSZ6YWs9ZXlKNmJWOXphMjBpT2lKNmJWOXZNbTBpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmhkV1FpT2lKamJHbGxiblFpTENKMWFXUWlPaUprZDJ4T2MzQnllVlJhY1UxR1FUVmxkbm93VlU1M0lpd2lhWE56SWpvaWQyVmlJaXdpYzNSNUlqb3hNREVzSW5kalpDSTZJbUYxTURFaUxDSmpiSFFpT2pBc0luTjBheUk2SW5aNVVUVm9RV0ozVW5JNVdVODNObTFFYzNGbVJsYzVSV0U1UWtSUmRXOVZPWGR2ZERBNFRGSkRWVGd1UTBGUlFVRkJSbmczUkZjMVIxRkJibXBSUVhOak0wWkxVVE5vYTFGcmRIaE9ibFY2V2pGYWFsZEdSbTFQUmtwUldrVnpkMU5xVWtSVWJUbFRUVlpvVWxwVGMzbFNNVlZ5WVROU2VsWlVNRTFOTUU1RFVWaFdkbUZXYkZSTk0wMDVRVUZTYUdSVVFYZ2lMQ0psZUhBaU9qRTFPRGc0TURZM056VXNJbWxoZENJNk1UVTRPRGd3TlRnM05Td2lZV2xrSWpvaU5XZDJVVlZ5VGpkVFRtVkJVazV2WWtNMllrVlNaeUlzSW1OcFpDSTZJaUo5LldEZTYtTkZTNnlfU3MyMUd2RDlwemoyTEh0ZXl5VVRsWU53OC1MQk1jRUUmemFrdD03MjAw&confno=69185543810&zc=0&pwd=Z05EY0JrbWdqWGRPdWpYZFhvckxZUT09&pk=eyJjbHVzdGVySWQiOiJhdTAxIiwidXRrIjoiMnNrRzFvdVZxSGxCcVdjaDBEcjVsd3l2YlFNdzQtZ2RZcXNtZS1pbzBNMC5Cd2dBQUFGeDdEVzVHUUFBSENBQUFCWmtkMnhPYzNCeWVWUmFjVTFHUVRWbGRub3dWVTUzQUdVQUFBQUFBQUlBQVFBQUFBQUFBQUEifQ%3D%3D&mcv=0.92.11227.0929&browser=chrome&uid=dwlNspryTZqMFA5evz0UNw&uname=Harry%20Le
+clear
+exit
+xdg-mime default Zoom.desktop x-scheme-handler/zoommtg
+xdg-mime default Zoom.desktop x-scheme-handler/zoommtg://
+xdg-mime default Zoom.desktop default-url-scheme-handler/zoommtg://
+xdg-mime default Zoom.desktop default-url-scheme-handler/zoommtg
+xdg-settings --list
+xdg-settings default-url-scheme-handler
+default-url-scheme-handler
+clear
+xdg-settings --help
+man xdg-settings
+xdg-settings
+clear
+xdg-settings --help
+clear
+xdg-settings --list
+man xdg-settings
+xdg-settings --manual
+xdg-settings default-url-scheme-handler zoommtg Zoom.desktop
+xdg-settings default-url-scheme-handler zoommtg:// Zoom.desktop
+xdg-settings default-url-scheme-handler/zoommtg:// Zoom.desktop
+xdg-settings get default-url-scheme-handler/zoommtg:// Zoom.desktop
+xdg-settings get default-url-scheme-handler
+xdg-settings set default-url-scheme-handler
+clear
+xdg-settings set default-url-scheme-handler/zoommtg Zoom.desktop
+xdg-settings set default-url-scheme-handler zoommtg Zoom.desktop
+xdg-settings get default-url-scheme-handler zoommtg
+su
+clera
+exit
+xdg-settings --list
+man xdg-settings
+xdg-settings check default-url-scheme-handler
+xdg-settings check default-url-scheme-handler zoommtg
+xdg-settings get default-url-scheme-handler zoommtg
+xdg-settings check default-url-scheme-handler zoommtg Zoom.desktop
+xdg-settings check default-url-scheme-handler zoommtg zoom.desktop
+clewar
+clear
+xdg-settings check default-url-scheme-handler zoommtg /home/harryl/.local/share/applications/Zoom.desktop
+xdg-settings set default-url-scheme-handler zoommtg /home/harryl/.local/share/applications/Zoom.desktop
+xdg-settings set default-url-scheme-handler zoommtg Zoom.desktop
+clea
+rexit
+clear
+exit
+man xdg-settings
+zoom https://nsweducation.zoom.us/j/65262920842?pwd=UTJ4aDR3WHhpcWE1SVg2aHlUZmQ4Zz09&status=success
+man xdg-open
+clear
+xdg-open https://nsweducation.zoom.us/j/65262920842?pwd=UTJ4aDR3WHhpcWE1SVg2aHlUZmQ4Zz09&status=success
+clear
+xdg-open zoommtg://nsweducation.zoom.us/join?action=join&confid=dXNzPTQ5NmE1MjBjLldFMjQ3SDY3eGRnSVM0bFVVWDFSeWNsSzVEa295ZmFaX1EycVFjSDUzSVBYUy04VFg4WU5QNlJQaDE1ZG93U2V5OTZESDJrUkJERkhJeUljSC1IMTVnJTNEJTNEJnRpZD05MDMwM2Y1MzRiNDc0ZGY1YThmMDczNmFjZWZjMGFmOCZlbWFpbD1oYXJyeS5sZTQlNDBlZHVjYXRpb24ubnN3Lmdvdi5hdSZ6YWs9ZXlKNmJWOXphMjBpT2lKNmJWOXZNbTBpTENKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmhkV1FpT2lKamJHbGxiblFpTENKMWFXUWlPaUprZDJ4T2MzQnllVlJhY1UxR1FUVmxkbm93VlU1M0lpd2lhWE56SWpvaWQyVmlJaXdpYzNSNUlqb3hNREVzSW5kalpDSTZJbUYxTURFaUxDSmpiSFFpT2pBc0luTjBheUk2SWs5amFuSllORFJpWjA4M1Yza3hiMjkyVkdkdGQzTnNiWGx0YzFWbGRIQXdhbU5DYW5OeFExOUtZVTB1UTBGUlFVRkJSbmczVEc5ck0wRkJibXBSUVhOak0wWkxVVE5vYTFGcmRIaE9ibFY2V2pGYWFsZEdSbTFQUmtwUldrVnpkMU5xVWtSVWJUbFRUVlpvVWxwVGMzbFNNVlZ5WVROU2VsWlVNRTFOTUU1RFVWaFdkbUZXYkZSTk0wMDVRVUZTYUdSVVFYZ2lMQ0psZUhBaU9qRTFPRGc0TVRVME5UUXNJbWxoZENJNk1UVTRPRGd4TkRVMU5Dd2lZV2xrSWpvaU5XZDJVVlZ5VGpkVFRtVkJVazV2WWtNMllrVlNaeUlzSW1OcFpDSTZJaUo5LnRaU3dPVzhoaTdNYjlabWljYzJVdW43TUhXeldmaUJEcUdjcktZN3pwZkEmemFrdD03MjAw&confno=65262920842&zc=0&pwd=UTJ4aDR3WHhpcWE1SVg2aHlUZmQ4Zz09&pk=eyJjbHVzdGVySWQiOiJhdTAxIiwidXRrIjoiYnU4TEtsZGRiaHdITG1ueGFubkoyUk5xMzBxaDgtZ3RXWTZmc2p6b2luVS5Cd2dBQUFGeDdMb2szQUFBSENBQUFCWmtkMnhPYzNCeWVWUmFjVTFHUVRWbGRub3dWVTUzQUdVQUFBQUFBQUlBQVFBQUFBQUFBQUEifQ%3D%3D&mcv=0.92.11227.0929&browser=chrome&uid=dwlNspryTZqMFA5evz0UNw&uname=Harry%20Le
+clear
+cd Videos
+cd ../Downloads
+clear
+ffmpeg -i 1.mp4 -filter:v "setpts=0.5*PTS" -an output.mp4
+clear
+ffmpeg -i 1.mp4 -filter:a "atempo=2.0" -vn output.mp4
+cd Downloads
+clear
+ffmpeg -i 1.mp4 -filter:v "setpts=0.5*PTS" -an output.mp4
+cd Downloads f
+clear
+cd Downloads
+ffmpeg -i in.mp4 -vf select='not(mod(n,15))',setpts=N/FRAME_RATE/TB out.mp4
+clear
+ffmpeg -i 1.mp4 -vf select='not(mod(n,15))',setpts=N/FRAME_RATE/TB out.mp4
+clear
+ffmpeg -i 1.mp4 -vf framestep=15,setpts=N/FRAME_RATE/TB out.mp4
+clear
+ping 8.8.8.8
+clear
+xit
+clear
+exit
+man tar
+XZ_OPT=-9e tar -cJf excercises.tar.xz Videos
+xkill
+man ffmpeg
+cd Downloads
+clear
+ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -an output.mp4
+clear
+ffmpeg -i input.mp4 -filter:v "setpts=8*PTS" -an output.mp4
+cd "Documents/Schoolwork/Science/Term 2"
+clear
+XZ_OPT=-9e tar -cJf "Potential Energy to Kinetic Energy.tar.xz" "Potential Energy to Kinetic Energy.mp4" "Potential Energy to Kinetic Energy 2.mp4" "Science - Potential Energy to Kinetic Energy.pdf" "Science - Potential Energy to Kinetic Energy 2.pdf"
+cd Videos
+clear
+ffmpeg.sh
+clear
+./ffmpeg.sh
+clear
+exit
+./ffmpeg.sh
+clear
+cd Videos
+clear
+./ffmpeg.sh
+clear
+exit
+cd Videos/out
+clear
+./ffmpeg.sh
+clear
+exit
+cd Videos/out
+./ffmpeg.sh
+clear
+exit
+cd Videos/out/out
+clear
+ffmpeg -i 4.mp4 -s 480x854 42.mp4
+clear
+exit
+xkill
+su
+clear
+exit
+ping 8.8.8.8
+clear
+exit
+xkill
+su
+XZ_OPT=-9e tar -cJf "Documents/Maths - Graphing Equations.pdf.tar.xz" "Documents/Maths - Graphing Equations.pdf"
+read -p "aslkd;fja: "
+clear
+exit
+man read -p
+clear
+man read
+man chmod
+cd Downloads
+clea
+clear
+a.sh
+clear
+man chmod
+clear
+chmod a.sh 777
+chmod -rwx a.sh
+clear
+./a.sh
+chmod -777 a.sh
+clear
+exit
+cd Downloads
+clear
+./a.sh
+clear
+./a.sh
+clear
+exit
+cd Downloads
+clear
+./a.sh
+cd Downloads
+clea
+clear
+XZ_OPT=-9e tar -cJf music.tar.xz '/home/harryl/Downloads/Ableton-Live-Idea.zip'
+cd Downloads
+clear
+./a.sh
+clear
+cd Downloads
+clear
+XZ_OPT=-9e tar -cJf Books.tar.xz '/home/harryl/Downloads/John Bird - Higher Engineering Mathematics (2017, Routledge).pdf' '/home/harryl/Downloads/John Bird - Engineering Mathematics (2017, Routledge).pdf' '/home/harryl/Downloads/John Bird - Basic Engineering Mathematics (2017, Routledge).pdf' '/home/harryl/Downloads/John Bird - Understanding Engineering Mathematics (2014, Routledge).pdf' '/home/harryl/Downloads/Bird’s Comprehensive Engineering Mathematics by John Bird.pdf' '/home/harryl/Downloads/Science and Mathematics for Engineering by John Bird.pdf'
+clear
+exit
+cd Downloads/gimp-normalmap-1.2.3
+clear
+make
+clear
+make install
+clea
+rexit
+clear
+exit
+su
+clea
+rexit
+clear
+exit
+pkg-config
+pkg-config --v
+pkg-config --version
+clear
+gtkglext
+clear
+su
+clear
+exit
+cd Downloads/gimp-normalmap-1.2.3
+clear
+make
+clear
+make
+cd '/home/harryl/Downloads/gimp-normalmap-1.2.3'
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+make
+clear
+exit
+cd Downloads/gimp-normalmap-1.2.3
+clear
+make
+clear
+hexedit
+cler
+clear
+su
+clear
+exit
+xkill
+gtk
+clear
+exit
+cd Downloads/gimp-normalmap-1.2.3
+clea
+clear
+make
+clea
+clear
+make
+gcc
+clear
+gcc -c -O3 -Wall `pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.0` normalmap.c
+gcc -c -O3 -Wall `pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.8` normalmap.c
+clear
+gcc -c -O3 -Wall `pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.8` normalmap.c
+clear
+gcc -c -O3 -Wall `pkg-config --cflags gtk+-2.0 gtkglext-1.0 gimp-2.0` normalmap.c
+cd '/home/harryl/Downloads/gimp-normalmap-1.2.2'
+clear
+make
+clear
+exit
+'/home/harryl/.local/share/unity3d/2019.3.12f1/Editor/Unity'
+su
+clear
+exit
+su
+clear
+exit
+cd '/home/harryl/Downloads/gimp-normalmap-1.2.3'
+clear
+make
+su
+clea
+clear
+exit
+su
+clear
+exit
+magick
+magic
+su
+clear
+exit
+su
+clear
+exit
+'/home/harryl/Downloads/WacomTablet_6.3.39-1.exe'
+clear
+mono-runtime '/home/harryl/Downloads/WacomTablet_6.3.39-1.exe'
+mono
+mono -version
+mono --version
+clear
+exit
+xkill
+clear
+exit
+xsetwacom set "Wacom Intuos S Pad pad" Button 8 "key plus"
+su
+clear
+exit
+xkill
+su
+su
+clear
+exit
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage' --help
+clear
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage' --help
+clear
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage' --appimage-unzip
+clear
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage' --appimage-extract
+cd Downloads
+clear
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage' --appimage-extract
+clear
+exit
+'/home/harryl/Downloads/gmic_krita_qt-x86_64.appimage'
+cd Documents
+clear
+ffmpeg -i 2.mp4 -s 854x480 1.mp4
+clear
+exit
+cd Documents
+clear
+ffmpeg -i 2.mp4 -filter:v "setpts=0.5*PTS" -an 1.mp4
+clear
+ffmpeg -i 3.mp4 -s 854x480 2.mp4
+clear
+fmpeg -i 3.mp4 -filter:v "setpts=0.5*PTS" -an 2.mp4
+clear
+ffmpeg -i 3.mp4 -filter:v "setpts=0.5*PTS" -an 2.mp4
+clear
+exit
+su
+clear
+exit
+cd Documents/Practical\ (copy)
+cd "Documents/Practical (copy)"
+clear
+\ls | vi -
+clear
+exit
+clear
+exit
+xkill
+'/home/harryl/Downloads/.wacom/WacomTablet_6.3.39-1.dmg'
+clear
+eix
+clear
+exit
+man apt-get
+clear
+exit
+apt get  http://repository.spotify.com
+clear
+apt-get http://repository.spotify.com
+apt-get deb http://repository.spotify.com
+clear
+apt-get download spotify
+apt-get download spotify-client
+watch sensors
+clear
+exit
+Zoom.desktop zoommtg://nsweducation.zoom.us/sso?token=AkjAb_5PFTEfX3s_XgL1OLN-z_lUBhWw-949QLhDFF4.CAQAAAFyBfRg5AAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+clear
+zoom zoommtg://nsweducation.zoom.us/sso?token=AkjAb_5PFTEfX3s_XgL1OLN-z_lUBhWw-949QLhDFF4.CAQAAAFyBfRg5AAAA4Qsc3FKQ3hkQktxNnUzZ1ZjWFFmOFJQZEswSjRDTm9SMVhRZSsyR1Ura3RzVT0MM0NCQXVvaVlTM3M9AAA
+clear
+exit
+xdg-settings set default-url-scheme-handler zoommtg zoom
+clear
+xdg-settings set default-url-scheme-handler zoommtg Zoom.desktop
+xdg-settings set default-url-scheme-handler zoommtg:// Zoom.desktop
+clear
+xdg-settings check default-url-scheme-handler zoommtg:// Zoom.desktop
+xdg-settings getC default-url-scheme-handler zoommtg
+clear
+xdg-settings getC default-url-scheme-handler zoommtg://
+clear
+xdg-settings get default-url-scheme-handler zoommtg://
+xdg-settings get default-url-scheme-handler zoommtg
+clear
+exit

@@ -1,0 +1,9 @@
+#!/bin/sh
+[Desktop Entry]
+Name=Adwaita++ Icon Updater
+Terminal=false
+Type=Application
+Icon=gnome
+Categories=GNOME;Utility;Preferences;
+Comment=Updates Adwaita++ Icon Theme
+Exec=Adwaita++.sh

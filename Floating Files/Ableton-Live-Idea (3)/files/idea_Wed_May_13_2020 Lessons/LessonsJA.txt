@@ -1,0 +1,25 @@
+$Page Liveへようこそ
+$TargetName Welcome to Live!
+
+ブラウザーでスタートさせた音楽アイデアをAbleton Liveで再生できます。
+
+Liveでは、このような音楽パターンを「クリップ」と呼びます。クリップはこのように表示されます。
+Clip.png
+
+クリップを聞くには、「再生」ボタンをクリックします。
+PlayButton.png
+
+「プレイグラウンド」ページからエクスポートした場合、複数のクリップが表示されます。「マスター」再生ボタンをクリックすると、全てのクリップをまとめてスタートすることができます。
+MasterPlay.png
+
+再生を停止するには、コンピューターキーボードのスペースキーを押します。
+
+クリップ内のノートを調整するには、クリップ上の任意の位置をダブルクリックしてクリップを選択します。ウィンドウ下部にノートが表示されます。これで、ブラウザーでの操作と同じように、ノートを動かしたり削除したりできます。
+Notes.png
+
+*このレッスンが終わったら*
+-> $Link ブラウザー <http://learningmusic.ableton.com/make-beats/what-are-these-sounds.html> で音楽作成
+-> $Link 内蔵レッスン <Lesson:Internal/Toc> でさらにLiveを学ぶ
+
+$Comment Status: Translate
+$Comment Translation Status: Up-to-date

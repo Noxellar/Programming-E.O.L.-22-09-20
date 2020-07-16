@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[Desktop Entry]
+Name=Krita Updater
+Terminal=true
+Type=Application
+Icon=krita.svg
+Categories=Graphics;System;
+Comment=Updates Krita
+Exec=kritaupdater.sh
