@@ -342,40 +342,54 @@
                         <KeyTracks>
                           <KeyTrack>
                             <Notes>
-                              <MidiNoteEvent Time="1.75" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                              <MidiNoteEvent Time="0.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                              <MidiNoteEvent Time="2.25" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
                             </Notes>
-                            <MidiKey Value="57"/>
+                            <MidiKey Value="61"/>
                           </KeyTrack>
                           <KeyTrack>
                             <Notes>
                               <MidiNoteEvent Time="1" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="2.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="3.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
                             </Notes>
-                            <MidiKey Value="60"/>
-                          </KeyTrack>
-                          <KeyTrack>
-                            <Notes>
-                              <MidiNoteEvent Time="0.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="2" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="3" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                            </Notes>
-                            <MidiKey Value="62"/>
+                            <MidiKey Value="65"/>
                           </KeyTrack>
                           <KeyTrack>
                             <Notes>
                               <MidiNoteEvent Time="1.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
                             </Notes>
-                            <MidiKey Value="64"/>
+                            <MidiKey Value="66"/>
+                          </KeyTrack>
+                          <KeyTrack>
+                            <Notes>
+                              <MidiNoteEvent Time="0.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                            </Notes>
+                            <MidiKey Value="67"/>
+                          </KeyTrack>
+                          <KeyTrack>
+                            <Notes>
+                              <MidiNoteEvent Time="1.25" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                              <MidiNoteEvent Time="1.75" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                              <MidiNoteEvent Time="2.25" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                            </Notes>
+                            <MidiKey Value="68"/>
+                          </KeyTrack>
+                          <KeyTrack>
+                            <Notes>
+                              <MidiNoteEvent Time="1.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                            </Notes>
+                            <MidiKey Value="69"/>
+                          </KeyTrack>
+                          <KeyTrack>
+                            <Notes>
+                              <MidiNoteEvent Time="0.5" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
+                            </Notes>
+                            <MidiKey Value="70"/>
                           </KeyTrack>
                           <KeyTrack>
                             <Notes>
                               <MidiNoteEvent Time="0" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="1" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="2" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
-                              <MidiNoteEvent Time="3" Duration="0.25" Velocity="120" OffVelocity="64" IsEnabled="true"/>
                             </Notes>
-                            <MidiKey Value="67"/>
+                            <MidiKey Value="72"/>
                           </KeyTrack>
                         </KeyTracks>
                       </Notes>

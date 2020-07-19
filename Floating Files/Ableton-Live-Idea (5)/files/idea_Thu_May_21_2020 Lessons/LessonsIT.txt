@@ -18,7 +18,7 @@ Per modificare le note di una clip fai doppio clic in qualsiasi punto della clip
 Notes.png
 
 *Come continuare*
--> Fai più musica $Link nel tuo browser. <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html>
+-> Fai più musica $Link nel tuo browser. <http://learningmusic.ableton.com/notes-and-scales/play-with-notes-and-scales.html>
 -> Apprendi di più su Live usando le $Link lezioni incorporate. <Lesson:Internal/Toc>
 
 $Comment Status: Translate

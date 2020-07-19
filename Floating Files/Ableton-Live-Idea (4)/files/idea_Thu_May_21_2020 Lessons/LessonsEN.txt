@@ -18,7 +18,7 @@ To adjust the notes in a clip, double-click anywhere on the clip to select it. T
 Notes.png
 
 *Where to go from here*
--> Make more music $Link in your browser. <http://learningmusic.ableton.com/notes-and-scales/make-patterns-with-pitch.html>
+-> Make more music $Link in your browser. <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html>
 -> Learn more about Live using the $Link built-in lessons. <Lesson:Internal/Toc>
 
 $Comment Status: Translate

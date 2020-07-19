@@ -18,7 +18,7 @@ MasterPlay.png
 Notes.png
 
 *このレッスンが終わったら*
--> $Link ブラウザー <http://learningmusic.ableton.com/notes-and-scales/make-patterns-with-pitch.html> で音楽作成
+-> $Link ブラウザー <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html> で音楽作成
 -> $Link 内蔵レッスン <Lesson:Internal/Toc> でさらにLiveを学ぶ
 
 $Comment Status: Translate

@@ -18,7 +18,7 @@ Pour modifier les notes dans un clip, double-cliquez n'importe où dans le clip 
 Notes.png
 
 *Où aller maintenant*
--> Faire plus de musique $Link dans votre navigateur. <http://learningmusic.ableton.com/notes-and-scales/make-patterns-with-pitch.html>
+-> Faire plus de musique $Link dans votre navigateur. <http://learningmusic.ableton.com/notes-and-scales/adding-more-notes.html>
 -> En apprendre plus sur Live à l'aide des $Link leçons intégrées. <Lesson:Internal/Toc>
 
 $Comment Status: Translate
