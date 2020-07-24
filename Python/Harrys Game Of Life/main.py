@@ -28,8 +28,10 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h",
 
 
 class Cell():
-    def __init__(self, universe, id, coords=()):
-        self.universe = universe
+    _occupied = []
+    _empty_adjacent = []
+
+    def __init__(self, id, coords=()):
         self.id = id
 
         self.coords = coords
@@ -44,29 +46,47 @@ class Cell():
             (self.coords[0] + 1, self.coords[1] + 1)
         ]
 
-        self.neighbours = []
+        self._occupied.append(self.coords)
 
-    def update(self):
-        for cell in self.universe:
+    def update(self, universe, delete_queue):
+        neighbours = []
+
+        for cell in universe:
             for adjacent in self.adjacent:
-                if adjacent == cell.coords:
-                    self.neighbours.append(cell.coords)
+                if adjacent == universe[cell].coords:
+                    neighbours.append(universe[cell].coords)
 
-        if len(self.neighbours) < 2 or len(self.neighbours) > 3:
-            del self.universe[self.id]
+        if len(neighbours) < 2 or len(neighbours) > 3:
+            self._occupied.remove(self.coords)
+            delete_queue.append(self.id)
+        
+        empty_adjacent = [for x in ]
+
+
+class MasterCell(Cell):
+    def __init__(self):
+        pass
+
+    def reproduction(self):
+        for i in self._occupied not in []:
+            pass
 
 
 class Main(gameinit):
     def __init__(self):
         super().__init__()
 
+        master = Cell("master", (-1, -1))
+
         self.universe = {}
 
         self.universe = {
-            "a": Cell(self.universe, "a", (10, 10)),
-            "b": Cell(self.universe, "b", (10, 11)),
-            "c": Cell(self.universe, "c", (10, 9))
+            "a": Cell("a", (10, 10)),
+            "b": Cell("b", (10, 11)),
+            "c": Cell("c", (10, 9))
         }
+
+        self.delete_queue = []
 
     def main(self):
         self.canvas.fill((0, 0, 0))
@@ -76,9 +96,12 @@ class Main(gameinit):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
 
         for key in self.universe:
-            self.universe[key].update()
+            self.universe[key].update(self.universe, self.delete_queue)
 
-        print(self.universe)
+        for id in self.delete_queue:
+            del self.universe[id]
+
+        self.delete_queue = []
 
         self.update()
 

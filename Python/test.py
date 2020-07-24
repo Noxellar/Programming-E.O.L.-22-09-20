@@ -1,14 +1,11 @@
-class A():
-    def kill_a(self):
-        print(self)
-        del self
-
-    def kill_b(self):
-        print(self)
+class A(object):
+    static = "alsdjflkajds;lf"
 
 
-a = A()
-b = A()
+class B(A):
+    def method(self):
+        print(self.static)
 
-a.kill_a()
-b.kill_b()
+
+b = B()
+b.method()
