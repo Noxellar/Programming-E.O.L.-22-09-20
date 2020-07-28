@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# set CPATH so it includes user's private header files if it exists
+if [ -d "$HOME/.local/include" ] ; then
+    export CPATH="$CPATH:$HOME/.local/include"
+fi
+
 # set LD_LIBRARY_PATH so it includes user's private lib if it exists
 if [ -d "$HOME/.local/lib" ] ; then
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.local/lib"
@@ -10,6 +15,11 @@ fi
 # set LD_LIBRARY_PATH so it includes user's private lib if it exists
 if [ -d "$HOME/.local/lib32" ] ; then
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.local/lib32"
+fi
+
+# set LD_LIBRARY_PATH so it includes user's private lib if it exists
+if [ -d "$HOME/.local/lib64" ] ; then
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.local/lib64"
 fi
 
 # set LD_LIBRARY_PATH so it includes user's private lib if it exists

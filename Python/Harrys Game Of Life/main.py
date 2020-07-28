@@ -20,7 +20,7 @@ sys.path.append(root + "/lib")
 import pygame as pygame
 
 # Modules
-from gameinit import gameinit
+from game import Game
 
 # Global Variables
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h",
@@ -28,7 +28,7 @@ alphabet = ["a", "b", "c", "d", "e", "f", "g", "h",
 
 
 class Cell():
-    _occupied = []
+    # Static variable for all empty and adjecent spaces
     _empty_adjacent = []
 
     def __init__(self, id, coords=()):
@@ -46,37 +46,43 @@ class Cell():
             (self.coords[0] + 1, self.coords[1] + 1)
         ]
 
-        self._occupied.append(self.coords)
-
     def update(self, universe, delete_queue):
         neighbours = []
 
         for cell in universe:
             for adjacent in self.adjacent:
                 if adjacent == universe[cell].coords:
+                    # Add neighbours' coordinates to list
                     neighbours.append(universe[cell].coords)
 
-        if len(neighbours) < 2 or len(neighbours) > 3:
-            self._occupied.remove(self.coords)
+        empty_adjacent = [x for x in self.adjacent if x not in neighbours]
+        self._empty_adjacent.append(empty_adjacent)
+
+        # If underpopulated or overpopulated
+        #   Removed coordinates from static variable
+        #   Add self to delete queue
+        if len(neighbours) != 2 and len(neighbours) != 3:
             delete_queue.append(self.id)
-        
-        empty_adjacent = [for x in ]
 
 
 class MasterCell(Cell):
     def __init__(self):
         pass
 
-    def reproduction(self):
-        for i in self._occupied not in []:
-            pass
+    def reproduce(self):
+        for coords in self._empty_adjacent:
+            frequency = self._empty_adjacent.count(coords)
+
+            if frequency == 2 or frequency == 3:
+                while coords in self._empty_adjacent:
+                    self._empty_adjacent.remove(coords)
 
 
-class Main(gameinit):
+class Main(Game):
     def __init__(self):
         super().__init__()
 
-        master = Cell("master", (-1, -1))
+        self.master = MasterCell()
 
         self.universe = {}
 
@@ -98,9 +104,10 @@ class Main(gameinit):
         for key in self.universe:
             self.universe[key].update(self.universe, self.delete_queue)
 
+        self.master.reproduce()
+
         for id in self.delete_queue:
             del self.universe[id]
-
         self.delete_queue = []
 
         self.update()
