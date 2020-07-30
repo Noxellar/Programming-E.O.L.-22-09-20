@@ -11,6 +11,7 @@ TODO:
 # Imports
 import os as os
 import sys as sys
+from random import choice
 
 root = os.path.dirname(os.path.realpath(__file__))
 
@@ -69,13 +70,22 @@ class MasterCell(Cell):
     def __init__(self):
         pass
 
-    def reproduce(self):
+    def reproduce(self, universe):
         for coords in self._empty_adjacent:
             frequency = self._empty_adjacent.count(coords)
 
             if frequency == 2 or frequency == 3:
                 while coords in self._empty_adjacent:
                     self._empty_adjacent.remove(coords)
+
+                new_cell_id = ""
+                count = 1
+
+                while count < range(6 + 1):
+                    new_cell_id += choice(alphabet)
+                    count += 1
+
+                universe[new_cell_id] = Cell(new_cell_id, coords)
 
 
 class Main(Game):
@@ -101,16 +111,18 @@ class Main(Game):
         for y in range(0, 1080, 40):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
 
+        self.master.reproduce(self.universe)
+
         for key in self.universe:
             self.universe[key].update(self.universe, self.delete_queue)
-
-        self.master.reproduce()
 
         for id in self.delete_queue:
             del self.universe[id]
         self.delete_queue = []
 
         self.update()
+
+        print(self.universe)
 
 
 if __name__ == "__main__":
