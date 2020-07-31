@@ -32,7 +32,7 @@ class Cell():
     # Static variable for all empty and adjecent spaces
     _empty_adjacent = []
 
-    def __init__(self, id, coords=()):
+    def __init__(self, id, coords):
         self.id = id
 
         self.coords = coords
@@ -57,6 +57,7 @@ class Cell():
                     neighbours.append(universe[cell].coords)
 
         empty_adjacent = [x for x in self.adjacent if x not in neighbours]
+        # THIS IS APPENDING A LIST TO A LIST, NEED TO APPEND ELEMENTS OF LIST
         self._empty_adjacent.append(empty_adjacent)
 
         # If underpopulated or overpopulated
@@ -70,9 +71,14 @@ class MasterCell(Cell):
     def __init__(self):
         pass
 
-    def reproduce(self, universe):
+    def update(self, universe, delete_queue):
+        for key in universe:
+            universe[key].update(universe, delete_queue)
+
         for coords in self._empty_adjacent:
             frequency = self._empty_adjacent.count(coords)
+
+            print(self._empty_adjacent)
 
             if frequency == 2 or frequency == 3:
                 while coords in self._empty_adjacent:
@@ -86,6 +92,9 @@ class MasterCell(Cell):
                     count += 1
 
                 universe[new_cell_id] = Cell(new_cell_id, coords)
+
+        while len(self._empty_adjacent) != 0:
+            del self._empty_adjacent[0]
 
 
 class Main(Game):
@@ -111,18 +120,15 @@ class Main(Game):
         for y in range(0, 1080, 40):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
 
-        self.master.reproduce(self.universe)
-
-        for key in self.universe:
-            self.universe[key].update(self.universe, self.delete_queue)
+        self.master.update(self.universe, self.delete_queue)
 
         for id in self.delete_queue:
             del self.universe[id]
         self.delete_queue = []
 
-        self.update()
-
         print(self.universe)
+
+        self.update()
 
 
 if __name__ == "__main__":
