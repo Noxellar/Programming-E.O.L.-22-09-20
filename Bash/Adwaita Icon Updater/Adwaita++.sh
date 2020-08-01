@@ -13,11 +13,11 @@ while true; do
 
 		wget -qO- https://raw.githubusercontent.com/Bonandry/adwaita-plus/master/install.sh | env DESTDIR="$HOME/.icons" sh
 
-		cd Adwaita++/apps/scalable
+		# cd Adwaita++/apps/scalable
 
-		rm firefox-official.svg && rm chromium.svg
+		# rm firefox-official.svg && rm chromium.svg
 
-		cp google-chrome.svg chromium.svg && cp /home/harryl/.icons/firefox-official.svg firefox-official.svg
+		# cp google-chrome.svg chromium.svg && cp /home/harryl/.icons/firefox-official.svg firefox-official.svg
 		
 		break
 	fi
