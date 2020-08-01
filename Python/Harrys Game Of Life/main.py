@@ -47,7 +47,10 @@ class Cell():
             (self.coords[0] + 1, self.coords[1] + 1)
         ]
 
-    def update(self, universe, delete_queue):
+    def update(self, canvas, universe, delete_queue):
+        pygame.draw.rect(canvas, (255, 255, 255),
+                         (self.coords[0] * 40, self.coords[1] * 40, 40, 40))
+
         neighbours = []
 
         for cell in universe:
@@ -57,8 +60,8 @@ class Cell():
                     neighbours.append(universe[cell].coords)
 
         empty_adjacent = [x for x in self.adjacent if x not in neighbours]
-        # THIS IS APPENDING A LIST TO A LIST, NEED TO APPEND ELEMENTS OF LIST
-        self._empty_adjacent.append(empty_adjacent)
+
+        self._empty_adjacent.extend(empty_adjacent)
 
         # If underpopulated or overpopulated
         #   Removed coordinates from static variable
@@ -71,30 +74,33 @@ class MasterCell(Cell):
     def __init__(self):
         pass
 
-    def update(self, universe, delete_queue):
+    def update(self, canvas, universe, delete_queue):
         for key in universe:
-            universe[key].update(universe, delete_queue)
+            universe[key].update(canvas, universe, delete_queue)
+
+        new_cell_queue = []
 
         for coords in self._empty_adjacent:
             frequency = self._empty_adjacent.count(coords)
 
-            print(self._empty_adjacent)
-
             if frequency == 2 or frequency == 3:
-                while coords in self._empty_adjacent:
-                    self._empty_adjacent.remove(coords)
+                new_cell_queue.append(coords)
 
-                new_cell_id = ""
-                count = 1
-
-                while count < range(6 + 1):
-                    new_cell_id += choice(alphabet)
-                    count += 1
-
-                universe[new_cell_id] = Cell(new_cell_id, coords)
+            while coords in self._empty_adjacent:
+                self._empty_adjacent.remove(coords)
 
         while len(self._empty_adjacent) != 0:
             del self._empty_adjacent[0]
+
+        for i in new_cell_queue:
+            new_cell_id = ""
+            count = 0
+
+            while count < 6:
+                new_cell_id += choice(alphabet)
+                count += 1
+
+            universe[new_cell_id] = Cell(new_cell_id, i)
 
 
 class Main(Game):
@@ -120,13 +126,11 @@ class Main(Game):
         for y in range(0, 1080, 40):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
 
-        self.master.update(self.universe, self.delete_queue)
+        self.master.update(self.canvas, self.universe, self.delete_queue)
 
         for id in self.delete_queue:
             del self.universe[id]
         self.delete_queue = []
-
-        print(self.universe)
 
         self.update()
 
