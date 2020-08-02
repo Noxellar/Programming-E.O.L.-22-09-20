@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+	// Player game object variable declaration
+	GameObject Player;
+
 	// Player rigidbody variable declaration
 	Rigidbody2D playerRigidbody;
 
@@ -40,6 +43,15 @@ public class PlayerMove : MonoBehaviour
 		if (y != 0 && !isJumping)
 		{
 			movement.y = y * jumpHeight * Time.deltaTime;
+		}
+
+		if (x < 0)
+		{
+			Player.transform.rotation.y = 180;
+		}
+		else
+		{
+			Player.transform.rotation.y = 0;
 		}
 
 		playerRigidbody.velocity = movement;
