@@ -1,7 +1,18 @@
-list1 = [1, 2, 1, 2, 3, 4, 5, 6]
+word = ["A", "E", "I", "I", "N", "O", "P", "R", "R", "S", "T"]
 
-for i in list1:
-    frequency = list1.count(i)
+file = open("a.txt", "a+")
 
-    if frequency == 2 or frequency == 3:
-        print(i)
+for a in word:
+    for b in word:
+        for c in word:
+            for d in word:
+                for e in word:
+                    for f in word:
+                        for g in word:
+                            for h in word:
+                                for i in word:
+                                    for j in word:
+                                        for k in word:
+                                            list = a + b + c + d + e + f + g + h + i + j + k
+
+                                            file.write(list + "\n")
