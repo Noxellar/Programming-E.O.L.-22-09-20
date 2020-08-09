@@ -1,4 +1,5 @@
 #!/bin/sh
+
 [Desktop Entry]
 Name=Adwaita++ Icon Updater
 Terminal=false
@@ -7,3 +8,4 @@ Icon=gnome
 Categories=GNOME;Utility;Preferences;
 Comment=Updates Adwaita++ Icon Theme
 Exec=Adwaita++.sh
+Name[en_AU]=Adwaita++ Icon Updater
