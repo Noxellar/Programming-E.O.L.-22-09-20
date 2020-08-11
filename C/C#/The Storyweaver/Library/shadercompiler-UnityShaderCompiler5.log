@@ -1,5 +1,4 @@
-Base path: '/home/harryl/.local/share/unity3d/Editors/2020.1.0f1/Editor/Data', plugins path '/home/harryl/.local/share/unity3d/Editors/2020.1.0f1/Editor/Data/PlaybackEngines'
+Base path: '/home/harryl/.local/share/unity3d/Editors/2020.1.1f1/Editor/Data', plugins path '/home/harryl/.local/share/unity3d/Editors/2020.1.1f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
 
 Quitting shader compiler process

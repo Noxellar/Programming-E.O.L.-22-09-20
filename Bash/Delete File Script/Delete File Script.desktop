@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[Desktop Entry]
+Name=Delete File Script
+Terminal=false
+Type=Application
+Icon=user-trash-full
+Categories=Utility
+Comment=Deletes a File
+Exec="Delete File Script.sh" file

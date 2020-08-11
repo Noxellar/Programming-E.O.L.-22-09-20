@@ -13,14 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys:
-    - Assets/Prefabs/Cop/Cop.psb.meta
-    - Assets/Prefabs/Little Miss Storyweaver/Little Miss Storyweaver.psb.meta
-    - Packages/manifest.json
-    - Packages/packages-lock.json
-    - ProjectSettings/ProjectVersion.txt
-    - 
-    m_Values: 000000000000
+    m_Keys: []
+    m_Values: 
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
