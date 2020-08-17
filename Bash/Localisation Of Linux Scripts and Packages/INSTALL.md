@@ -1,18 +1,18 @@
 # INSTALL INSTRUCTIONS FOR PROGRAM
 
-## INGREDIENTS
+## PACKAGES
 - 
 
 ## INSTRUCTIONS
-- 
+1) 
 
-- 
+2) 
 
-- 
+3) 
 
-- 
+4) 
 
-- 
+5) 
 
 ## EXECUTION
-- 
+6) 
