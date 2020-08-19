@@ -11,6 +11,11 @@ https://docs.unity3d.com/ScriptReference/Cursor-lockState.html
 
 
 https://answers.unity.com/questions/1087351/limit-vertical-rotation-of-camera.html
+https://answers.unity.com/questions/1381417/using-euler-angles-to-rotate-causes-the-object-to.html
+https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
+
+
+
 
 
 

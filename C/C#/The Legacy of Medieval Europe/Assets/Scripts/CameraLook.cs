@@ -7,22 +7,35 @@ public class CameraLook : MonoBehaviour
 	// Player Input Action variable declaration
 	PlayerInputActions playerInputActions;
 
+	// Look Input and Look Sensitivity variable declaration
+	Vector2 lookInput;
+	float lookSensitivity;
+
 	// Player Object variable declaration
 	GameObject player;
 
-	// Look Input variable declaration
-	Vector2 lookInput;
+	// Player Rotation variable declaration
+	Vector3 playerRotation;
+
+	// Camera Rotation variable declaration
+	Vector3 cameraRotation;
 
 	void Awake()
 	{
-		//Player Object variable declaration
-		player = GameObject.FindWithTag("Player");
-
 		// Player input action variable assignment to input action maps called "Player Input Actions"
 		playerInputActions = new PlayerInputActions();
 
-		// Look Input variable assignment
+		// Look Input and Look Sensitivity variable assignment
 		playerInputActions.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
+		lookSensitivity = 10;
+
+		// Player Object variable declaration
+		player = GameObject.FindWithTag("Player");
+
+		// Player Rotation variable declaration
+		playerRotation = player.transform.eulerAngles;
+
+		cameraRotation = transform.eulerAngles;
 
 		Cursor.lockState = CursorLockMode.Confined;
 		Cursor.visible = false;
@@ -30,17 +43,15 @@ public class CameraLook : MonoBehaviour
 
 	void Update()
 	{
-		/*REMEMBER TO LOOK UP HOW TO COLLAPSE THIS CODE INTO ONE STEP*/
-		Quaternion cameraRotation = transform.rotation;
+		float playerRotationX = lookInput.x * lookSensitivity * Time.deltaTime;
+		playerRotationX = playerRotation.x + playerRotationX;
 
-		cameraRotation.x += -lookInput.y * Time.deltaTime;
-		cameraRotation.x = Mathf.Clamp(cameraRotation.x, -90, 90);
+		player.transform.Rotate(0, playerRotationX, 0, Space.Self);
 
-		transform.rotation = cameraRotation;
+		float cameraRotationY = lookInput.y * lookSensitivity * Time.deltaTime;
+		transform.Rotate(-cameraRotationY, 0, 0, Space.Self);
 
-		Quaternion playerRotation = player.transform.rotation;
-
-		playerRotation.y += lookInput.x * Time.deltaTime;
+		//cameraRotationY = Mathf.Clamp(cameraRotation.x + cameraRotationY, -90, 90);
 	}
 
 	void OnEnable()
