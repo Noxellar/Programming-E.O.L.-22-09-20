@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
 	Rigidbody playerRigidbody;
 
 	// Player Input Action variable declaration
-	PlayerInputActions inputAction;
+	PlayerInputActions playerInputActions;
 
 	// Movement Input variable declaration
 	Vector2 movementInput;
@@ -22,10 +22,10 @@ public class PlayerMove : MonoBehaviour
 		playerRigidbody = GetComponent<Rigidbody>();
 
 		// Player input action variable assignment to input action maps called "Player Input Actions"
-		inputAction = new PlayerInputActions();
+		playerInputActions = new PlayerInputActions();
 
 		// .Player is a action map and .Move is an action
-		inputAction.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+		playerInputActions.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
 
 		// Movement Speed variable assignment in m/s
 		movementSpeed = 3f;
@@ -43,11 +43,11 @@ public class PlayerMove : MonoBehaviour
 
 	void OnEnable()
 	{
-		inputAction.Enable();
+		playerInputActions.Enable();
 	}
 
 	void OnDisable()
 	{
-		inputAction.Disable();
+		playerInputActions.Disable();
 	}
 }

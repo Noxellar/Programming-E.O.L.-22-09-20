@@ -37,9 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\PlayerInputActions.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
-     <Compile Include="Assets\Scripts\StartMenu.cs" />
+     <Compile Include="Assets\Scripts\cameraLook.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/harryl/.local/share/unity3d/Editors/2020.1.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -574,6 +573,9 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/home/harryl/Desktop/Programming/C/C#/The Legacy of Medieval Europe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InputSystem">
+        <HintPath>/home/harryl/Desktop/Programming/C/C#/The Legacy of Medieval Europe/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>/home/harryl/Desktop/Programming/C/C#/The Legacy of Medieval Europe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -588,9 +590,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/home/harryl/Desktop/Programming/C/C#/The Legacy of Medieval Europe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-        <HintPath>/home/harryl/Desktop/Programming/C/C#/The Legacy of Medieval Europe/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
