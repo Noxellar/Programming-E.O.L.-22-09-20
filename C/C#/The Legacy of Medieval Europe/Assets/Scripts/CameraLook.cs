@@ -12,7 +12,7 @@ public class CameraLook : MonoBehaviour
 	float lookSensitivity;
 
 	// Player Object variable declaration
-	GameObject player;
+	Transform playerTransform;
 
 	// Player Rotation variable declaration
 	Vector3 playerRotation;
@@ -29,15 +29,16 @@ public class CameraLook : MonoBehaviour
 		playerInputActions.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
 		lookSensitivity = 10;
 
-		// Player Object variable declaration
-		player = GameObject.FindWithTag("Player");
+		// Player Object variable assignment
+		playerTransform = GameObject.FindWithTag("Player").transform;
 
-		// Player Rotation variable declaration
-		playerRotation = player.transform.eulerAngles;
+		// Player Rotation variable assignment
+		playerRotation = playerTransform.eulerAngles;
 
+		// Camera Rotation variable assignment
 		cameraRotation = transform.eulerAngles;
 
-		Cursor.lockState = CursorLockMode.Confined;
+		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
 
@@ -46,10 +47,17 @@ public class CameraLook : MonoBehaviour
 		float playerRotationX = lookInput.x * lookSensitivity * Time.deltaTime;
 		playerRotationX = playerRotation.x + playerRotationX;
 
-		player.transform.Rotate(0, playerRotationX, 0, Space.Self);
+		playerTransform.Rotate(0, playerRotationX, 0, Space.Self);
 
 		float cameraRotationY = lookInput.y * lookSensitivity * Time.deltaTime;
 		transform.Rotate(-cameraRotationY, 0, 0, Space.Self);
+
+		transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, -90, 90), 0, 0);
+
+		/*
+		Vector3 cameraEulerX = new Vector3(Mathf.Clamp(cameraRotation.x, -90, 90), 0, 0);
+		transform.eulerAngles = cameraEulerX;
+		*/
 
 		//cameraRotationY = Mathf.Clamp(cameraRotation.x + cameraRotationY, -90, 90);
 	}
