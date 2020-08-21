@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Models.meta
     - Assets/Models/The Museum of Harry Le's Medieval Assignment (UNDER CONSTRUCTION).blend
     - Assets/Models/The Museum of Harry Le's Medieval Assignment (UNDER CONSTRUCTION).blend.meta
+    - Assets/Models/The Museum of Harry Le's Medieval Assignment (UNDER CONSTRUCTION).blend1
     - Assets/Scenes/Main Scene.unity
+    - Assets/Scripts/CameraLook.cs
+    - Assets/Textures/Stone.jpg
+    - Assets/Textures/Stone.jpg.meta
     - 
-    m_Values: 0000000000
+    m_Values: 0000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

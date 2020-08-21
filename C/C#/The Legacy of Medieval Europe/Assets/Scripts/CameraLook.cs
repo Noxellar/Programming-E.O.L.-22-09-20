@@ -52,7 +52,7 @@ public class CameraLook : MonoBehaviour
 		float cameraRotationY = lookInput.y * lookSensitivity * Time.deltaTime;
 		transform.Rotate(-cameraRotationY, 0, 0, Space.Self);
 
-		transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, -90, 90), 0, 0);
+		// transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, -90, 90), 0, 0);
 
 		/*
 		Vector3 cameraEulerX = new Vector3(Mathf.Clamp(cameraRotation.x, -90, 90), 0, 0);
