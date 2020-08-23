@@ -1,74 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraLook : MonoBehaviour
 {
-	// Player Input Action variable declaration
-	PlayerInputActions playerInputActions;
-
-	// Look Input and Look Sensitivity variable declaration
-	Vector2 lookInput;
-	float lookSensitivity;
-
-	// Player Object variable declaration
+	// Player Transform variable declaration
 	Transform playerTransform;
 
 	// Player Rotation variable declaration
-	Vector3 playerRotation;
+	Quaternion playerRotation;
 
-	// Camera Rotation variable declaration
-	Vector3 cameraRotation;
+	// Camera Transform variable declaration
+	Transform cameraTransform;
+
+	// Camera Rotation varaible declaration
+	Quaternion cameraRotation;
+
+	// Look Sensitivity variable declaration
+	float lookSensitivity;
 
 	void Awake()
 	{
-		// Player input action variable assignment to input action maps called "Player Input Actions"
-		playerInputActions = new PlayerInputActions();
-
 		// Look Input and Look Sensitivity variable assignment
-		playerInputActions.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
 		lookSensitivity = 10;
 
-		// Player Object variable assignment
+		// Player Transform variable assignment
 		playerTransform = GameObject.FindWithTag("Player").transform;
 
 		// Player Rotation variable assignment
-		playerRotation = playerTransform.eulerAngles;
+		playerRotation = playerTransform.rotation;
+
+		// Camera Transform variable assignment
+		cameraTransform = transform;
 
 		// Camera Rotation variable assignment
-		cameraRotation = transform.eulerAngles;
+		cameraRotation = cameraTransform.rotation;
 
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
 
-	void Update()
+	public void Look(InputAction.CallbackContext ctx)
 	{
-		float playerRotationX = lookInput.x * lookSensitivity * Time.deltaTime;
-		playerRotationX = playerRotation.x + playerRotationX;
+		Vector2 lookInput = ctx.ReadValue<Vector2>();
 
-		playerTransform.Rotate(0, playerRotationX, 0, Space.Self);
+		float playerRotationY = lookInput.x * lookSensitivity * Time.deltaTime;
+		// playerRotation *= Quaternion.Euler(0, playerRotationY, 0);
+		playerTransform.Rotate(0, playerRotationY, 0, Space.Self);
 
-		float cameraRotationY = lookInput.y * lookSensitivity * Time.deltaTime;
-		transform.Rotate(-cameraRotationY, 0, 0, Space.Self);
-
-		// transform.localEulerAngles = new Vector3(Mathf.Clamp(transform.localEulerAngles.x, -90, 90), 0, 0);
-
-		/*
-		Vector3 cameraEulerX = new Vector3(Mathf.Clamp(cameraRotation.x, -90, 90), 0, 0);
-		transform.eulerAngles = cameraEulerX;
-		*/
-
-		//cameraRotationY = Mathf.Clamp(cameraRotation.x + cameraRotationY, -90, 90);
-	}
-
-	void OnEnable()
-	{
-		playerInputActions.Enable();
-	}
-
-	void OnDisable()
-	{
-		playerInputActions.Disable();
+		float cameraRotationX = lookInput.y * lookSensitivity * Time.deltaTime;
+		// cameraRotation *= Quaternion.Euler(cameraRotationX, 0, 0);
+		cameraTransform.Rotate(-cameraRotationX, 0, 0, Space.Self);
 	}
 }
