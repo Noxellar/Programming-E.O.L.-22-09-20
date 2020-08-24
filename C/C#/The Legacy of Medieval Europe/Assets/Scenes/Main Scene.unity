@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
@@ -1477,7 +1475,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 629687543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b808c65b95d6f6189bd83545d4e8a14, type: 3}
+  m_Script: {fileID: 11500000, guid: 42819a138b7f4b5729734eabc24ec058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &651611337
@@ -1642,7 +1640,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1820, y: 1023.75}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781030466
 MonoBehaviour:
@@ -1664,12 +1662,55 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-    sit amet lorem ipsum dolor sit amet
+  m_text: "Baker, W. F., & Pawlikowski, J. J. (2012). Higher and Higher: The Evolution
+    of the Buttressed Core. Civil Engineering Magazine Archive, 82(9), 58\u201365.
+    https://doi.org/10.1061/ciegag.0000420\nBurj Khalifa. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Burj_Khalifa&oldid=971851872\nCastle.
+    (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Castle&oldid=970233870\nChristopher
+    Wren\u2014Legacy. (n.d.). In Encyclopedia Britannica. Retrieved August 16, 2020,
+    from https://www.britannica.com/biography/Christopher-Wren\nCodex Parisino-petropolitanu\u2014Recto
+    of the First Folio. (n.d.). [Manuscript]. Retrieved August 15, 2020, from https://gallica.bnf.fr/ark:/12148/btv1b8415207g\nCodex
+    Parisino-petropolitanus. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Codex_Parisino-petropolitanus&oldid=964239851\nCraven,
+    J. (2019, August 17). All About the Buttress and Other Wall Supports. ThoughtCo.
+    https://www.thoughtco.com/what-is-a-flying-buttress-4049089\nDrane, J. (2011,
+    July 12). BBC - Religions - Christianity: The Bible. https://www.bbc.co.uk/religion/religions/christianity/texts/bible.shtml\nEarly
+    Quranic manuscripts. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Early_Quranic_manuscripts&oldid=968213972\nFeudalism.
+    (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Feudalism&oldid=972957364\nFeudalism
+    | Definition & History. (n.d.). In Encyclopedia Britannica. Retrieved August
+    15, 2020, from https://www.britannica.com/topic/feudalism\nFlying buttress. (2020).
+    In Wikipedia. https://en.wikipedia.org/w/index.php?title=Flying_buttress&oldid=967447343\nFosh,
+    M. (2008). St Pauls [Photo]. https://upload.wikimedia.org/wikipedia/commons/c/cb/St_Pauls_aerial_%28cropped%29.jpg\nGaspare
+    Tagliacozzi. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Gaspare_Tagliacozzi&oldid=939877121\nGregersen,
+    E. (2020, February 16). Laura Bassi | Italian scientist | Britannica. https://www.britannica.com/biography/Laura-Bassi\nHistory.com
+    Editors. (2019, April 23). The Bible. HISTORY. https://www.history.com/topics/religion/bible\nHistory.com
+    Editors. (2020, February 28). Ottoman Empire. HISTORY. https://www.history.com/topics/middle-east/ottoman-empire\nLaura
+    Bassi. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=Laura_Bassi&oldid=958198943\nMason,
+    H. A. (1940, December 29). St Paul\u2019s Cathedral December 29th, 1940; photograph
+    by Herbert Alexander Mason (1903-1964). https://upload.wikimedia.org/wikipedia/en/b/b2/Stpaulsblitz.jpg\nMedieval
+    Architecture. (n.d.). English Heritage. Retrieved August 15, 2020, from https://www.english-heritage.org.uk/learn/story-of-england/medieval/architecture/\nMoses.
+    (n.d.). Old Testament\u2014The First Page of Genesis. In Vaticanus. https://digi.vatlib.it/view/MSS_Vat.gr.1209\nNguyen,
+    H. (2020, August 16). The Importance and Evolution of Flying Buttresses [Personal
+    communication].\nOxford University. (n.d.). A-Z of colleges | University of Oxford.
+    Retrieved August 23, 2020, from https://www.ox.ac.uk/admissions/undergraduate/colleges/a-z-of-colleges\nPraefcke,
+    A. (2007). Arching above a side aisle roof, flying buttresses support the main
+    vault of St. Mary\u2019s Church, in L\xFCbeck, Germany.\nSaint Paul\u2019s Cathedral
+    | cathedral, London, United Kingdom. (n.d.). In Encyclopedia Britannica. Retrieved
+    August 15, 2020, from https://www.britannica.com/topic/Saint-Pauls-Cathedral-London\nSt.
+    Mary\u2019s Church, L\xFCbeck. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=St._Mary%27s_Church,_L%C3%BCbeck&oldid=969341106\nSt
+    Paul\u2019s Cathedral. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=St_Paul%27s_Cathedral&oldid=973121814\nThe
+    Editors of Encyclopaedia Britannica. (2020, April 3). University of Oxford |
+    History, Colleges, & Notable Alumni. Encyclopedia Britannica. https://www.britannica.com/topic/University-of-Oxford\nTomba,
+    P., Vigan\xF2, A., Ruggieri, P., & Gasbarrini, A. (2014). Gaspare Tagliacozzi,
+    pioneer of plastic surgery and the spread of his technique throughout Europe
+    in \u201CDe Curtorum Chirurgia per Insitionem.\u201D European Review for Medical
+    and Pharmacological Sciences, 18(4), 445\u2013450.\nUniversit\xE0 di Bologna.
+    (n.d.). The University from the 12th to the 20th century\u2014University of Bologna.
+    Retrieved August 16, 2020, from https://www.unibo.it/en/university/who-we-are/our-history/university-from-12th-to-20th-century\nUniversity
+    of Bologna. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=University_of_Bologna&oldid=972915018\nUniversity
+    of Bologna\u2014Entry of German Students\u20141497. (1497). https://upload.wikimedia.org/wikipedia/commons/4/47/Universit%C3%A4t_Bologna_Deutsche_Nation.jpg\nUniversity
+    of Oxford. (2020). In Wikipedia. https://en.wikipedia.org/w/index.php?title=University_of_Oxford&oldid=972707737\nWhen
+    was the Bible written? (2020, May 12). Biblica. https://www.biblica.com/resources/bible-faqs/when-was-the-bible-written/\nWilliam
+    of Normandy. (1086). Original folio of Middlesex, page 9 in Domesday Book | Domesday
+    Book. https://opendomesday.org/book/middlesex/09/"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3367,7 +3408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1496944200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3578,7 +3619,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529519623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b808c65b95d6f6189bd83545d4e8a14, type: 3}
+  m_Script: {fileID: 11500000, guid: 42819a138b7f4b5729734eabc24ec058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1548476834
@@ -3769,7 +3810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1673384479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b808c65b95d6f6189bd83545d4e8a14, type: 3}
+  m_Script: {fileID: 11500000, guid: 42819a138b7f4b5729734eabc24ec058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1703167231
@@ -3864,7 +3905,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1703167233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b808c65b95d6f6189bd83545d4e8a14, type: 3}
+  m_Script: {fileID: 11500000, guid: 42819a138b7f4b5729734eabc24ec058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1722862571
@@ -4041,7 +4082,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782301535}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b808c65b95d6f6189bd83545d4e8a14, type: 3}
+  m_Script: {fileID: 11500000, guid: 42819a138b7f4b5729734eabc24ec058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1812531207
@@ -5280,4 +5321,3 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
->>>>>>> 40c06595229f10c458f38e6e2a0d11b032630ed9

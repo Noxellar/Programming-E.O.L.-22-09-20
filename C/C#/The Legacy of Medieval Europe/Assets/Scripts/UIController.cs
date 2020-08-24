@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour
 		{
 			if (raycast.collider.transform.parent.tag == "Floor Stand")
 			{
-				raycast.collider.transform.parent.gameObject.GetComponent<OpenExhibit>().Open();
+				raycast.collider.transform.parent.gameObject.GetComponent<ViewExhibit>().Open();
 			}
 		}
 	}
