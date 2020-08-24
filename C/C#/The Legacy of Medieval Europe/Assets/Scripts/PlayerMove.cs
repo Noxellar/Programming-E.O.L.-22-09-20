@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+	// Player Input Action variable declaration
+	public PlayerInputActions playerInputActions;
+
 	// Player rigidbody variable declaration
 	Rigidbody playerRigidbody;
-
-	// Player Input Action variable declaration
-	PlayerInputActions playerInputActions;
 
 	// Movement Input variable declaration
 	Vector2 movementInput;
@@ -18,20 +19,20 @@ public class PlayerMove : MonoBehaviour
 
 	void Awake()
 	{
-		// Player rigidbody variable assignment
-		playerRigidbody = GetComponent<Rigidbody>();
-
 		// Player input action variable assignment to input action maps called "Player Input Actions"
 		playerInputActions = new PlayerInputActions();
 
-		// .Player is a action map and .Move is an action
+		// .Player is the action map and .Move is the action
 		playerInputActions.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+
+		// Player rigidbody variable assignment
+		playerRigidbody = GetComponent<Rigidbody>();
 
 		// Movement Speed variable assignment in m/s
 		movementSpeed = 3f;
 	}
 
-	void Update()
+	public void Update()
 	{
 		// Player x and y velocities. Time.deltaTime is not included because
 		// movementSpeed is in already velocity: m/s

@@ -19,6 +19,17 @@ https://docs.unity3d.com/ScriptReference/Transform.Rotate.html
 
 
 
+https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+https://answers.unity.com/questions/1119002/how-can-i-get-an-object-reference-from-a-raycast.html
+https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
+
+
+
+https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html
+
+
+
+
 
 
 https://forum.unity.com/threads/manually-moving-rigidbody-with-proper-collision.6313/
