@@ -15,15 +15,8 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Scenes/Main Scene.unity
-    - Assets/Scripts/OpenExhibit.cs
-    - Assets/Scripts/OpenExhibit.cs.meta
-    - Assets/Scripts/SelectExhibit.cs
-    - Assets/Scripts/SelectExhibit.cs.meta
-    - Assets/Scripts/UIController.cs
-    - Assets/Scripts/ViewExhibit.cs
-    - Assets/Scripts/ViewExhibit.cs.meta
     - 
-    m_Values: 000000000000000000
+    m_Values: 0101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

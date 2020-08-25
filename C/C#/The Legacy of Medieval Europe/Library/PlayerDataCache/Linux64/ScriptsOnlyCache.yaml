@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
     - UnityEngine.InputSystem.InputSettings
@@ -23,8 +24,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -37,6 +36,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
@@ -73,41 +73,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 12018}
     - Class: 114
-      Script: {instanceID: 15210}
+      Script: {instanceID: 12044}
     - Class: 114
-      Script: {instanceID: 15288}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 15328}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 15406}
+      Script: {instanceID: 12576}
     - Class: 114
-      Script: {instanceID: 16052}
+      Script: {instanceID: 12616}
     - Class: 114
-      Script: {instanceID: 16130}
+      Script: {instanceID: 12698}
     - Class: 114
-      Script: {instanceID: 16170}
+      Script: {instanceID: 13172}
     - Class: 114
-      Script: {instanceID: 16182}
+      Script: {instanceID: 13346}
     - Class: 114
-      Script: {instanceID: 16388}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 16430}
+      Script: {instanceID: 13472}
     - Class: 114
-      Script: {instanceID: 16504}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 16548}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 16708}
+      Script: {instanceID: 13736}
     - Class: 114
-      Script: {instanceID: 16830}
+      Script: {instanceID: 13812}
     - Class: 114
-      Script: {instanceID: 20064}
+      Script: {instanceID: 13856}
     - Class: 114
-      Script: {instanceID: 21216}
+      Script: {instanceID: 14016}
+    - Class: 114
+      Script: {instanceID: 14138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,6 +231,12 @@ ScriptsOnlyBuild:
     className: OnScreenStick
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIController
+  - hash:
+      serializedVersion: 2
       Hash: 5f206dd3b0d6b103c9456019be49d644
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -281,6 +289,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ViewExhibit
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -737,20 +751,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SelectExhibit
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ViewExhibit
   platform: 24
   scenePathNames:
   - Assets/Scenes/Main Scene.unity
-  playerPath: /home/harryl/Downloads/The Legacy of Medieval Europe/The Legacy of
-    Medieval Europe.x86_64
+  playerPath: /home/harryl/Downloads/tlomd/The Legacy of Medieval Europe.x86_64
