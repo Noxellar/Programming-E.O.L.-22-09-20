@@ -15,7 +15,7 @@ public class CameraLook : MonoBehaviour
 	Transform cameraTransform;
 
 	// Camera Rotation varaible declaration
-	Quaternion cameraRotation;
+	// Quaternion cameraRotation;
 
 	// Look Sensitivity variable declaration
 	float lookSensitivity;
@@ -35,7 +35,7 @@ public class CameraLook : MonoBehaviour
 		cameraTransform = transform;
 
 		// Camera Rotation variable assignment
-		cameraRotation = cameraTransform.rotation;
+		// cameraRotation = cameraTransform.rotation;
 
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
