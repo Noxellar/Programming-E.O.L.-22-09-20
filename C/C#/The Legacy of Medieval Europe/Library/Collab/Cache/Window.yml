@@ -15,8 +15,14 @@ MonoBehaviour:
   SimpleSelectedItems:
     m_Keys:
     - Assets/Scenes/Main Scene.unity
+    - Assets/TextMesh Pro/Fonts/Comic Sans MS.ttf
+    - Assets/TextMesh Pro/Fonts/Comic Sans MS.ttf.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/Comic Sans MS SDF.asset
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 0101
+    m_Values: 0000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
