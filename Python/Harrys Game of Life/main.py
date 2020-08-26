@@ -132,6 +132,10 @@ class Main(Game):
             del self.universe[id]
         self.delete_queue = []
 
+        for i in self.universe:
+            if self.universe.count(i) > 1:
+                print("sdjaflk;asdjflk;jasdl;f")
+
         self.update()
 
 
