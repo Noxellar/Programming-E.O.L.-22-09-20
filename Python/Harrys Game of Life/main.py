@@ -47,7 +47,7 @@ class Cell():
             (self.coords[0] + 1, self.coords[1] + 1)
         ]
 
-    def update(self, canvas, universe, delete_queue):
+    def update(self, canvas, universe, death_queue):
         pygame.draw.rect(canvas, (255, 255, 255),
                          (self.coords[0] * 40, self.coords[1] * 40, 40, 40))
 
@@ -67,16 +67,16 @@ class Cell():
         #   Removed coordinates from static variable
         #   Add self to delete queue
         if len(neighbours) != 2 and len(neighbours) != 3:
-            delete_queue.append(self.id)
+            death_queue.append(self.id)
 
 
 class MasterCell(Cell):
     def __init__(self):
         pass
 
-    def update(self, canvas, universe, delete_queue):
+    def update(self, canvas, universe, birth_queue, death_queue):
         for key in universe:
-            universe[key].update(canvas, universe, delete_queue)
+            universe[key].update(canvas, universe, death_queue)
 
         new_cell_queue = []
 
@@ -100,7 +100,7 @@ class MasterCell(Cell):
                 new_cell_id += choice(alphabet)
                 count += 1
 
-            universe[new_cell_id] = Cell(new_cell_id, i)
+            birth_queue.append((new_cell_id, i))
 
 
 class Main(Game):
@@ -117,7 +117,8 @@ class Main(Game):
             "c": Cell("c", (10, 9))
         }
 
-        self.delete_queue = []
+        self.birth_queue = []
+        self.death_queue = []
 
     def main(self):
         self.canvas.fill((0, 0, 0))
@@ -126,18 +127,17 @@ class Main(Game):
         for y in range(0, 1080, 40):
             pygame.draw.line(self.canvas, (255, 255, 255), (0, y), (1920, y))
 
-        self.master.update(self.canvas, self.universe, self.delete_queue)
+        # MASTERCELL ADDS NEW CELLS IMMEDIATELY CAUSING NE CEELS TO POP UP AND REGISTER AS A NEIGHBOUR
+        self.master.update(self.canvas, self.universe,
+                           self.birth_queue, self.death_queue)
 
-        for id in self.delete_queue:
+        for id in self.death_queue:
             del self.universe[id]
-        self.delete_queue = []
+        self.death_queue = []
 
-        list = []
-
-        for i in self.universe:
-            list.append(self.universe[i].coords)
-
-        print(list)
+        for cell in self.birth_queue:
+            self.universe[cell[0]] = Cell(cell[0], cell[1])
+        self.birth_queue = []
 
         self.update()
 

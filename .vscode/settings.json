@@ -41,6 +41,5 @@
 		"ProjectSettings/": true,
 		"temp/": true,
 		"Temp/": true
-	},
-	"python.pythonPath": "/usr/bin/python3"
+	}
 }
