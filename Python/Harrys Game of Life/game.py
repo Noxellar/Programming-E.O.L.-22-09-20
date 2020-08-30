@@ -30,7 +30,7 @@ class Game():
             self.canvas, (self.width, self.height))
 
         # Title of the window
-        pygame.display.set_caption("Harry's Game Of Life")
+        pygame.display.set_caption("Harry's Game of Life")
 
         # Setting framerate
         self.fps = 60
