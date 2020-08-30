@@ -1,10 +1,10 @@
 # INSTALL INSTRUCTIONS FOR PROGRAM
 
 ## PACKAGES
-- 
+- steam (.deb file from website)
 
 ## INSTRUCTIONS
-1) 
+1) Unpack .deb file into source directory
 
 2) 
 
