@@ -94,11 +94,9 @@ class MasterCell(Cell):
 
         for i in new_cell_queue:
             new_cell_id = ""
-            count = 0
 
-            while count < 6:
+            while len(new_cell_id) < 6:
                 new_cell_id += choice(alphabet)
-                count += 1
 
             birth_queue.append((new_cell_id, i))
 
