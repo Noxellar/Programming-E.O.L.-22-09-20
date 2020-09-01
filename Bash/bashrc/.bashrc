@@ -33,4 +33,4 @@ if [ -d "$HOME/.local/lib/i386-linux-gnu" ] ; then
 fi
 
 # The above does not work for .desktop files. Use this instead and replace program with your program name
-Exec=sh -c "env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.local/lib:$HOME/.local/lib32:$HOME/.local/lib/x86_64-linux-gnu:$HOME/.local/lib/i386-linux-gnu" program %alphabet :)"
+Exec=sh -c "env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.local/lib:$HOME/.local/lib32:$HOME/.local/lib/x86_64-linux-gnu:$HOME/.local/lib/i386-linux-gnu" program %letter"
