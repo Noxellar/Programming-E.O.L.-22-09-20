@@ -56,5 +56,5 @@ while true; do
 		echo "Wifi connectivity down ... retrying ..." >> "$CONFIG_DIR/log.txt"
 	fi
 	
-	sleep 300
+	sleep SLEEP_TIME
 done
