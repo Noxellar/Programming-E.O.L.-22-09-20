@@ -4,78 +4,66 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    // Player game object variable declaration
-    GameObject Player;
+	// Player Rigidbody variable declaration
+	Rigidbody2D playerRigidbody;
 
-    // Player rigidbody variable declaration
-    Rigidbody2D playerRigidbody;
+	// Player Input Action variable declaration
+	PlayerInputActions playerInputActions;
 
-    // Movement speed, jump height, and jumping status
-    public float movementSpeed = 500f;
-    public float jumpHeight = 200f;
-    bool isJumping = false;
-    // Player Input Action variable declaration
-    PlayerInputActions inputAction;
+	// Movement Input variable declaration
+	Vector2 movementInput;
 
-    // Movement Input variable declaration
-    Vector2 movementInput;
+	// Movement speed, jump height, and jumping status variable declarations
+	public float movementSpeed = 1f;
+	public float jumpHeight = 200f;
+	bool isJumping = false;
 
-    void Awake()
-    {
-        // Player rigidbody variable assignment
-        playerRigidbody = GetComponent<Rigidbody2D>();
+	void Awake()
+	{
+		// Player Rigidbody variable assignment
+		playerRigidbody = GetComponent<Rigidbody2D>();
 
-        // Player input action variable assignment to input action maps called "Player Input Actions"
-        inputAction = new PlayerInputActions();
+		// Player input action variable assignment to input action maps called "Player Input Actions"
+		playerInputActions = new PlayerInputActions();
 
-        // .Player is a action map and .Move is an action
-        inputAction.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
-    }
+		// .Player is a action map and .Move is an action
+		playerInputActions.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
+	}
 
-    void Update()
-    {
-        PlayerRotation = Player.transform.rotation;
+	void Update()
+	{
+		Debug.Log(movementInput);
 
-        Vector2 movement = playerRigidbody.velocity;
+		// Player x velocity. Time.deltaTime is not included because
+		// movementSpeed is in already velocity: m/s
+		Vector2 playerVelocityX = (transform.right * movementInput.x) * movementSpeed;
+		Vector2 playerVelocityY = transform.up * 0;
 
-        float x = movementInput.x;
-        float y = movementInput.y;
+		if (!isJumping)
+		{
+			playerVelocityY = (transform.up * movementInput.y) * jumpHeight;
+		}
 
-        movement.x = x * movementSpeed * Time.deltaTime;
-        if (y != 0 && !isJumping)
-        {
-            movement.y = y * jumpHeight * Time.deltaTime;
-        }
+		playerRigidbody.velocity = playerVelocityX + playerVelocityY;
+	}
 
-        if (x < 0)
-        {
-            PlayerRotation.y = 180;
-        }
-        else
-        {
-            PlayerRotation.y = 0;
-        }
+	void OnCollisionStay2D(Collision2D collisionObject)
+	{
+		isJumping = false;
+	}
 
-        playerRigidbody.velocity = movement;
-    }
+	void OnCollisionExit2D(Collision2D collisionObject)
+	{
+		isJumping = true;
+	}
 
-    void OnCollisionStay2D(Collision2D collisionObject)
-    {
-        isJumping = false;
-    }
+	void OnEnable()
+	{
+		playerInputActions.Enable();
+	}
 
-    void OnCollisionExit2D(Collision2D collisionObject)
-    {
-        isJumping = true;
-    }
-
-    void OnEnable()
-    {
-        inputAction.Enable();
-    }
-
-    void OnDisable()
-    {
-        inputAction.Disable();
-    }
+	void OnDisable()
+	{
+		playerInputActions.Disable();
+	}
 }
