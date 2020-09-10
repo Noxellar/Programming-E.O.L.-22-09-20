@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-	// Player Rigidbody variable declaration
+	// Player rigidbody variable declaration
 	Rigidbody2D playerRigidbody;
 
 	// Player Input Action variable declaration
@@ -13,14 +14,14 @@ public class PlayerMove : MonoBehaviour
 	// Movement Input variable declaration
 	Vector2 movementInput;
 
-	// Movement speed, jump height, and jumping status variable declarations
+	// Movement speed, jump height, and jumping status
 	public float movementSpeed = 1f;
 	public float jumpHeight = 200f;
 	bool isJumping = false;
 
 	void Awake()
 	{
-		// Player Rigidbody variable assignment
+		// Player rigidbody variable assignment
 		playerRigidbody = GetComponent<Rigidbody2D>();
 
 		// Player input action variable assignment to input action maps called "Player Input Actions"
@@ -32,8 +33,6 @@ public class PlayerMove : MonoBehaviour
 
 	void Update()
 	{
-		Debug.Log(movementInput);
-
 		// Player x velocity. Time.deltaTime is not included because
 		// movementSpeed is in already velocity: m/s
 		Vector2 playerVelocityX = (transform.right * movementInput.x) * movementSpeed;
@@ -45,6 +44,8 @@ public class PlayerMove : MonoBehaviour
 		}
 
 		playerRigidbody.velocity = playerVelocityX + playerVelocityY;
+
+		Debug.Log(playerVelocityX);
 	}
 
 	void OnCollisionStay2D(Collision2D collisionObject)
