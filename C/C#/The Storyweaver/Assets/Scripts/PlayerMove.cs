@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -35,7 +34,7 @@ public class PlayerMove : MonoBehaviour
 	{
 		// Player x velocity. Time.deltaTime is not included because
 		// movementSpeed is in already velocity: m/s
-		Vector2 playerVelocityX = (transform.right * movementInput.x) * movementSpeed;
+		Vector2 playerVelocityX = new Vector2(movementInput.x, 0);
 		Vector2 playerVelocityY = transform.up * 0;
 
 		if (!isJumping)
