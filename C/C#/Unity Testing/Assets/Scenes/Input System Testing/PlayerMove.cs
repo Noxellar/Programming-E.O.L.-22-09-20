@@ -40,7 +40,7 @@ public class PlayerMove : MonoBehaviour
 		Vector3 playerVelocityY = (transform.forward * movementInput.y) * movementSpeed;
 
 		playerRigidbody.velocity = playerVelocityX + playerVelocityY;
-		
+
 		Debug.Log(movementInput);
 	}
 
