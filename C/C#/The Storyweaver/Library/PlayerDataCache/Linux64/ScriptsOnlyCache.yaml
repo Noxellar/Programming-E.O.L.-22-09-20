@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - Unity.Cloud.Collaborate.UserInterface.CollaborateWindow
     - Unity.Cloud.Collaborate.UserInterface.WindowCache
     Unity.InputSystem.dll:
+    - UnityEngine.InputSystem.Editor.InputActionEditorWindow
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -124,113 +125,113 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11932}
     - Class: 114
-      Script: {instanceID: 11852}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 11854}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 11856}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 11858}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 11860}
+      Script: {instanceID: 11942}
     - Class: 114
-      Script: {instanceID: 11862}
+      Script: {instanceID: 11944}
     - Class: 114
-      Script: {instanceID: 11864}
+      Script: {instanceID: 12080}
     - Class: 114
-      Script: {instanceID: 11866}
+      Script: {instanceID: 12226}
     - Class: 114
-      Script: {instanceID: 11996}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12142}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 12512}
     - Class: 114
-      Script: {instanceID: 12370}
+      Script: {instanceID: 12700}
     - Class: 114
-      Script: {instanceID: 12428}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 12930}
+      Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 12974}
+      Script: {instanceID: 13392}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 13460}
     - Class: 114
-      Script: {instanceID: 13308}
+      Script: {instanceID: 13504}
     - Class: 114
-      Script: {instanceID: 13376}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13420}
+      Script: {instanceID: 13772}
     - Class: 114
-      Script: {instanceID: 13624}
+      Script: {instanceID: 13844}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 13762}
+      Script: {instanceID: 14328}
     - Class: 114
-      Script: {instanceID: 13906}
+      Script: {instanceID: 14352}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 14376}
     - Class: 114
-      Script: {instanceID: 14292}
+      Script: {instanceID: 14558}
     - Class: 114
-      Script: {instanceID: 14474}
-    - Class: 114
-      Script: {instanceID: 14582}
-    - Class: 114
-      Script: {instanceID: 14592}
-    - Class: 114
-      Script: {instanceID: 14660}
+      Script: {instanceID: 14666}
     - Class: 114
       Script: {instanceID: 14676}
     - Class: 114
-      Script: {instanceID: 14680}
+      Script: {instanceID: 14744}
     - Class: 114
-      Script: {instanceID: 14806}
+      Script: {instanceID: 14746}
     - Class: 114
-      Script: {instanceID: 14850}
+      Script: {instanceID: 14762}
     - Class: 114
-      Script: {instanceID: 14858}
+      Script: {instanceID: 14766}
     - Class: 114
-      Script: {instanceID: 15036}
+      Script: {instanceID: 14892}
     - Class: 114
-      Script: {instanceID: 15104}
+      Script: {instanceID: 14936}
     - Class: 114
-      Script: {instanceID: 15186}
+      Script: {instanceID: 14944}
     - Class: 114
-      Script: {instanceID: 15266}
+      Script: {instanceID: 15122}
     - Class: 114
-      Script: {instanceID: 15564}
+      Script: {instanceID: 15190}
     - Class: 114
-      Script: {instanceID: 15618}
+      Script: {instanceID: 15272}
     - Class: 114
-      Script: {instanceID: 15742}
+      Script: {instanceID: 15352}
     - Class: 114
-      Script: {instanceID: 15766}
+      Script: {instanceID: 15650}
     - Class: 114
-      Script: {instanceID: 15802}
+      Script: {instanceID: 15704}
     - Class: 114
-      Script: {instanceID: 15858}
+      Script: {instanceID: 15828}
     - Class: 114
-      Script: {instanceID: 16000}
+      Script: {instanceID: 15852}
     - Class: 114
-      Script: {instanceID: 16018}
+      Script: {instanceID: 15888}
     - Class: 114
-      Script: {instanceID: 16024}
+      Script: {instanceID: 15944}
     - Class: 114
-      Script: {instanceID: 16098}
+      Script: {instanceID: 16086}
     - Class: 114
-      Script: {instanceID: 16154}
+      Script: {instanceID: 16104}
     - Class: 114
-      Script: {instanceID: 16164}
+      Script: {instanceID: 16110}
     - Class: 114
-      Script: {instanceID: 16248}
+      Script: {instanceID: 16184}
     - Class: 114
-      Script: {instanceID: 16252}
+      Script: {instanceID: 16240}
+    - Class: 114
+      Script: {instanceID: 16250}
+    - Class: 114
+      Script: {instanceID: 16334}
+    - Class: 114
+      Script: {instanceID: 16338}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -266,34 +267,16 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: f087c23fbfa15475a0d110af46fb0496
+      Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: VerticalLayoutGroup
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: fd8b23ad3c9e81bc85b197495bc510ac
@@ -302,10 +285,22 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 2cb85097bd451bae61ff71e703256582
+    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
+    namespaceName: UnityEngine.Rendering.Universal
+    className: UniversalRenderPipelineAsset
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -644,12 +639,6 @@ ScriptsOnlyBuild:
     className: InputSettings
   - hash:
       serializedVersion: 2
-      Hash: 2cb85097bd451bae61ff71e703256582
-    assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
-    namespaceName: UnityEngine.Rendering.Universal
-    className: UniversalRenderPipelineAsset
-  - hash:
-      serializedVersion: 2
       Hash: cd0ecdca0166232906c6f2df9dddc3d3
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
@@ -770,6 +759,12 @@ ScriptsOnlyBuild:
     className: ChatController
   - hash:
       serializedVersion: 2
+      Hash: f087c23fbfa15475a0d110af46fb0496
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: 0c9920fb850aff7b5ec756815b7a6fc1
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -882,6 +877,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro
     className: TMP_DigitValidator
+  - hash:
+      serializedVersion: 2
+      Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
       Hash: 344a8c2e106a0a4e098e91a52e0af063
