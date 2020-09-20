@@ -4,8 +4,8 @@
 Name=Wacom Tablet Button Setup
 Terminal=false
 Type=Application
-Icon=/home/harryl/.icons/Adwaita++-Colorful/devices/32/input-tablet.svg
+Icon=input-tablet
 Categories=Graphics;Preferences;
 Comment=Wacom Intuos S Tablet Setup
 Exec=xsetwacom.sh
-Name[en_AU]=Wacom Tablet Button Setup
+
