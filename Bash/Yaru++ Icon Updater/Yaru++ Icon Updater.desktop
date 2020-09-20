@@ -1,0 +1,9 @@
+#!/bin/sh
+[Desktop Entry]
+Name=Yaru++ Icon Updater
+Terminal=false
+Type=Application
+Icon=distributor-logo
+Categories=GNOME;Utility;Preferences;
+Comment=Updates Yaru++ Icon Theme
+Exec=Yaru++.sh
