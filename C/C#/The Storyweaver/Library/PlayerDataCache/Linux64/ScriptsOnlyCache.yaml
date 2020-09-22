@@ -23,7 +23,6 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
-    - UnityEngine.InputSystem.PlayerInput
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -161,8 +160,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13454}
     - Class: 114
-      Script: {instanceID: 13498}
-    - Class: 114
       Script: {instanceID: 13702}
     - Class: 114
       Script: {instanceID: 13768}
@@ -176,8 +173,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14348}
     - Class: 114
       Script: {instanceID: 14372}
-    - Class: 114
-      Script: {instanceID: 14554}
     - Class: 114
       Script: {instanceID: 14662}
     - Class: 114
@@ -1360,4 +1355,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/Player Testing.unity
-  playerPath: /home/harryl/Downloads/The Storyweaver/The Storyweaver.x86_64
+  playerPath: /home/harryl/Videos/The Storyweaver/The Storyweaver.x86_64
