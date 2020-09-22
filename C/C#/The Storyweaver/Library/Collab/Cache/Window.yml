@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Scenes/Player Testing.unity
+    - Assets/Scenes/Start Menu.unity
+    - Assets/Scenes/Start MenuSettings.lighting
+    - Assets/Scenes/Start MenuSettings.lighting.meta
+    - Assets/Scripts/StartMenu.cs
     - 
-    m_Values: 01
+    m_Values: 000000000000
   RevisionSummary: 
   ChangesSearchValue: 
-  SelectedHistoryRevision: 7cd1e21888b821ef1a074802155fb4787f4afccf
+  SelectedHistoryRevision: 
   HistoryPageNumber: 0
-  TabIndex: 1
+  TabIndex: 0

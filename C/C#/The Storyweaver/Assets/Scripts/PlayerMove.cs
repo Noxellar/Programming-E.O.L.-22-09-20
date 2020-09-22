@@ -21,7 +21,6 @@ public class PlayerMove : MonoBehaviour
 	void Awake()
 	{
 		// Player rigidbody variable assignment
-		//https://answers.unity.com/questions/1057863/help-sprite-showing-up-in-scene-but-not-in-game.html
 		playerRigidbody = GetComponent<Rigidbody2D>();
 
 		// Player input action variable assignment to input action maps called "Player Input Actions"

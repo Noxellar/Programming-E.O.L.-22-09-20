@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class StartMenu : MonoBehaviour
 {
-	public void OnButtonPress()
+	public void Play()
 	{
-		Debug.Log("yeet");
+		Debug.Log("Pley Geym");
+	}
+
+	public void OpenOptions()
+	{
+		Debug.Log("Open Oopshuns");
+	}
+
+	public void Exit()
+	{
+		Application.Quit();
 	}
 }
